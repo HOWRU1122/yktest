@@ -1,0 +1,189 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 112, Failures: 23, Errors: 0, Skipped: 0, Time elapsed: 610.684 sec <<< FAILURE! - in TestSuite
+user_note(com.tester.cases.XHSv1Test)  Time elapsed: 0.32 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "xhs1 参数错误", "start_time": 1581053196, "end_time": 1581053197}
+请求url：http://47.97.206.10/api/xhs_v1/user_note?user_id=5a73c5fa4eacab4c4ccc9778&page=1&page_size=10
+	at com.tester.cases.XHSv1Test.user_note(XHSv1Test.java:93)
+
+note_comments(com.tester.cases.XHSv2Test)  Time elapsed: 0.519 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "xhs2 参数错误", "start_time": 1581053206, "end_time": 1581053207}
+请求url：http://47.97.206.10/api/xhs_v2/note_comments?note_id=5df5d21d000000000100790c&num=10&start=5df738e200000000010091d4
+	at com.tester.cases.XHSv2Test.note_comments(XHSv2Test.java:183)
+
+get_share_video_detail(com.tester.cases.DouyinTest)  Time elapsed: 9.366 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053270, "code": -1, "msg": "失败", "end_time": 1581053279}
+请求url：http://47.97.206.10/api/douyin/get_share_video_detail?url=http://v.douyin.com/UyrYGY/
+	at com.tester.cases.DouyinTest.get_share_video_detail(DouyinTest.java:63)
+
+get_user_forward_list(com.tester.cases.DouyinTest)  Time elapsed: 10.261 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053283, "code": -1, "msg": "失败", "end_time": 1581053293}
+请求url：http://47.97.206.10/api/douyin/get_user_forward_list?user_id=102388086611&max_cursor=0&count=20
+	at com.tester.cases.DouyinTest.get_user_forward_list(DouyinTest.java:183)
+
+get_user_info(com.tester.cases.DouyinLiteTest)  Time elapsed: 100.08 sec  <<< FAILURE!
+com.alibaba.fastjson.JSONException: 
+syntax error, pos 1, json : <!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the <a href="http://nginx.org/r/error_log">error log</a> for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
+
+	at com.tester.cases.DouyinLiteTest.get_user_info(DouyinLiteTest.java:115)
+
+get_video_detail(com.tester.cases.DouyinLiteTest)  Time elapsed: 100.072 sec  <<< FAILURE!
+com.alibaba.fastjson.JSONException: 
+syntax error, pos 1, json : <!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the <a href="http://nginx.org/r/error_log">error log</a> for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
+
+	at com.tester.cases.DouyinLiteTest.get_video_detail(DouyinLiteTest.java:536)
+
+get_webcast_room_info(com.tester.cases.DouyinLiteTest)  Time elapsed: 0.443 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053580, "code": -1, "msg": "失败", "end_time": 1581053581}
+请求url：http://47.97.206.10/api/douyin_lite/get_webcast_room_info?room_id=6731613896211188484
+	at com.tester.cases.DouyinLiteTest.get_webcast_room_info(DouyinLiteTest.java:665)
+
+get_aweme_comment(com.tester.cases.DouyinAweTest)  Time elapsed: 0.081 sec  <<< FAILURE!
+com.alibaba.fastjson.JSONException: 
+syntax error, pos 1, json : <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
+
+	at com.tester.cases.DouyinAweTest.get_aweme_comment(DouyinAweTest.java:115)
+
+get_aweme_info(com.tester.cases.DouyinAweTest)  Time elapsed: 0.286 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053582, "code": -1, "msg": "失败", "end_time": 1581053582}
+请求url：http://47.97.206.10/api/douyin_awe/get_aweme_info?aweme_id=6729436911498267908
+	at com.tester.cases.DouyinAweTest.get_aweme_info(DouyinAweTest.java:153)
+
+get_aweme_list(com.tester.cases.DouyinAweTest)  Time elapsed: 91.426 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053582, "code": -1, "msg": "失败，采集失败..", "end_time": 1581053673}
+请求url：http://47.97.206.10/api/douyin_awe/get_aweme_list?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo&cursor=0
+	at com.tester.cases.DouyinAweTest.get_aweme_list(DouyinAweTest.java:93)
+
+get_user_info(com.tester.cases.DouyinAweTest)  Time elapsed: 1.526 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053674, "code": -1, "msg": "失败", "end_time": 1581053675}
+请求url：http://47.97.206.10/api/douyin_awe/get_user_info?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo
+	at com.tester.cases.DouyinAweTest.get_user_info(DouyinAweTest.java:32)
+
+crawlPageByBrandName(com.tester.cases.JingDongTest)  Time elapsed: 0.093 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053678, "code": -1, "msg": "失败请求返回了空结果", "end_time": 1581053678}
+请求url：http://47.97.206.10/api/jd/crawlPageByBrandName?brandName=三星
+	at com.tester.cases.JingDongTest.crawlPageByBrandName(JingDongTest.java:63)
+
+crawlShopDetails(com.tester.cases.JingDongTest)  Time elapsed: 0.125 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"start_time": 1581053678, "code": -1, "msg": "失败请求返回了空结果", "end_time": 1581053678}
+请求url：http://47.97.206.10/api/jd/crawlShopDetails?shop_list=[1000000925]
+	at com.tester.cases.JingDongTest.crawlShopDetails(JingDongTest.java:153)
+
+shop_info(com.tester.cases.JingDongCPSTest)  Time elapsed: 1.288 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "jd_cps: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/jd_cps/jd_cps_api.py\", line 139, in get_shop_info\n    r = self.request('GET', url, params=params, headers=headers)\n  File \"./spider/jd_cps/jd_cps_api.py\", line 46, in request\n    raise Exception(f'jd_cps请求重试超过最大次数: content:{content}, status_code:{status_code}')\nException: jd_cps请求重试超过最大次数: content:{\"code\":402}, status_code:200\n", "start_time": 1581053682, "end_time": 1581053683}
+请求url：http://47.97.206.10/api/jd_cps/shop_info?shop_id=996822
+	at com.tester.cases.JingDongCPSTest.shop_info(JingDongCPSTest.java:93)
+
+shop_item(com.tester.cases.JingDongCPSTest)  Time elapsed: 3.42 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "jd_cps: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/jd_cps/jd_cps_api.py\", line 154, in get_shop_item\n    r = self.request('GET', url, params=params, headers=headers)\n  File \"./spider/jd_cps/jd_cps_api.py\", line 46, in request\n    raise Exception(f'jd_cps请求重试超过最大次数: content:{content}, status_code:{status_code}')\nUnboundLocalError: local variable 'content' referenced before assignment\n", "start_time": 1581053683, "end_time": 1581053687}
+请求url：http://47.97.206.10/api/jd_cps/shop_item?shop_id=996822&page_no=1&page_size=20
+	at com.tester.cases.JingDongCPSTest.shop_item(JingDongCPSTest.java:123)
+
+shops(com.tester.cases.JingDongCPSTest)  Time elapsed: 2.019 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "jd_cps: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/jd_cps/jd_cps_api.py\", line 127, in get_shops\n    r = self.request('POST', url, json=data, headers=headers)\n  File \"./spider/jd_cps/jd_cps_api.py\", line 46, in request\n    raise Exception(f'jd_cps请求重试超过最大次数: content:{content}, status_code:{status_code}')\nException: jd_cps请求重试超过最大次数: content:{\"code\":402}, status_code:200\n", "start_time": 1581053687, "end_time": 1581053689}
+请求url：http://47.97.206.10/api/jd_cps/shops?page_no=1&page_size=20
+	at com.tester.cases.JingDongCPSTest.shops(JingDongCPSTest.java:63)
+
+hot_feed(com.tester.cases.KuaiShouTest)  Time elapsed: 15.494 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "ks2: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/ks_2/ks_api.py\", line 663, in get_hot_feed\n    return self.http_post(ks_url, form_params=form_params)\n  File \"./spider/ks_2/ks_api.py\", line 220, in http_post\n    form_params.update(sign)\nTypeError: 'NoneType' object is not iterable\n", "start_time": 1581053689, "end_time": 1581053704}
+请求url：http://47.97.206.10/api/ks_v2/hot_feed?page=1&page_size=10
+	at com.tester.cases.KuaiShouTest.hot_feed(KuaiShouTest.java:63)
+
+nearby_feed(com.tester.cases.KuaiShouTest)  Time elapsed: 15.551 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "ks2: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/ks_2/ks_api.py\", line 695, in get_nearby_feed\n    return self.http_post(ks_url, form_params=form_params)\n  File \"./spider/ks_2/ks_api.py\", line 220, in http_post\n    form_params.update(sign)\nTypeError: 'NoneType' object is not iterable\n", "start_time": 1581053704, "end_time": 1581053720}
+请求url：http://47.97.206.10/api/ks_v2/nearby_feed?page=1&page_size=20&lon=113.712143&lat=34.593717
+	at com.tester.cases.KuaiShouTest.nearby_feed(KuaiShouTest.java:93)
+
+share_video(com.tester.cases.KuaiShouTest)  Time elapsed: 15.669 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "ks2: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/ks_2/ks_api.py\", line 787, in get_share_video_info\n    return self.http_post(ks_url, form_params=form_params)\n  File \"./spider/ks_2/ks_api.py\", line 220, in http_post\n    form_params.update(sign)\nTypeError: 'NoneType' object is not iterable\n", "start_time": 1581053720, "end_time": 1581053736}
+请求url：http://47.97.206.10/api/ks_v2/share_video?share_url=http://kphbeijing.m.chenzhongtech.com/s/Qsh970xL
+	at com.tester.cases.KuaiShouTest.share_video(KuaiShouTest.java:243)
+
+user_info(com.tester.cases.KuaiShouTest)  Time elapsed: 15.521 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "ks2: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/ks_2/ks_api.py\", line 711, in get_user_profile\n    return self.http_post(ks_url, form_params=form_params)\n  File \"./spider/ks_2/ks_api.py\", line 220, in http_post\n    form_params.update(sign)\nTypeError: 'NoneType' object is not iterable\n", "start_time": 1581053736, "end_time": 1581053752}
+请求url：http://47.97.206.10/api/ks_v2/user_info?user_id=1391625066
+	at com.tester.cases.KuaiShouTest.user_info(KuaiShouTest.java:123)
+
+user_video(com.tester.cases.KuaiShouTest)  Time elapsed: 15.498 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "ks2: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/ks_2/ks_api.py\", line 734, in get_user_feed\n    return self.http_post(ks_url, form_params=form_params)\n  File \"./spider/ks_2/ks_api.py\", line 220, in http_post\n    form_params.update(sign)\nTypeError: 'NoneType' object is not iterable\n", "start_time": 1581053752, "end_time": 1581053767}
+请求url：http://47.97.206.10/api/ks_v2/user_video?user_id=1391625066&page_size=10
+	at com.tester.cases.KuaiShouTest.user_video(KuaiShouTest.java:153)
+
+video_comment(com.tester.cases.KuaiShouTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+Illegal character in query at index 103: http://47.97.206.10/api/ks_v2/video_comment?user_id=191674858&photo_id=5248945383907780546&page_size=10
+
+	at com.tester.cases.KuaiShouTest.video_comment(KuaiShouTest.java:170)
+Caused by: java.net.URISyntaxException: 
+Illegal character in query at index 103: http://47.97.206.10/api/ks_v2/video_comment?user_id=191674858&photo_id=5248945383907780546&page_size=10
+
+	at com.tester.cases.KuaiShouTest.video_comment(KuaiShouTest.java:170)
+
+video_detail(com.tester.cases.KuaiShouTest)  Time elapsed: 15.503 sec  <<< FAILURE!
+java.lang.RuntimeException: 
+{"code": -1, "data": null, "msg": "ks2: 其他异常错误: Traceback (most recent call last):\n  File \"./utils/deco.py\", line 37, in wrapper\n    return func(*args, **kwargs)\n  File \"./spider/ks_2/ks_api.py\", line 772, in get_video_info\n    return self.http_post(ks_url, form_params=form_params)\n  File \"./spider/ks_2/ks_api.py\", line 220, in http_post\n    form_params.update(sign)\nTypeError: 'NoneType' object is not iterable\n", "start_time": 1581053767, "end_time": 1581053783}
+请求url：http://47.97.206.10/api/ks_v2/video_detail?photo_id=5248945383907780546
+	at com.tester.cases.KuaiShouTest.video_detail(KuaiShouTest.java:213)
+

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="" />
+    <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yktest-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1OrCsZOEZ0YOOS0KzCjgfc5lp74" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
@@ -33,7 +45,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -50,8 +62,8 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/yaokai/IdeaProjects/yktest/src/main/resources/testng.xml">
-    <configuration name="DouyinLiteTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DouyinAweTest.get_user_info">
+    <configuration name="DouyinAweTest.get_user_info" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -60,8 +72,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinLiteTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinAweTest" />
+      <option name="METHOD_NAME" value="get_user_info" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -133,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DouyinAweTest.get_user_info" />
         <item itemvalue="TestNG./Users/yaokai/IdeaProjects/yktest/src/main/resources/testng.xml" />
         <item itemvalue="TestNG.DuTest.call_nums" />
         <item itemvalue="TestNG.DuTest" />
         <item itemvalue="TestNG.DuTest.ice_shopping" />
-        <item itemvalue="TestNG.DouyinLiteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +185,8 @@
       <workItem from="1580894508646" duration="274000" />
       <workItem from="1580894796694" duration="33000" />
       <workItem from="1580894842584" duration="30000" />
-      <workItem from="1580894885715" duration="14882000" />
+      <workItem from="1580894885715" duration="17701000" />
+      <workItem from="1581052388654" duration="1059000" />
     </task>
     <servers />
   </component>
@@ -180,10 +194,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="472" y="181" key="#Project_Structure" timestamp="1580821895782">
+    <state x="472" y="181" key="#Project_Structure" timestamp="1581051900869">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state x="472" y="181" key="#Project_Structure/0.23.1680.967@0.23.1680.967" timestamp="1580821895782" />
+    <state x="472" y="181" key="#Project_Structure/0.23.1680.967@0.23.1680.967" timestamp="1581051900869" />
     <state x="618" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1580894870023">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
@@ -196,29 +210,29 @@
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="844" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.967@0.23.1680.967" timestamp="1580822750501" />
-    <state width="1555" height="250" key="GridCell.Tab.0.bottom" timestamp="1581039040222">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1337" height="230" key="GridCell.Tab.0.bottom" timestamp="1581052693494">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1555" height="250" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1580984499950" />
-    <state width="1555" height="250" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1581039040222" />
+    <state width="1337" height="230" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581052693494" />
+    <state width="1337" height="230" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1581050820770" />
     <state width="1555" height="251" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1580867807233" />
-    <state width="1555" height="250" key="GridCell.Tab.0.center" timestamp="1581039040221">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1337" height="230" key="GridCell.Tab.0.center" timestamp="1581052693494">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1555" height="250" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1580984499949" />
-    <state width="1555" height="250" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1581039040221" />
+    <state width="1337" height="230" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1581052693494" />
+    <state width="1337" height="230" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1581050820769" />
     <state width="1555" height="251" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1580867807232" />
-    <state width="1555" height="250" key="GridCell.Tab.0.left" timestamp="1581039040221">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1337" height="230" key="GridCell.Tab.0.left" timestamp="1581052693493">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1555" height="250" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1580984499949" />
-    <state width="1555" height="250" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1581039040221" />
+    <state width="1337" height="230" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1581052693493" />
+    <state width="1337" height="230" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1581050820769" />
     <state width="1555" height="251" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1580867807231" />
-    <state width="1555" height="250" key="GridCell.Tab.0.right" timestamp="1581039040222">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1337" height="230" key="GridCell.Tab.0.right" timestamp="1581052693494">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1555" height="250" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1580984499949" />
-    <state width="1555" height="250" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1581039040222" />
+    <state width="1337" height="230" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1581052693494" />
+    <state width="1337" height="230" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1581050820770" />
     <state width="1555" height="251" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1580867807232" />
     <state width="1555" height="314" key="GridCell.Tab.1.bottom" timestamp="1580894280457">
       <screen x="0" y="23" width="1680" height="972" />
@@ -236,9 +250,10 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1555" height="314" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1580894280456" />
-    <state x="244" y="95" key="SettingsEditor" timestamp="1581040152896">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="244" y="95" key="SettingsEditor" timestamp="1581051533518">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
+    <state x="244" y="95" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1581051533518" />
     <state x="244" y="95" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1581040152896" />
     <state x="544" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1580894885371">
       <screen x="0" y="23" width="1680" height="972" />
