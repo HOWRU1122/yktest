@@ -2,41 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tester/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tester/model/TestResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/KaoLaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinAweTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinAweTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinLiteTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinLiteTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinShareTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinShareTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DuTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DuTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongCPSTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongCPSTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KuaiShouTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KuaiShouTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.PddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.PddTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv1Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv1Test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv2Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv2Test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/DouyinAweTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/DouyinLiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/DouyinShareTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/DouyinTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/DuTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/JingDongCPSTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/JingDongTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/KuaiShouTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/PddTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/XHSv1Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/cases/XHSv2Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/AddUserCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/GetUserInfoCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/GetUserListCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/InterfaceName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/LoginCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/UpdateUserInfoCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,9 +87,6 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.tester.cases" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -85,9 +94,17 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tester.cases" />
+      <recent name="com.tester.model" />
+      <recent name="com.tester.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/yaokai/IdeaProjects/yktest/src/main/resources/testng.xml">
-    <configuration name="DouyinAweTest.get_user_info" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.XHSv2Test">
+    <configuration name="DouyinAweTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -97,15 +114,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
       <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinAweTest" />
-      <option name="METHOD_NAME" value="get_user_info" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DuTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DouyinLiteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -114,15 +128,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DuTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinLiteTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DuTest.call_nums" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DouyinShareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -131,16 +143,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DuTest" />
-      <option name="METHOD_NAME" value="call_nums" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinShareTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DuTest.ice_shopping" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DouyinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -149,32 +158,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DuTest" />
-      <option name="METHOD_NAME" value="ice_shopping" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/yaokai/IdeaProjects/yktest/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="XHSv2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.XHSv2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yktest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tester.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/yaokai/IdeaProjects/yktest/src/main/resources/testng.xml" />
-        <item itemvalue="TestNG.DouyinAweTest.get_user_info" />
-        <item itemvalue="TestNG.DuTest.call_nums" />
-        <item itemvalue="TestNG.DuTest" />
-        <item itemvalue="TestNG.DuTest.ice_shopping" />
+        <item itemvalue="JUnit.XHSv2Test" />
+        <item itemvalue="JUnit.DouyinAweTest" />
+        <item itemvalue="JUnit.DouyinLiteTest" />
+        <item itemvalue="JUnit.DouyinShareTest" />
+        <item itemvalue="JUnit.DouyinTest" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +229,13 @@
       <workItem from="1580894842584" duration="30000" />
       <workItem from="1580894885715" duration="17701000" />
       <workItem from="1581052388654" duration="5437000" />
+      <workItem from="1581070132318" duration="337000" />
+      <workItem from="1581071450609" duration="12025000" />
+      <workItem from="1581394832140" duration="7000" />
+      <workItem from="1581395486981" duration="464000" />
+      <workItem from="1581399575579" duration="379000" />
+      <workItem from="1581409410038" duration="1027000" />
+      <workItem from="1581417705353" duration="14890000" />
     </task>
     <servers />
   </component>
@@ -234,34 +259,38 @@
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="844" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.967@0.23.1680.967" timestamp="1580822750501" />
-    <state width="1610" height="230" key="GridCell.Tab.0.bottom" timestamp="1581062914241">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1610" height="309" key="GridCell.Tab.0.bottom" timestamp="1581432966796">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1610" height="230" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581062914241" />
-    <state width="1337" height="230" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581054771873" />
-    <state width="1337" height="230" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1581050820770" />
-    <state width="1555" height="251" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1580867807233" />
-    <state width="1610" height="230" key="GridCell.Tab.0.center" timestamp="1581062914241">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
+    <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
+    <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581389281402" />
+    <state width="1610" height="315" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1581426528418" />
+    <state width="1610" height="309" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581432966796" />
+    <state width="1610" height="309" key="GridCell.Tab.0.center" timestamp="1581432966796">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1610" height="230" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581062914241" />
-    <state width="1337" height="230" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1581054771872" />
-    <state width="1337" height="230" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1581050820769" />
-    <state width="1555" height="251" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1580867807232" />
-    <state width="1610" height="230" key="GridCell.Tab.0.left" timestamp="1581062914240">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
+    <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
+    <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
+    <state width="1610" height="315" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1581426528417" />
+    <state width="1610" height="309" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581432966796" />
+    <state width="1610" height="309" key="GridCell.Tab.0.left" timestamp="1581432966795">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1610" height="230" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581062914240" />
-    <state width="1337" height="230" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1581054771872" />
-    <state width="1337" height="230" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1581050820769" />
-    <state width="1555" height="251" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1580867807231" />
-    <state width="1610" height="230" key="GridCell.Tab.0.right" timestamp="1581062914241">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
+    <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581386437553" />
+    <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1581389281400" />
+    <state width="1610" height="315" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1581426528416" />
+    <state width="1610" height="309" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581432966795" />
+    <state width="1610" height="309" key="GridCell.Tab.0.right" timestamp="1581432966796">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1610" height="230" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581062914241" />
-    <state width="1337" height="230" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1581054771873" />
-    <state width="1337" height="230" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1581050820770" />
-    <state width="1555" height="251" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1580867807232" />
+    <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
+    <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
+    <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
+    <state width="1610" height="315" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1581426528417" />
+    <state width="1610" height="309" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581432966796" />
     <state width="1555" height="314" key="GridCell.Tab.1.bottom" timestamp="1580894280457">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
@@ -283,10 +312,11 @@
     </state>
     <state x="244" y="95" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1581051533518" />
     <state x="244" y="95" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1581040152896" />
-    <state x="544" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1580894885371">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="544" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1581399575826">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="544" y="333" key="com.intellij.ide.util.TipDialog/0.23.1680.972@0.23.1680.972" timestamp="1580894885371" />
+    <state x="544" y="333" key="com.intellij.ide.util.TipDialog/0.23.1680.973@0.23.1680.973" timestamp="1581399575826" />
     <state x="603" y="271" key="extract.method.dialog" timestamp="1580894999687">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
@@ -295,5 +325,9 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="618" y="378" width="717" height="295" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1680.972@0.23.1680.972" timestamp="1580894978457" />
+    <state x="517" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1581432248328">
+      <screen x="0" y="23" width="1680" height="973" />
+    </state>
+    <state x="517" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1581432248328" />
   </component>
 </project>
