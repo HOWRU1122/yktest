@@ -787,7 +787,7 @@ public class DouyinLiteTest {
 
         }
         else {
-            testResultDao.insertResult("DouyinLite",500, new Date(), "成功", url,"get_webcast_user_info",result);
+            testResultDao.insertResult("DouyinLite",200, new Date(), "成功", url,"get_webcast_user_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 

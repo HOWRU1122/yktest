@@ -91,7 +91,7 @@ public class XHSv2Test {
     public void user_info() throws IOException {
         //用户信息
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/user_info";
+        String url = "http://47.97.206.10/api/xhs_v2/user_info?user_id=5a73c5fa4eacab4c4ccc9778";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
