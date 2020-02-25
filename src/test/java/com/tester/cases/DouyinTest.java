@@ -156,7 +156,7 @@ public class DouyinTest {
     public void get_user_post() throws IOException {
         //获取用户post的视频
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_user_post?user_id=102388086611&max_cursor=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_user_post?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -189,7 +189,7 @@ public class DouyinTest {
     public void get_user_forward_list() throws IOException {
         //获取用户发布的动态列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_user_forward_list?user_id=102388086611&max_cursor=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_user_forward_list?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -222,7 +222,7 @@ public class DouyinTest {
     public void get_user_following_list() throws IOException {
         //获取用户关注的列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_user_following_list?user_id=102388086611&max_cursor=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_user_following_list?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -254,7 +254,7 @@ public class DouyinTest {
     public void get_user_follower_list() throws IOException {
         //获取用户粉丝的列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_user_follower_list?user_id=102388086611&max_cursor=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_user_follower_list?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -419,7 +419,7 @@ public class DouyinTest {
     public void get_hot_category_list() throws IOException {
         //获取热门分类列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_hot_category_list?cursor=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_hot_category_list?cursor=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -452,7 +452,7 @@ public class DouyinTest {
     public void get_general_search_ret() throws IOException {
         //获取综合搜索的结果
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_general_search_ret?keyword=美食&offset=0&count=10";
+        String url = "http://47.97.206.10/api/douyin/get_general_search_ret?keyword=美食&offset=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -485,7 +485,7 @@ public class DouyinTest {
     public void get_video_search() throws IOException {
         //获取视频搜索的结果
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_video_search?keyword=养生&offset=0&count=10";
+        String url = "http://47.97.206.10/api/douyin/get_video_search?keyword=养生&offset=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -518,7 +518,7 @@ public class DouyinTest {
     public void get_user_search() throws IOException {
         //获取用户搜索的结果
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_user_search?keyword=养生&offset=0&count=10";
+        String url = "http://47.97.206.10/api/douyin/get_user_search?keyword=养生&offset=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -551,7 +551,7 @@ public class DouyinTest {
     public void get_video_comment_list() throws IOException {
         //获取评论列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_video_comment_list?aweme_id=6619905376009587972&offset=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_video_comment_list?aweme_id=6619905376009587972&offset=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -649,7 +649,7 @@ public class DouyinTest {
     public void get_music_videos() throws IOException {
         //获取音乐对应的视频列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_music_videos?music_id=6673679720980269831&cursor=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_music_videos?music_id=6673679720980269831&cursor=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -682,7 +682,7 @@ public class DouyinTest {
     public void get_promotion_list() throws IOException {
         //获取商品橱窗列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_promotion_list?user_id=105621336289&cursor=0&count=20";
+        String url = "http://47.97.206.10/api/douyin/get_promotion_list?user_id=105621336289&cursor=0&count=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;

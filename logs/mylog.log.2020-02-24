@@ -1,0 +1,503 @@
+2020-02-24 09:14:02.936 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 09:14:02.954 [main] INFO  com.tester.cases.KuaiShouTest - Starting KuaiShouTest on yaokaideMacBook-Pro.local with PID 13128 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 09:14:02.955 [main] INFO  com.tester.cases.KuaiShouTest - No active profile set, falling back to default profiles: default
+2020-02-24 09:14:02.990 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2e32ccc5: startup date [Mon Feb 24 09:14:02 CST 2020]; root of context hierarchy
+2020-02-24 09:14:04.566 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:04.866 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2e32ccc5: startup date [Mon Feb 24 09:14:02 CST 2020]; root of context hierarchy
+2020-02-24 09:14:04.937 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 09:14:04.938 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 09:14:04.964 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:04.964 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:05.190 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 09:14:05.223 [cluster-ClusterId{value='5e53235d59e3df334867a6b2', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 09:14:05.324 [main] INFO  com.tester.cases.KuaiShouTest - Started KuaiShouTest in 3.267 seconds (JVM running for 4.228)
+2020-02-24 09:14:06.888 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 09:14:07.113 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 09:14:07.206 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-02-24 09:14:07.292 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 09:14:07.303 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-24 09:14:20.044 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 09:14:20.060 [main] INFO  com.tester.cases.KuaiShouTest - Starting KuaiShouTest on yaokaideMacBook-Pro.local with PID 13137 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 09:14:20.061 [main] INFO  com.tester.cases.KuaiShouTest - No active profile set, falling back to default profiles: default
+2020-02-24 09:14:20.099 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@a7e2d9d: startup date [Mon Feb 24 09:14:20 CST 2020]; root of context hierarchy
+2020-02-24 09:14:21.952 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:22.275 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@a7e2d9d: startup date [Mon Feb 24 09:14:20 CST 2020]; root of context hierarchy
+2020-02-24 09:14:22.367 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 09:14:22.369 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 09:14:22.399 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:22.400 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:22.671 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 09:14:22.711 [cluster-ClusterId{value='5e53236e59e3df3351f29157', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 09:14:22.846 [main] INFO  com.tester.cases.KuaiShouTest - Started KuaiShouTest in 3.203 seconds (JVM running for 5.097)
+2020-02-24 09:14:24.052 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 09:14:24.263 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 09:14:24.358 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-02-24 09:14:24.437 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@a7e2d9d: startup date [Mon Feb 24 09:14:20 CST 2020]; root of context hierarchy
+2020-02-24 09:14:24.442 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 09:14:24.457 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-24 09:14:27.896 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 09:14:27.919 [main] INFO  com.tester.cases.KuaiShouTest - Starting KuaiShouTest on yaokaideMacBook-Pro.local with PID 13142 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 09:14:27.920 [main] INFO  com.tester.cases.KuaiShouTest - No active profile set, falling back to default profiles: default
+2020-02-24 09:14:27.981 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2e32ccc5: startup date [Mon Feb 24 09:14:27 CST 2020]; root of context hierarchy
+2020-02-24 09:14:30.099 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:30.465 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2e32ccc5: startup date [Mon Feb 24 09:14:27 CST 2020]; root of context hierarchy
+2020-02-24 09:14:30.541 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 09:14:30.543 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 09:14:30.575 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:30.575 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:30.812 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 09:14:30.837 [cluster-ClusterId{value='5e53237659e3df33567c10f7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 09:14:30.957 [main] INFO  com.tester.cases.KuaiShouTest - Started KuaiShouTest in 3.606 seconds (JVM running for 4.495)
+2020-02-24 09:14:32.857 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 09:14:33.036 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 09:14:33.116 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-02-24 09:14:33.188 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 09:14:33.229 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-24 09:14:41.836 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 09:14:41.857 [main] INFO  com.tester.cases.KuaiShouTest - Starting KuaiShouTest on yaokaideMacBook-Pro.local with PID 13153 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 09:14:41.859 [main] INFO  com.tester.cases.KuaiShouTest - No active profile set, falling back to default profiles: default
+2020-02-24 09:14:41.912 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4ea5b703: startup date [Mon Feb 24 09:14:41 CST 2020]; root of context hierarchy
+2020-02-24 09:14:43.568 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:43.854 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4ea5b703: startup date [Mon Feb 24 09:14:41 CST 2020]; root of context hierarchy
+2020-02-24 09:14:44.006 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 09:14:44.008 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 09:14:44.040 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:44.040 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:14:44.280 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 09:14:44.311 [cluster-ClusterId{value='5e53238459e3df33615fec0f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 09:14:44.434 [main] INFO  com.tester.cases.KuaiShouTest - Started KuaiShouTest in 3.107 seconds (JVM running for 4.226)
+2020-02-24 09:14:46.081 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 09:14:46.278 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 09:14:46.356 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-02-24 09:14:51.386 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 09:14:51.396 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-24 09:19:16.709 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 09:19:16.733 [main] INFO  com.tester.cases.KuaiShouTest - Starting KuaiShouTest on yaokaideMacBook-Pro.local with PID 13490 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 09:19:16.734 [main] INFO  com.tester.cases.KuaiShouTest - No active profile set, falling back to default profiles: default
+2020-02-24 09:19:16.832 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3224a577: startup date [Mon Feb 24 09:19:16 CST 2020]; root of context hierarchy
+2020-02-24 09:19:18.934 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:19:19.291 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3224a577: startup date [Mon Feb 24 09:19:16 CST 2020]; root of context hierarchy
+2020-02-24 09:19:19.379 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 09:19:19.386 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 09:19:19.414 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:19:19.414 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:19:19.613 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 09:19:19.639 [cluster-ClusterId{value='5e53249759e3df34b2d63c85', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 09:19:19.741 [main] INFO  com.tester.cases.KuaiShouTest - Started KuaiShouTest in 3.741 seconds (JVM running for 5.192)
+2020-02-24 09:19:20.214 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 09:19:20.398 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 09:19:20.456 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-02-24 09:19:20.530 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 09:19:20.546 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-24 09:20:35.891 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 09:20:35.912 [main] INFO  com.tester.cases.KuaiShouTest - Starting KuaiShouTest on yaokaideMacBook-Pro.local with PID 13584 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 09:20:35.913 [main] INFO  com.tester.cases.KuaiShouTest - No active profile set, falling back to default profiles: default
+2020-02-24 09:20:35.966 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 09:20:35 CST 2020]; root of context hierarchy
+2020-02-24 09:20:37.757 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:20:38.002 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 09:20:35 CST 2020]; root of context hierarchy
+2020-02-24 09:20:38.147 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 09:20:38.149 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 09:20:38.176 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:20:38.176 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 09:20:38.379 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 09:20:38.403 [cluster-ClusterId{value='5e5324e659e3df351034fb39', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 09:20:38.504 [main] INFO  com.tester.cases.KuaiShouTest - Started KuaiShouTest in 3.098 seconds (JVM running for 3.975)
+2020-02-24 09:20:39.063 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 09:20:39.247 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 09:20:39.298 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 09:20:39.305 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-24 10:03:32.056 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 10:03:32.079 [main] INFO  com.tester.cases.JingDongTest - Starting JingDongTest on yaokaideMacBook-Pro.local with PID 14201 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 10:03:32.080 [main] INFO  com.tester.cases.JingDongTest - No active profile set, falling back to default profiles: default
+2020-02-24 10:03:32.117 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:03:32 CST 2020]; root of context hierarchy
+2020-02-24 10:03:33.692 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:03:33.988 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:03:32 CST 2020]; root of context hierarchy
+2020-02-24 10:03:34.061 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 10:03:34.063 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 10:03:34.090 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:03:34.094 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:03:34.301 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 10:03:34.329 [cluster-ClusterId{value='5e532ef659e3df3779a5c45b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 10:03:34.439 [main] INFO  com.tester.cases.JingDongTest - Started JingDongTest in 3.139 seconds (JVM running for 3.994)
+2020-02-24 10:03:35.570 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 10:04:00.261 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 10:04:00.286 [main] INFO  com.tester.cases.JingDongTest - Starting JingDongTest on yaokaideMacBook-Pro.local with PID 14236 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 10:04:00.287 [main] INFO  com.tester.cases.JingDongTest - No active profile set, falling back to default profiles: default
+2020-02-24 10:04:00.338 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:04:00 CST 2020]; root of context hierarchy
+2020-02-24 10:04:01.954 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:04:02.315 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:04:00 CST 2020]; root of context hierarchy
+2020-02-24 10:04:02.388 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 10:04:02.390 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 10:04:02.416 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:04:02.416 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:04:02.625 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 10:04:02.648 [cluster-ClusterId{value='5e532f1259e3df379cff2e3c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 10:04:02.758 [main] INFO  com.tester.cases.JingDongTest - Started JingDongTest in 2.957 seconds (JVM running for 3.833)
+2020-02-24 10:04:03.536 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 10:08:43.347 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 10:08:43.362 [main] INFO  com.tester.cases.JingDongTest - Starting JingDongTest on yaokaideMacBook-Pro.local with PID 14275 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 10:08:43.363 [main] INFO  com.tester.cases.JingDongTest - No active profile set, falling back to default profiles: default
+2020-02-24 10:08:43.394 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:08:43 CST 2020]; root of context hierarchy
+2020-02-24 10:08:45.027 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:08:45.385 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:08:43 CST 2020]; root of context hierarchy
+2020-02-24 10:08:45.463 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 10:08:45.464 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 10:08:45.490 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:08:45.491 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:08:45.710 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 10:08:45.740 [cluster-ClusterId{value='5e53302d59e3df37c3a5d598', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 10:08:45.872 [main] INFO  com.tester.cases.JingDongTest - Started JingDongTest in 3.225 seconds (JVM running for 4.06)
+2020-02-24 10:08:46.775 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 10:13:03.997 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 10:13:04.023 [main] INFO  com.tester.cases.JingDongTest - Starting JingDongTest on yaokaideMacBook-Pro.local with PID 14330 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 10:13:04.025 [main] INFO  com.tester.cases.JingDongTest - No active profile set, falling back to default profiles: default
+2020-02-24 10:13:04.079 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:13:04 CST 2020]; root of context hierarchy
+2020-02-24 10:13:05.885 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:13:06.158 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@748741cb: startup date [Mon Feb 24 10:13:04 CST 2020]; root of context hierarchy
+2020-02-24 10:13:06.306 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 10:13:06.307 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 10:13:06.338 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:13:06.339 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:13:06.542 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 10:13:06.565 [cluster-ClusterId{value='5e53313259e3df37fa8a6fa7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 10:13:06.680 [main] INFO  com.tester.cases.JingDongTest - Started JingDongTest in 3.177 seconds (JVM running for 3.969)
+2020-02-24 10:13:07.508 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 10:13:09.848 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 10:13:09.915 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 10:13:09.923 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-24 10:14:13.727 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-02-24 10:14:13.743 [main] INFO  com.tester.cases.DouyinTest - Starting DouyinTest on yaokaideMacBook-Pro.local with PID 14344 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-02-24 10:14:13.744 [main] INFO  com.tester.cases.DouyinTest - No active profile set, falling back to default profiles: default
+2020-02-24 10:14:13.774 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1c481ff2: startup date [Mon Feb 24 10:14:13 CST 2020]; root of context hierarchy
+2020-02-24 10:14:15.265 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:14:15.464 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1c481ff2: startup date [Mon Feb 24 10:14:13 CST 2020]; root of context hierarchy
+2020-02-24 10:14:15.543 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-24 10:14:15.545 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-24 10:14:15.573 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:14:15.574 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-24 10:14:15.790 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-24 10:14:15.821 [cluster-ClusterId{value='5e53317759e3df3808ab96e7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-02-24 10:14:15.978 [main] INFO  com.tester.cases.DouyinTest - Started DouyinTest in 2.593 seconds (JVM running for 3.332)
+2020-02-24 10:14:17.006 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-24 10:14:17.220 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-24 10:16:08.445 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.DouyinLiteTest], using SpringBootContextLoader
+2020-02-24 10:16:08.446 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.DouyinLiteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:16:08.447 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.DouyinLiteTest]: DouyinLiteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:16:08.449 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.DouyinLiteTest
+2020-02-24 10:16:08.451 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:16:08.451 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6707a4bf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3fc7c734, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f0a66bd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@460b50df, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1cf336fd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d0cac30, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@41ef1ea2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5dfe23e8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@583fb274, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@202ae86f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1989e8c6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@35c4697c]
+2020-02-24 10:17:36.934 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.JingDongTest], using SpringBootContextLoader
+2020-02-24 10:17:36.935 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.JingDongTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:17:36.935 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.JingDongTest]: JingDongTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:17:36.937 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.JingDongTest
+2020-02-24 10:17:36.939 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:17:36.940 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4215e133, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5ccb85d6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d88f893, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@259b85d6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48eaf42f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@488f3dd1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2091833, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7bc58891, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6411504a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@554188ac, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1f43cab7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@481558ce]
+2020-02-24 10:17:43.468 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.XHSv1Test], using SpringBootContextLoader
+2020-02-24 10:17:43.469 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.XHSv1Test]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:17:43.469 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.XHSv1Test]: XHSv1Test does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:17:43.471 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.XHSv1Test
+2020-02-24 10:17:43.472 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:17:43.473 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7ef8eda7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@115ca7de, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@29fe4840, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7f287b98, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4684240f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@32120956, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6975fb1c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@553da911, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@327e5be5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1084ac45, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@566f1852, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6ea246af]
+2020-02-24 10:17:56.799 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.DouyinAweTest], using SpringBootContextLoader
+2020-02-24 10:17:56.800 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.DouyinAweTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:17:56.800 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.DouyinAweTest]: DouyinAweTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:17:56.802 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.DouyinAweTest
+2020-02-24 10:17:56.803 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:17:56.804 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@40ef0af8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36790bec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@461c3709, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e3d7dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3f63a513, org.springframework.test.context.transaction.TransactionalTestExecutionListener@413bef78, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@66383c29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7f7c420c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5d152bcd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@43cb5f38, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6435fa1c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7944b8b4]
+2020-02-24 10:18:29.889 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.JingDongCPSTest], using SpringBootContextLoader
+2020-02-24 10:18:29.889 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.JingDongCPSTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:18:29.889 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.JingDongCPSTest]: JingDongCPSTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:18:29.891 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.JingDongCPSTest
+2020-02-24 10:18:29.893 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:18:29.893 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2839e3c8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@66bf40e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2291d9a0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e26f1ed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@39666e42, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25c2a9e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9b23822, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@60f21960, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a6c7f42, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a515e5d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@423a0e1d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32f32623]
+2020-02-24 10:18:36.723 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.DouyinShareTest], using SpringBootContextLoader
+2020-02-24 10:18:36.724 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.DouyinShareTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:18:36.724 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.DouyinShareTest]: DouyinShareTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:18:36.726 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.DouyinShareTest
+2020-02-24 10:18:36.728 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:18:36.729 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@53940e2f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45e6d1e0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@61db86bf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4da1f38a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e377967, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4dadd690, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@707e4fe4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3281dfc2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@377874b4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14422d9d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@16c1519e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a02e34b]
+2020-02-24 10:18:39.455 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.PddTest], using SpringBootContextLoader
+2020-02-24 10:18:39.456 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.PddTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:18:39.456 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.PddTest]: PddTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:18:39.458 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.PddTest
+2020-02-24 10:18:39.459 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:18:39.460 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@66c9b52f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1536ea40, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@36776c32, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7792d851, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5cd96b41, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e1ffe70, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@73041b7d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1235151c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5a1f778, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4cc65c2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@574059d5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6d672bd4]
+2020-02-24 10:18:40.420 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.DuTest], using SpringBootContextLoader
+2020-02-24 10:18:40.420 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.DuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:18:40.421 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.DuTest]: DuTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:18:40.422 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.DuTest
+2020-02-24 10:18:40.424 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:18:40.424 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@51e3d37e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a479fda, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@8a6631b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@472d0f4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4bc59b27, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4d7a64ca, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@76ff68c5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6418e39e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3635099, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1da1380b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1095d23a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3332c7a5]
+2020-02-24 10:18:42.889 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.KuaiShouTest], using SpringBootContextLoader
+2020-02-24 10:18:42.890 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.KuaiShouTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:18:42.891 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.KuaiShouTest]: KuaiShouTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:18:42.893 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.KuaiShouTest
+2020-02-24 10:18:42.895 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:18:42.895 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ec7b5de, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c19d42e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@373e6b9d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@65629ac6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56b8aaf1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5482bcac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@10244722, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61615b4a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@721d8ab5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@33bb3f86, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1946384, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6ac4c3f7]
+2020-02-24 10:18:50.388 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.KaoLaTest], using SpringBootContextLoader
+2020-02-24 10:18:50.389 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.KaoLaTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:18:50.389 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.KaoLaTest]: KaoLaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:18:50.391 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.KaoLaTest
+2020-02-24 10:18:50.392 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:18:50.393 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ea04cab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@134f8ef6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5a90265a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6a32191e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@66fbc5e7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@9accff0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@52559a69, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@285583d4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1039bfc4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f85217c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1fd7a37, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5b202ff]
+2020-02-24 10:18:58.876 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.XHSv2Test], using SpringBootContextLoader
+2020-02-24 10:18:58.877 [main] INFO  org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tester.cases.XHSv2Test]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-24 10:18:58.877 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tester.cases.XHSv2Test]: XHSv2Test does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-24 10:18:58.879 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.XHSv2Test
+2020-02-24 10:18:58.880 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-24 10:18:58.881 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@44dc7b7d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15fb4566, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25ffd826, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@29896529, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e29f4f6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@41b64020, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1a538ed8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78910096, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@39dec536, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4a1a256d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4cb957b8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3cdc7b09]
+2020-02-24 10:19:15.428 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-24 10:19:15.437 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

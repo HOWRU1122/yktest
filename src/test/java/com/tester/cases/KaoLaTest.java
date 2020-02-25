@@ -59,7 +59,7 @@ public class KaoLaTest {
     public void item_list() throws IOException {
         //根据类目获取商品
         String result = "";
-        String url = "http://47.97.206.10/api/kaola/item_list?cid=547&page_no=1&page_size=60";
+        String url = "http://47.97.206.10/api/kaola/item_list?cid=547&page_no=1&page_size=5";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -155,7 +155,7 @@ public class KaoLaTest {
     public void shop_item() throws IOException {
         //获取店铺商品
         String result = "";
-        String url = "http://47.97.206.10/api/kaola/shop_item?shop_id=104975581&page=1&page_size=20";
+        String url = "http://47.97.206.10/api/kaola/shop_item?shop_id=104975581&page=1&page_size=5";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
