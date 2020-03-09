@@ -4,8 +4,7 @@
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinLiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinLiteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,37 @@
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KaoLaTest">
+  <component name="RunManager" selected="JUnit.DouyinShareTest">
+    <configuration name="DouyinLiteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yktest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinLiteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DouyinShareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yktest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinShareTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DouyinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
@@ -110,38 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JingDongCPSTest.items" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yktest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tester.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.JingDongCPSTest" />
-      <option name="METHOD_NAME" value="items" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JingDongTest.crawlSkuPrices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yktest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tester.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.JingDongTest" />
-      <option name="METHOD_NAME" value="crawlSkuPrices" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KaoLaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
@@ -166,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DouyinShareTest" />
+        <item itemvalue="JUnit.DouyinLiteTest" />
+        <item itemvalue="JUnit.DouyinTest" />
         <item itemvalue="JUnit.KaoLaTest" />
         <item itemvalue="JUnit.JingDongCPSTest" />
-        <item itemvalue="JUnit.JingDongCPSTest.items" />
-        <item itemvalue="JUnit.DouyinTest" />
-        <item itemvalue="JUnit.JingDongTest.crawlSkuPrices" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +210,7 @@
       <workItem from="1581395486981" duration="464000" />
       <workItem from="1581399575579" duration="379000" />
       <workItem from="1581409410038" duration="1027000" />
-      <workItem from="1581417705353" duration="25432000" />
+      <workItem from="1581417705353" duration="33086000" />
     </task>
     <servers />
   </component>
@@ -229,45 +226,46 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="618" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.23.1680.972@0.23.1680.972" timestamp="1580894870023" />
-    <state x="553" y="235" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580874520388">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="632" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583731015648">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="553" y="235" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.972@0.23.1680.972" timestamp="1580874520388" />
+    <state x="632" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583731015648" />
     <state x="844" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580822750501">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="844" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.967@0.23.1680.967" timestamp="1580822750501" />
-    <state width="1610" height="305" key="GridCell.Tab.0.bottom" timestamp="1582595747007">
+    <state width="1610" height="305" key="GridCell.Tab.0.bottom" timestamp="1582687668077">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581389281402" />
-    <state width="1610" height="305" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1582595747007" />
+    <state width="1610" height="305" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1582687668077" />
     <state width="1610" height="309" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
-    <state width="1610" height="305" key="GridCell.Tab.0.center" timestamp="1582595747006">
+    <state width="1610" height="305" key="GridCell.Tab.0.center" timestamp="1582687668076">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
-    <state width="1610" height="305" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1582595747006" />
+    <state width="1610" height="305" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1582687668076" />
     <state width="1610" height="309" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
-    <state width="1610" height="305" key="GridCell.Tab.0.left" timestamp="1582595747005">
+    <state width="1610" height="305" key="GridCell.Tab.0.left" timestamp="1582687668075">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581386437553" />
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1581389281400" />
-    <state width="1610" height="305" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1582595747005" />
+    <state width="1610" height="305" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1582687668075" />
     <state width="1610" height="309" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
-    <state width="1610" height="305" key="GridCell.Tab.0.right" timestamp="1582595747006">
+    <state width="1610" height="305" key="GridCell.Tab.0.right" timestamp="1582687668076">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
-    <state width="1610" height="305" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1582595747006" />
+    <state width="1610" height="305" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1582687668076" />
     <state width="1610" height="309" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
     <state width="1610" height="302" key="GridCell.Tab.1.bottom" timestamp="1582506866459">
       <screen x="0" y="23" width="1680" height="972" />

@@ -6,10 +6,6 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 
-/**
- * @author xuyj
- * @date 2020/2/11
- */
 @Mapper
 public interface TestResultDao {
     /**
