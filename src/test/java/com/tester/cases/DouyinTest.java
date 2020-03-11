@@ -58,7 +58,7 @@ public class DouyinTest {
     public void get_share_video_detail() throws IOException {
         //获取分享视频连接的详情
         String result = "";
-        String url = "http://47.97.206.10/api/douyin/get_share_video_detail?url=http://v.douyin.com/UyrYGY/";
+        String url = "http://47.97.206.10/api/douyin/get_share_video_detail?url=https://v.douyin.com/tajDmg/";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;

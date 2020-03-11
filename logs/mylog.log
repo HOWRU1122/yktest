@@ -1,4 +1,4 @@
-2020-03-10 09:22:28.210 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+2020-03-11 09:32:51.712 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -7,17 +7,17 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2020-03-10 09:22:28.228 [main] INFO  com.tester.cases.DouyinLiteTest - Starting DouyinLiteTest on yaokaideMacBook-Pro.local with PID 95545 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
-2020-03-10 09:22:28.228 [main] INFO  com.tester.cases.DouyinLiteTest - No active profile set, falling back to default profiles: default
-2020-03-10 09:22:28.258 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e44f2a5: startup date [Tue Mar 10 09:22:28 CST 2020]; root of context hierarchy
-2020-03-10 09:22:29.703 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-10 09:22:30.047 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3e44f2a5: startup date [Tue Mar 10 09:22:28 CST 2020]; root of context hierarchy
-2020-03-10 09:22:30.136 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-03-10 09:22:30.137 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-10 09:22:30.169 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-10 09:22:30.169 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-10 09:22:30.407 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2020-03-10 09:22:30.439 [cluster-ClusterId{value='5e66ebd659e3df75396b7beb', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+2020-03-11 09:32:51.729 [main] INFO  com.tester.cases.DouyinTest - Starting DouyinTest on yaokaideMacBook-Pro.local with PID 7738 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
+2020-03-11 09:32:51.730 [main] INFO  com.tester.cases.DouyinTest - No active profile set, falling back to default profiles: default
+2020-03-11 09:32:51.767 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Mar 11 09:32:51 CST 2020]; root of context hierarchy
+2020-03-11 09:32:53.192 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-11 09:32:53.480 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Mar 11 09:32:51 CST 2020]; root of context hierarchy
+2020-03-11 09:32:53.563 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-11 09:32:53.565 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-11 09:32:53.591 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-11 09:32:53.591 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-11 09:32:53.833 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-03-11 09:32:53.870 [cluster-ClusterId{value='5e683fc559e3df1e3ab0ec5f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
 com.mongodb.MongoSocketOpenException: Exception opening socket
 	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
 	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
@@ -33,48 +33,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
 	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
 	... 3 common frames omitted
-2020-03-10 09:22:30.538 [main] INFO  com.tester.cases.DouyinLiteTest - Started DouyinLiteTest in 3.017 seconds (JVM running for 3.908)
-2020-03-10 09:22:32.385 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-03-10 09:22:33.174 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-03-10 09:22:33.428 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2020-03-10 09:22:33.464 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2020-03-10 09:33:25.069 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
-
-Found multiple occurrences of org.json.JSONObject on the class path:
-
-	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
-	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-
-You may wish to exclude one of them to ensure predictable runtime behavior
-
-2020-03-10 09:33:25.085 [main] INFO  com.tester.cases.Douyinv1Test - Starting Douyinv1Test on yaokaideMacBook-Pro.local with PID 95692 (started by yaokai in /Users/yaokai/IdeaProjects/yktest)
-2020-03-10 09:33:25.086 [main] INFO  com.tester.cases.Douyinv1Test - No active profile set, falling back to default profiles: default
-2020-03-10 09:33:25.129 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f0fd5a0: startup date [Tue Mar 10 09:33:25 CST 2020]; root of context hierarchy
-2020-03-10 09:33:26.713 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-10 09:33:26.972 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f0fd5a0: startup date [Tue Mar 10 09:33:25 CST 2020]; root of context hierarchy
-2020-03-10 09:33:27.126 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-03-10 09:33:27.128 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-10 09:33:27.160 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-10 09:33:27.160 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-10 09:33:27.409 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2020-03-10 09:33:27.440 [cluster-ClusterId{value='5e66ee6759e3df75cc82c485', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
-com.mongodb.MongoSocketOpenException: Exception opening socket
-	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
-	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
-	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
-	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
-	... 3 common frames omitted
-2020-03-10 09:33:27.551 [main] INFO  com.tester.cases.Douyinv1Test - Started Douyinv1Test in 3.055 seconds (JVM running for 3.947)
-2020-03-10 09:33:28.561 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-03-10 09:33:28.875 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-03-10 09:33:30.800 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2020-03-10 09:33:30.813 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-11 09:32:53.975 [main] INFO  com.tester.cases.DouyinTest - Started DouyinTest in 3.037 seconds (JVM running for 4.382)
+2020-03-11 09:32:55.774 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-11 09:32:56.280 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-11 09:32:56.372 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-11 09:32:56.382 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
