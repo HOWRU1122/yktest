@@ -179,7 +179,7 @@ public class KuaiShouTest {
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "成功", url,"user_video",result);
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"user_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
