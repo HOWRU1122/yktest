@@ -53,7 +53,7 @@ public class JingDongCPSTest {
         }
 
     }
-
+/*
     @Test
     public void shops() throws IOException {
         //获取京东联盟店铺列表
@@ -149,4 +149,6 @@ public class JingDongCPSTest {
         }
 
     }
+
+ */
 }

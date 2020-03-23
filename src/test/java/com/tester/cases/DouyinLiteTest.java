@@ -23,7 +23,7 @@ import java.util.Date;
 public class DouyinLiteTest {
     @Autowired
     private TestResultDao testResultDao;
-
+/*
     @Test
     public void get_feed() throws IOException {
         //热门事件
@@ -225,7 +225,7 @@ public class DouyinLiteTest {
 
 
     }
-
+*/
     @Test
     public void get_user_following_list() throws IOException {
         //获取用户关注的列表
@@ -258,7 +258,7 @@ public class DouyinLiteTest {
         }
 
     }
-
+/*
     @Test
     public void get_user_follower_list() throws IOException {
         //获取用户粉丝的列表
@@ -693,6 +693,7 @@ public class DouyinLiteTest {
 
     }
 
+
     @Test
     public void get_promotion_list() throws IOException {
         //获取商品橱窗列表
@@ -824,6 +825,5 @@ public class DouyinLiteTest {
             System.out.println("成功，" + "请求url：" + url);
         }
 
-
-    }
+    */
 }

@@ -21,6 +21,9 @@ public class DouyinTest {
 
     @Autowired
     private TestResultDao testResultDao;
+
+
+    /*
     @Test
     public void get_feed() throws IOException {
         //热门事件
@@ -677,7 +680,7 @@ public class DouyinTest {
         }
 
     }
-
+*/
     @Test
     public void get_promotion_list() throws IOException {
         //获取商品橱窗列表
@@ -711,6 +714,7 @@ public class DouyinTest {
 
 
     }
+    /*
     @Test
     public void get_webcast_room_info() throws IOException {
         //获取直播房间信息
@@ -808,4 +812,6 @@ public class DouyinTest {
         }
 
     }
+
+     */
 }

@@ -119,6 +119,7 @@ public class Douyinv1Test {
 
 
     }
+    /*
     @Test
     public void video_detail() throws IOException {
         //获取商品详情
@@ -152,6 +153,7 @@ public class Douyinv1Test {
 
 
     }
+    */
     @Test
     public void video_comment() throws IOException {
         //获取商品最近购买列表

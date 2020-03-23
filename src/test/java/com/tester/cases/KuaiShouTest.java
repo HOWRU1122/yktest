@@ -313,6 +313,237 @@ public class KuaiShouTest {
             System.out.println("成功，" + "请求url：" + url);
         }
 
+    }
+
+    @Test
+    public void get_live_info() throws IOException {
+        //获取直播简介
+        String result = "";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_info?user_id=417310422";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = new DefaultHttpClient();
+        Integer code,Statuscode;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_info",result);
+            return;
+        }
+        if (Statuscode != 200){
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_info",result);
+
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_info",result);
+
+        }
+        else {
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_info",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+
+    }
+
+    @Test
+    public void get_live_goods() throws IOException {
+        //获取直播小黄车商品 (需要登陆)
+        String result = "";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_goods?live_stream_id=sLB199KXJDQ";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = new DefaultHttpClient();
+        Integer code,Statuscode;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_goods",result);
+            return;
+        }
+        if (Statuscode != 200){
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_goods",result);
+
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_goods",result);
+
+        }
+        else {
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_goods",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+
+    }
+
+    @Test
+    public void get_live_users() throws IOException {
+        //获取前30名直播观看用户
+        String result = "";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_users?live_stream_id=3J5JzzC75Bw";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = new DefaultHttpClient();
+        Integer code,Statuscode;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_users",result);
+            return;
+        }
+        if (Statuscode != 200){
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_users",result);
+
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_users",result);
+
+        }
+        else {
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_users",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+
+    }
+
+    @Test
+    public void get_live_top_users() throws IOException {
+        //获取前100名直播观看用户
+        String result = "";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_top_users?live_stream_id=3J5JzzC75Bw";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = new DefaultHttpClient();
+        Integer code,Statuscode;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_top_users",result);
+            return;
+        }
+        if (Statuscode != 200){
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_top_users",result);
+
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_top_users",result);
+
+        }
+        else {
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_top_users",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+
+    }
+
+    @Test
+    public void get_live_square_refresh() throws IOException {
+        //获取直播广场刷新列表
+        String result = "";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = new DefaultHttpClient();
+        Integer code,Statuscode;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_refresh",result);
+            return;
+        }
+        if (Statuscode != 200){
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_square_refresh",result);
+
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_square_refresh",result);
+
+        }
+        else {
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_square_refresh",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+        System.out.println(result);
+
+    }
+
+    @Test
+    public void get_live_square_list() throws IOException {
+        //获取直播广场分页列表
+        String result = "";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_square_list?pcursor=8";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = new DefaultHttpClient();
+        Integer code,Statuscode;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_list",result);
+            return;
+        }
+        if (Statuscode != 200){
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_square_list",result);
+
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_square_list",result);
+
+        }
+        else {
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_square_list",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+
+    }
+
+    @Test
+    public void get_live_district_rank() throws IOException {
+        //获取直播地区排名
+        String result = "";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id=sLB199KXJDQ";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = new DefaultHttpClient();
+        Integer code,Statuscode;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_district_rank",result);
+            return;
+        }
+        if (Statuscode != 200){
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_district_rank",result);
+
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_district_rank",result);
+
+        }
+        else {
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_district_rank",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
 
     }
 }
