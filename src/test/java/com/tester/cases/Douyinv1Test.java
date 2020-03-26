@@ -58,7 +58,7 @@ public class Douyinv1Test {
 
         }
         if (user == null || user.hashCode() == 0){
-            testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_video",result);
+            testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_info",result);
 
         }
         else if (code != 0) {
@@ -141,7 +141,7 @@ public class Douyinv1Test {
 
         }
         if (columns == null || columns.size() == 0){
-            testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_video",result);
+            testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_goods",result);
 
         }
         else if (code != 0) {
@@ -219,7 +219,7 @@ public class Douyinv1Test {
 
         }
         if (comments == null || comments.size() == 0){
-            testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_video",result);
+            testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "video_comment",result);
 
         }
         else if (code != 0) {

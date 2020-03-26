@@ -1,5 +1,6 @@
 package com.tester.cases;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
@@ -689,18 +690,27 @@ public class DouyinTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
+        JSONObject data;
+        JSONArray columns;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
+
             code = jsonObject.getInteger("code");
+            data = jsonObject.getJSONObject("data");
+            columns = data.getJSONArray("columns");
         } catch (Exception e) {
             testResultDao.insertResult("Douyin",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_promotion_list",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("Douyin",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
+
+        }
+        if (columns == null || columns.size() == 0) {
+            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "get_promotion_list", result);
 
         }
         else if (code != 0) {
@@ -711,6 +721,9 @@ public class DouyinTest {
             testResultDao.insertResult("Douyin",200, new Date(), "成功", url,"get_promotion_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
+        System.out.println(columns);
+        System.out.println(result);
+
     }
     /*
     @Test

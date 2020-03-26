@@ -256,7 +256,7 @@ public class DouyinLiteTest {
 
         }
         if (followings == null || followings.size() == 0) {
-            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_video", result);
+            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "get_user_following_list", result);
 
         }
         else if (code != 0) {
