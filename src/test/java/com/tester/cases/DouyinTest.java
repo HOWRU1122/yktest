@@ -711,8 +711,6 @@ public class DouyinTest {
             testResultDao.insertResult("Douyin",200, new Date(), "成功", url,"get_promotion_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
     /*
     @Test

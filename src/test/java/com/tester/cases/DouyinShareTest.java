@@ -1,5 +1,6 @@
 package com.tester.cases;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
@@ -29,18 +30,26 @@ public class DouyinShareTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
+        JSONObject data;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
+
             code = jsonObject.getInteger("code");
+            data = jsonObject.getJSONObject("data");
         } catch (Exception e) {
             testResultDao.insertResult("DouyinShare",200, new Date(), "测试异常，e:" + e.getMessage(), url, "user_info",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinShare",Statuscode, new Date(), "http请求错误", url,"user_info",result);
+
+        }
+        if (data == null || data.hashCode() == 0) {
+            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_video", result);
 
         }
         else if (code != 0) {
@@ -51,7 +60,6 @@ public class DouyinShareTest {
             testResultDao.insertResult("DouyinShare",200, new Date(), "成功", url,"user_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -62,18 +70,27 @@ public class DouyinShareTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
+        JSONObject data;
+        JSONArray aweme_list;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
+
             code = jsonObject.getInteger("code");
+            data = jsonObject.getJSONObject("data");
+            aweme_list = data.getJSONArray("aweme_list");
         } catch (Exception e) {
             testResultDao.insertResult("DouyinShare",200, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinShare",Statuscode, new Date(), "http请求错误", url,"user_video",result);
+
+        }
+        if (aweme_list == null || aweme_list.size() == 0) {
+            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_video", result);
 
         }
         else if (code != 0) {
@@ -84,7 +101,5 @@ public class DouyinShareTest {
             testResultDao.insertResult("DouyinShare",200, new Date(), "成功", url,"user_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
-
 }

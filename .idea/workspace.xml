@@ -5,12 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinLiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinLiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinShareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinShareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/Douyinv1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/Douyinv1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongCPSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongCPSTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/KuaiShouTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/KuaiShouTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinLiteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinLiteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinShareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinShareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/Douyinv1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/Douyinv1Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KuaiShouTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KuaiShouTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/JingDongCPSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/JingDongCPSTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +87,8 @@
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DouyinLiteTest.get_promotion_list">
-    <configuration name="DouyinLiteTest.get_promotion_list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DouyinLiteTest.get_user_following_list">
+    <configuration name="DouyinLiteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +98,38 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
       <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinLiteTest" />
-      <option name="METHOD_NAME" value="get_promotion_list" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DouyinLiteTest.get_user_following_list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yktest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinLiteTest" />
+      <option name="METHOD_NAME" value="get_user_following_list" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DouyinShareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yktest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinShareTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,7 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KuaiShouTest.get_live_square_refresh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DouyinShareTest.user_video" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -127,40 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.KuaiShouTest" />
-      <option name="METHOD_NAME" value="get_live_square_refresh" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KuaiShouTest.get_live_top_users" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yktest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tester.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.KuaiShouTest" />
-      <option name="METHOD_NAME" value="get_live_top_users" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KuaiShouTest.get_live_users" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yktest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tester.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.KuaiShouTest" />
-      <option name="METHOD_NAME" value="get_live_users" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinShareTest" />
+      <option name="METHOD_NAME" value="user_video" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DouyinLiteTest.get_promotion_list" />
+        <item itemvalue="JUnit.DouyinLiteTest.get_user_following_list" />
+        <item itemvalue="JUnit.DouyinShareTest" />
         <item itemvalue="JUnit.DouyinShareTest.user_info" />
-        <item itemvalue="JUnit.KuaiShouTest.get_live_square_refresh" />
-        <item itemvalue="JUnit.KuaiShouTest.get_live_top_users" />
-        <item itemvalue="JUnit.KuaiShouTest.get_live_users" />
+        <item itemvalue="JUnit.DouyinLiteTest" />
+        <item itemvalue="JUnit.DouyinShareTest.user_video" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +222,7 @@
       <workItem from="1581395486981" duration="464000" />
       <workItem from="1581399575579" duration="379000" />
       <workItem from="1581409410038" duration="1027000" />
-      <workItem from="1581417705353" duration="69365000" />
+      <workItem from="1581417705353" duration="87614000" />
     </task>
     <servers />
   </component>
@@ -251,42 +251,46 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="665" y="88" key="CommitChangelistDialog2/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1584499097343" />
-    <state width="1610" height="298" key="GridCell.Tab.0.bottom" timestamp="1584929425218">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1610" height="249" key="GridCell.Tab.0.bottom" timestamp="1585200923347">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581389281402" />
-    <state width="1610" height="305" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1582687668077" />
+    <state width="1610" height="258" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1585191843644" />
     <state width="1610" height="309" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
-    <state width="1610" height="298" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1584929425218" />
-    <state width="1610" height="298" key="GridCell.Tab.0.center" timestamp="1584929425217">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1610" height="249" key="GridCell.Tab.0.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585200923347" />
+    <state width="1610" height="249" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585200509167" />
+    <state width="1610" height="249" key="GridCell.Tab.0.center" timestamp="1585200923346">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
-    <state width="1610" height="305" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1582687668076" />
+    <state width="1610" height="258" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1585191843643" />
     <state width="1610" height="309" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
-    <state width="1610" height="298" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1584929425217" />
-    <state width="1610" height="298" key="GridCell.Tab.0.left" timestamp="1584929425217">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1610" height="249" key="GridCell.Tab.0.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585200923346" />
+    <state width="1610" height="249" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585200509166" />
+    <state width="1610" height="249" key="GridCell.Tab.0.left" timestamp="1585200923345">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581386437553" />
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1581389281400" />
-    <state width="1610" height="305" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1582687668075" />
+    <state width="1610" height="258" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1585191843643" />
     <state width="1610" height="309" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
-    <state width="1610" height="298" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1584929425217" />
-    <state width="1610" height="298" key="GridCell.Tab.0.right" timestamp="1584929425218">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1610" height="249" key="GridCell.Tab.0.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585200923345" />
+    <state width="1610" height="249" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585200509165" />
+    <state width="1610" height="249" key="GridCell.Tab.0.right" timestamp="1585200923346">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581386437554" />
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
-    <state width="1610" height="305" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1582687668076" />
+    <state width="1610" height="258" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1585191843644" />
     <state width="1610" height="309" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
-    <state width="1610" height="298" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1584929425218" />
+    <state width="1610" height="249" key="GridCell.Tab.0.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585200923346" />
+    <state width="1610" height="249" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585200509166" />
     <state width="1610" height="302" key="GridCell.Tab.1.bottom" timestamp="1583731028531">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -322,10 +326,11 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="603" y="271" key="extract.method.dialog/0.23.1680.972@0.23.1680.972" timestamp="1580894999687" />
-    <state x="618" y="378" width="717" height="295" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1580894978457">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="706" y="409" width="717" height="295" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1585124893179">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="618" y="378" width="717" height="295" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1680.972@0.23.1680.972" timestamp="1580894978457" />
+    <state x="706" y="409" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585124893179" />
     <state x="591" y="275" width="766" height="697" key="search.everywhere.popup" timestamp="1583917274051">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>

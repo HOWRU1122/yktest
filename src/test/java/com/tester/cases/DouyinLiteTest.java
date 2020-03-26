@@ -1,5 +1,6 @@
 package com.tester.cases;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
@@ -234,18 +235,28 @@ public class DouyinLiteTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
+        JSONObject data;
+        JSONArray followings;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
+
             code = jsonObject.getInteger("code");
+            data = jsonObject.getJSONObject("data");
+            followings = data.getJSONArray("followings");
         } catch (Exception e) {
             testResultDao.insertResult("DouyinLite",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_user_following_list",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinLite",Statuscode, new Date(), "http请求错误", url,"get_user_following_list",result);
+
+        }
+        if (followings == null || followings.size() == 0) {
+            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_video", result);
 
         }
         else if (code != 0) {
@@ -256,7 +267,6 @@ public class DouyinLiteTest {
             testResultDao.insertResult("DouyinLite",200, new Date(), "成功", url,"get_user_following_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 /*
     @Test
