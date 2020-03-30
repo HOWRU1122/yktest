@@ -367,7 +367,7 @@ public class KuaiShouTest {
         JSONObject zhibodata2;
         JSONArray zhibofeeds = new JSONArray();
         String liveStreamId = "";
-        {
+        try{
             HttpResponse zhiboresponse = zhiboclient.execute(zhiboget);
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
@@ -390,6 +390,8 @@ public class KuaiShouTest {
             JSONObject feedObj = feedMap.get(1);
             liveStreamId = feedMap.keySet().iterator().next();
 
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_goods?live_stream_id=" + liveStreamId;
@@ -414,6 +416,10 @@ public class KuaiShouTest {
             testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_goods",result);
 
         }
+        else if (liveStreamId == null) {
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_goods",result);
+
+        }
         else {
             testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_goods",result);
             System.out.println("成功，" + "请求url：" + url);
@@ -435,7 +441,7 @@ public class KuaiShouTest {
         JSONObject zhibodata2;
         JSONArray zhibofeeds = new JSONArray();
         String liveStreamId = "";
-        {
+        try{
             HttpResponse zhiboresponse = zhiboclient.execute(zhiboget);
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
@@ -458,7 +464,9 @@ public class KuaiShouTest {
             JSONObject feedObj = feedMap.get(1);
             liveStreamId = feedMap.keySet().iterator().next();
 
-        }
+        }catch (Exception e){
+        System.out.println(e.getMessage());
+    }
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_users?live_stream_id=" + liveStreamId;
         HttpGet get = new HttpGet(url);
@@ -482,6 +490,10 @@ public class KuaiShouTest {
             testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_users",result);
 
         }
+        else if (liveStreamId == null) {
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_users",result);
+
+        }
         else {
             testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_users",result);
             System.out.println("成功，" + "请求url：" + url);
@@ -502,7 +514,7 @@ public class KuaiShouTest {
         JSONObject zhibodata2;
         JSONArray zhibofeeds = new JSONArray();
         String liveStreamId = "";
-        {
+       try {
             HttpResponse zhiboresponse = zhiboclient.execute(zhiboget);
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
@@ -525,7 +537,9 @@ public class KuaiShouTest {
             JSONObject feedObj = feedMap.get(1);
             liveStreamId = feedMap.keySet().iterator().next();
 
-        }
+        }catch (Exception e){
+           System.out.println(e.getMessage());
+       }
 
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id="+ liveStreamId;
@@ -550,69 +564,49 @@ public class KuaiShouTest {
             testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_top_users",result);
 
         }
+        else if (liveStreamId == null) {
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
+
+        }
         else {
             testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_top_users",result);
             System.out.println("成功，" + "请求url：" + url);
         }
+        System.out.println(url);
     }
 
     @Test
     public void get_live_square_refresh() throws IOException {
         //获取直播广场刷新列表
 
-        String zhiboresult = "";
+        String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
-        JSONObject data1;
-        JSONObject data2;
-        JSONArray feeds = new JSONArray();
-        String liveStreamId = "";
-
         try {
             HttpResponse response = client.execute(get);
-            zhiboresult = EntityUtils.toString(response.getEntity(), "utf-8");
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
-            JSONObject jsonObject = JSONObject.parseObject(zhiboresult);
-
+            JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
-            data1 = jsonObject.getJSONObject("data");
-            data2 = data1.getJSONObject("data");
-            feeds = data2.getJSONArray("feeds");
-
-
-            Map<String, JSONObject> feedMap = feeds.stream().map(obj -> {
-                if (obj instanceof JSONObject) {
-                    return (JSONObject) obj;
-                } else {
-                    return JSONObject.parseObject(obj.toString());
-                }
-            }).collect(Collectors.toMap(feed -> feed.getString("liveStreamId"), feed -> feed));
-            JSONObject feedObj = feedMap.get(1);
-            liveStreamId = feedMap.keySet().iterator().next();
-
-        }
-
-        catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_refresh",zhiboresult);
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_refresh",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_square_refresh",zhiboresult);
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_square_refresh",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_square_refresh",zhiboresult);
+            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_square_refresh",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_square_refresh",zhiboresult);
+            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_square_refresh",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-        System.out.println(liveStreamId);
-        String url1 = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id="+ liveStreamId;
-        System.out.println(url1);
+
     }
 
     @Test
@@ -629,7 +623,7 @@ public class KuaiShouTest {
         JSONObject zhibodata2;
         JSONArray zhibofeeds = new JSONArray();
         String liveStreamId = "";
-        {
+        try{
             HttpResponse zhiboresponse = zhiboclient.execute(zhiboget);
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
@@ -652,6 +646,8 @@ public class KuaiShouTest {
             JSONObject feedObj = feedMap.get(1);
             liveStreamId = feedMap.keySet().iterator().next();
 
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id="+ liveStreamId;
@@ -676,6 +672,10 @@ public class KuaiShouTest {
             testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_square_list",result);
 
         }
+        else if (liveStreamId == null) {
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
+
+        }
         else {
             testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_square_list",result);
             System.out.println("成功，" + "请求url：" + url);
@@ -697,7 +697,7 @@ public class KuaiShouTest {
         JSONObject zhibodata2;
         JSONArray zhibofeeds = new JSONArray();
         String liveStreamId = "";
-        {
+        try{
             HttpResponse zhiboresponse = zhiboclient.execute(zhiboget);
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
@@ -720,6 +720,8 @@ public class KuaiShouTest {
             JSONObject feedObj = feedMap.get(1);
             liveStreamId = feedMap.keySet().iterator().next();
 
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id=" + liveStreamId;
@@ -742,6 +744,10 @@ public class KuaiShouTest {
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_district_rank",result);
+
+        }
+        else if (liveStreamId == null) {
+            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
 
         }
         else {
