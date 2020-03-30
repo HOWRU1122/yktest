@@ -91,7 +91,7 @@ public class Douyinv1Test {
             aweme_list = data.getJSONArray("aweme_list");
 
         } catch (Exception e) {
-            testResultDao.insertResult("Douyinv1", 500, new Date(), "测试异常，e:" + e.toString(), url, "user_video", result);
+            testResultDao.insertResult("Douyinv1", 500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video", result);
             return;
         }
         if (Statuscode != 200) {
