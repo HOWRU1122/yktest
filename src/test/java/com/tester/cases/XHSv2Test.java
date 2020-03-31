@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,7 +30,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/call_nums";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -61,7 +62,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/home_feed";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -93,7 +94,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/user_info?user_id=5a73c5fa4eacab4c4ccc9778";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -124,7 +125,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/user_note?user_id=5a73c5fa4eacab4c4ccc9778&page=1&page_size=10";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -156,7 +157,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/note_detail?note_id=5df5d21d000000000100790c";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -187,7 +188,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/note_comments?note_id=5df5d21d000000000100790c&num=10&start=5df738e200000000010091d4";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -218,7 +219,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/user_video?user_id=5a73c5fa4eacab4c4ccc9778&page=1&page_size=10";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -249,7 +250,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/video_detail?note_id=5dadbbfa0000000001001129";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -281,7 +282,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/user_focus?user_id=5a73c5fa4eacab4c4ccc9778";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -313,7 +314,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/user_fans?user_id=5a73c5fa4eacab4c4ccc9778&start=5666f2cc82ec397fccb607a4";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -345,7 +346,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/note/search?keyword=蛋糕&page=1&page_size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -378,7 +379,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/topic_notes?topic_id=5cc6ce90ec9d135e33e97b7e&page=1&page_size=200";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -410,7 +411,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/channel_refresh";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -441,7 +442,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/item/search?keyword=EMXEE嫚熙&filters=&page=1&page_size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -473,7 +474,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/shop_items?shop_id=59c5cbf577e3086597fc4706&page=1";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -504,7 +505,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/shop_font?shop_id=59c5cbf577e3086597fc4706";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -535,7 +536,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/shop_info?shop_id=59c5cbf577e3086597fc4706";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -566,7 +567,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/item_info?item_id=5b1ccd8570e7527d5b74caae";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -597,7 +598,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/item_price?item_id=5b1ccd8570e7527d5b74caae";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -628,7 +629,7 @@ public class XHSv2Test {
         String result = "";
         String url = "http://47.97.206.10/api/xhs_v2/item_comm?item_id=5b1ccd8570e7527d5b74caae&page=1";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,7 +30,7 @@ public class KaoLaTest {
         String result = "";
         String url = "http://47.97.206.10/api/kaola/leaf_cate";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -61,7 +62,7 @@ public class KaoLaTest {
         String result = "";
         String url = "http://47.97.206.10/api/kaola/item_list?cid=547&page_no=1&page_size=5";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -93,7 +94,7 @@ public class KaoLaTest {
         String result = "";
         String url = "http://47.97.206.10/api/kaola/item_detail?item_id=1991396";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -125,7 +126,7 @@ public class KaoLaTest {
         String result = "";
         String url = "http://47.97.206.10/api/kaola/shop_info?shop_id=23072595";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -157,7 +158,7 @@ public class KaoLaTest {
         String result = "";
         String url = "http://47.97.206.10/api/kaola/shop_item?shop_id=104975581&page=1&page_size=5";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

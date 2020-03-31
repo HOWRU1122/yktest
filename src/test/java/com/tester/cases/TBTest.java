@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +27,7 @@ public class TBTest {
         String result = new String();
         String url = "http://47.97.206.10/api/tb/get_tb_comment?item_id=22538999781&page=1&size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

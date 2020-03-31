@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,7 +28,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlPageShopProducts?shop_id=1000000925&page=0&page_size=3";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -61,7 +62,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlPageByBrandName?brandName=三星";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -94,7 +95,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlSkuComment?product_id=100000538392";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -127,7 +128,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlSkuCommentAndCount?product_id=100000538392&page=0";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -160,7 +161,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlShopDetails?shop_list=[1000000925]";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -194,7 +195,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlShopVenderId?shop_id=1000000925";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -228,7 +229,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlSkuPrices?product_list=[100000538392]";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -261,7 +262,7 @@ public class JingDongTest {
         String result = "";
         String url = "http://47.97.206.10/api/jd/crawlCommentsCounts?product_list=[100000538392]";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

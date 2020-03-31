@@ -7,6 +7,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +29,7 @@ public class DouyinShareTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_share/user_info?share_id=104255897823";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         JSONObject data;
 
@@ -68,7 +69,7 @@ public class DouyinShareTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_share/user_video?share_id=104255897823&max_cursor=0";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         JSONObject data;
         JSONArray aweme_list;

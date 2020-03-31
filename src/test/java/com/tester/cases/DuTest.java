@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +29,7 @@ public class DuTest {
         String result = "";
         String url = "http://47.97.206.10/api/du/call_nums";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -60,7 +61,7 @@ public class DuTest {
         String result = "";
         String url = "http://47.97.206.10/api/du/ice_shopping";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -92,7 +93,7 @@ public class DuTest {
         String result = "";
         String url = "http://47.97.206.10/api/du/ice_shopping_tab?tab_id=13";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -125,7 +126,7 @@ public class DuTest {
         String result = "";
         String url = "http://47.97.206.10/api/du/item/detail?item_id=57388";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -158,7 +159,7 @@ public class DuTest {
         String result = "";
         String url = "http://47.97.206.10/api/du/item/sold_list?item_id=57388";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,7 +30,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd_spider_api/get_pdd_date?cat_id=-1&range_from=400&range_to=410&page_number=1";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -62,7 +63,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd_spider_api/get_cat_id_list";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -94,7 +95,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_limited_seckill?tab_id=1584100800&page=1&size=20&day_type=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -127,7 +128,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_hot_goods?page=1&size=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -159,7 +160,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_fenlei_goods?tab_id=14&count=20&offset=0";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -191,7 +192,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_mall_similar_goods?goods_id=7366692450";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -223,7 +224,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_similar_goods?goods_id=7366692450&mall_id=397048742&page=1";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -255,7 +256,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_goods_detail?goods_id=7366692450";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -287,7 +288,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_mall_most_goods?mall_id=397048742";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -319,7 +320,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_mall_info?mall_id=397048742";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -351,7 +352,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_clearance_sale_goods?tab_id=210&page=1&size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -383,7 +384,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_new_clothes_goods?tab_id=6074&page=1&size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -414,7 +415,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_99_goods?tab_id=18&page=1&size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -446,7 +447,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_electrical_goods?tab_id=0&page=1&size=12";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -478,7 +479,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_love_shopping_goods?tab_id=3255&page=1&size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -510,7 +511,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_daily_good_mall?tab_id=4895&page=1&size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -542,7 +543,7 @@ public class PddTest {
         String result = "";
         String url = "http://47.97.206.10/api/pdd/get_subsidy_goods?tab_id=3665&page=1&size=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

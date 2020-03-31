@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,7 +28,7 @@ public class DouyinAweTest {
         String result = new String();
         String url = "http://47.97.206.10/api/douyin_awe/get_user_info?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -60,7 +61,7 @@ public class DouyinAweTest {
         String result = new String();
         String url = "http://47.97.206.10/api/douyin_awe/get_promotion_list?user_id=100057983844&sec_uid=MS4wLjABAAAAnUDewltNkKWz6gNx0MZ-qZOHDB58ksYV6dG-W_EcD1k&cursor=0";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -93,7 +94,7 @@ public class DouyinAweTest {
         String result = new String();
         String url = "http://47.97.206.10/api/douyin_awe/get_aweme_list?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo&cursor=0";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -126,7 +127,7 @@ public class DouyinAweTest {
         String result = new String();
         String url = "http://47.97.206.10/api/douyin_awe/get_aweme_comment?aweme_id=6772104868627827982&cursor=0";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -159,7 +160,8 @@ public class DouyinAweTest {
         String result = new String();
         String url = "http://47.97.206.10/api/douyin_awe/get_aweme_info?aweme_id=6729436911498267908";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
+
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

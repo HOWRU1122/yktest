@@ -7,6 +7,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.apache.tomcat.util.http.fileupload.MultipartStream;
 import org.junit.Test;
@@ -31,7 +32,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_feed";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -65,7 +66,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_share_video_detail?url=https://v.douyin.com/tajDmg/";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -98,7 +99,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_nearby_feed?city_id=110000";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -132,7 +133,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_user_info?user_id=102388086611";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -165,7 +166,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_user_post?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -199,7 +200,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_user_forward_list?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -233,7 +234,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_user_following_list?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         JSONObject data;
         JSONArray followings;
@@ -275,7 +276,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_user_follower_list?user_id=102388086611&max_cursor=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -308,7 +309,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_hot_search_list";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -342,7 +343,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_hot_video_list";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -375,7 +376,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_hot_music_list";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -408,7 +409,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_hot_positive_energy_list";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -442,7 +443,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_hot_category_list?cursor=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -475,7 +476,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_general_search_ret?keyword=美食&offset=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -508,7 +509,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_video_search?keyword=养生&offset=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -541,7 +542,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_user_search?keyword=养生&offset=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -574,7 +575,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_video_comment_list?aweme_id=6619905376009587972&offset=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -607,7 +608,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_video_detail?aweme_id=6645546646287420686";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -641,7 +642,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_music_detail?music_id=6673679720980269831";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -675,7 +676,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_music_videos?music_id=6673679720980269831&cursor=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -710,7 +711,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_promotion_list?user_id=105621336289&cursor=0&count=2";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -744,7 +745,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_webcast_room_info?room_id=6731613896211188484";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -777,7 +778,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_webcast_user_info?room_id=6731613896211188484&user_id=108160072764";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -810,7 +811,7 @@ public class DouyinLiteTest {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_lite/get_webcast_ranklist?room_id=6731613896211188484&anchor_id=108160072764";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

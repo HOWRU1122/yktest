@@ -7,6 +7,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,7 +33,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/call_nums";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -65,7 +66,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/hot_feed?page=1&page_size=10";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -97,7 +98,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/nearby_feed?page=1&page_size=20&lon=113.712143&lat=34.593717";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -129,7 +130,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/user_info?user_id=1391625066";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -162,7 +163,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/user_video?user_id=1391625066&page_size=10";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -195,7 +196,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/video_comment?user_id=191674858&photo_id=5248945383907780546&page_size=10";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -227,7 +228,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/video_detail?photo_id=5248945383907780546";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -259,7 +260,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/share_video?share_url=http://kphbeijing.m.chenzhongtech.com/s/Qsh970xL";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -292,7 +293,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/product_list?user_id=976786976&page=1";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -326,7 +327,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_info?user_id=1143032926";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -361,7 +362,7 @@ public class KuaiShouV2Test {
         String zhiboresult = "";
         String zhibourl = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
-        HttpClient zhiboclient = new DefaultHttpClient();
+        HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
         JSONObject zhibodata1;
         JSONObject zhibodata2;
@@ -396,7 +397,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_goods?live_stream_id=" + liveStreamId;
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -434,7 +435,7 @@ public class KuaiShouV2Test {
         String zhiboresult = "";
         String zhibourl = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
-        HttpClient zhiboclient = new DefaultHttpClient();
+        HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
         JSONObject zhibodata1;
         JSONObject zhibodata2;
@@ -469,7 +470,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_users?live_stream_id=" + liveStreamId;
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -507,7 +508,7 @@ public class KuaiShouV2Test {
         String zhiboresult = "";
         String zhibourl = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
-        HttpClient zhiboclient = new DefaultHttpClient();
+        HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
         JSONObject zhibodata1;
         JSONObject zhibodata2;
@@ -543,7 +544,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id="+ liveStreamId;
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -581,7 +582,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -616,7 +617,7 @@ public class KuaiShouV2Test {
         String zhiboresult = "";
         String zhibourl = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
-        HttpClient zhiboclient = new DefaultHttpClient();
+        HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
         JSONObject zhibodata1;
         JSONObject zhibodata2;
@@ -651,7 +652,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id="+ liveStreamId;
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -690,7 +691,7 @@ public class KuaiShouV2Test {
         String zhiboresult = "";
         String zhibourl = "http://47.97.206.10/api/ks_v2/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
-        HttpClient zhiboclient = new DefaultHttpClient();
+        HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
         JSONObject zhibodata1;
         JSONObject zhibodata2;
@@ -725,7 +726,7 @@ public class KuaiShouV2Test {
         String result = "";
         String url = "http://47.97.206.10/api/ks_v2/get_live_district_rank?live_stream_id=" + liveStreamId;
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);

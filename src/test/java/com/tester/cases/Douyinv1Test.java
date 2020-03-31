@@ -10,6 +10,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -34,7 +35,7 @@ public class Douyinv1Test {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_v1/user_info?sec_user_id=MS4wLjABAAAAc3GesvcbjzGc9Yr7Qf47M1iArpbR16WIk3l-4JnfHvA";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         JSONObject data;
         JSONObject user;
@@ -76,7 +77,7 @@ public class Douyinv1Test {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_v1/user_video?sec_user_id=MS4wLjABAAAAc3GesvcbjzGc9Yr7Qf47M1iArpbR16WIk3l-4JnfHvA&max_cursor=0&count=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code, Statuscode;
         JSONObject data;
         JSONArray aweme_list;
@@ -119,7 +120,7 @@ public class Douyinv1Test {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_v1/user_goods?sec_user_id=MS4wLjABAAAAZk_KayH7Ze2BOUa0DunPPsGD-A5aI-ZHrEtBfd_zeu9cOmRZN6dGHhYo4mmWBRJl&user_id=1297017945466284&cursor=0&count=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         JSONObject data;
         JSONArray columns;
@@ -197,7 +198,7 @@ public class Douyinv1Test {
         String result = "";
         String url = "http://47.97.206.10/api/douyin_v1/video_comment?aweme_id=6790276545542884615&cursor=0&count=20";
         HttpGet get = new HttpGet(url);
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         JSONObject data;
         JSONArray comments;
