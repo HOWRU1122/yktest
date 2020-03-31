@@ -11,7 +11,6 @@ import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.ldap.LdapDataAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -22,7 +21,7 @@ import java.util.stream.Collectors;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class KuaiShouTest {
+public class KuaiShouV2Test {
 
     @Autowired
     private TestResultDao testResultDao;
@@ -42,19 +41,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "测试异常，e:" + e.getMessage(), url, "call_nums",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "测试异常，e:" + e.getMessage(), url, "call_nums",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"call_nums",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"call_nums",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"call_nums",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"call_nums",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -75,19 +74,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "hot_feed",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "hot_feed",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"hot_feed",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"hot_feed",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"hot_feed",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"hot_feed",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"hot_feed",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"hot_feed",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -107,19 +106,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "nearby_feed",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "nearby_feed",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"nearby_feed",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"nearby_feed",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"nearby_feed",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"nearby_feed",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"nearby_feed",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"nearby_feed",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -139,19 +138,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_info",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_info",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"user_info",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_info",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"user_info",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"user_info",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"user_info",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"user_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -172,19 +171,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"user_video",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_video",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"user_video",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"user_video",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"user_video",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"user_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -205,19 +204,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_comment",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_comment",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"video_comment",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"video_comment",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"video_comment",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"video_comment",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"video_comment",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"video_comment",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -237,19 +236,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_detail",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_detail",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"video_detail",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"video_detail",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"video_detail",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"video_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -269,19 +268,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "share_video",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "share_video",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"share_video",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"share_video",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"share_video",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"share_video",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"share_video",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"share_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -302,19 +301,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "product_list",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "product_list",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"product_list",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"product_list",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"product_list",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"product_list",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"product_list",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"product_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -323,8 +322,9 @@ public class KuaiShouTest {
     @Test
     public void get_live_info() throws IOException {
         //获取直播简介
+
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v2/get_live_info?user_id=417310422";
+        String url = "http://47.97.206.10/api/ks_v2/get_live_info?user_id=1143032926";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -335,19 +335,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_info",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_info",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_info",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_info",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_info",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_info",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_info",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -405,23 +405,22 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_goods",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_goods",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_goods",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_goods",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_goods",result);
-
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_goods",result);
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_goods",result);
+            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_users",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_goods",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_goods",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -479,23 +478,23 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_users",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_users",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_users",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_users",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_users",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_users",result);
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_users",result);
+            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_users",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_users",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_users",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
@@ -553,23 +552,23 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_top_users",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_top_users",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_top_users",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_top_users",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_top_users",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_top_users",result);
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
+            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_top_users",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_top_users",result);
             System.out.println("成功，" + "请求url：" + url);
         }
         System.out.println(url);
@@ -591,19 +590,19 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_refresh",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_refresh",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_square_refresh",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_square_refresh",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_square_refresh",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_square_refresh",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_square_refresh",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_square_refresh",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -661,23 +660,23 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_list",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_list",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_square_list",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_square_list",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_square_list",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_square_list",result);
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
+            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_square_list",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_square_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
@@ -735,23 +734,23 @@ public class KuaiShouTest {
             JSONObject jsonObject = JSONObject.parseObject(result);;
             code = jsonObject.getInteger("code");
         } catch (Exception e) {
-            testResultDao.insertResult("KuaiShou",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_district_rank",result);
+            testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_district_rank",result);
             return;
         }
         if (Statuscode != 200){
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "http请求错误", url,"get_live_district_rank",result);
+            testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_district_rank",result);
 
         }
         else if (code != 0) {
-            testResultDao.insertResult("KuaiShou",code, new Date(), "业务请求错误", url,"get_live_district_rank",result);
+            testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_district_rank",result);
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShou",Statuscode, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
+            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
 
         }
         else {
-            testResultDao.insertResult("KuaiShou",200, new Date(), "成功", url,"get_live_district_rank",result);
+            testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_district_rank",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 
