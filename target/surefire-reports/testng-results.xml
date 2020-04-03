@@ -1,418 +1,498 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="95" passed="95">
+<testng-results skipped="0" failed="0" ignored="0" total="114" passed="114">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="155761" started-at="2020-03-30T09:09:53Z" finished-at="2020-03-30T09:12:29Z">
+  <suite name="Surefire suite" duration-ms="181621" started-at="2020-04-03T09:51:12Z" finished-at="2020-04-03T09:54:13Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="155761" started-at="2020-03-30T09:09:53Z" finished-at="2020-03-30T09:12:29Z">
+    <test name="Surefire test" duration-ms="181621" started-at="2020-04-03T09:51:12Z" finished-at="2020-04-03T09:54:13Z">
       <class name="com.tester.cases.Douyinv1Test">
-        <test-method status="PASS" signature="user_goods() throws java.io.IOException" name="user_goods" duration-ms="1367" started-at="2020-03-30T17:09:58Z" finished-at="2020-03-30T17:09:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_goods -->
-        <test-method status="PASS" signature="video_comment() throws java.io.IOException" name="video_comment" duration-ms="385" started-at="2020-03-30T17:09:58Z" finished-at="2020-03-30T17:09:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- video_comment -->
-        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="823" started-at="2020-03-30T17:09:58Z" finished-at="2020-03-30T17:09:59Z">
+        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="705" started-at="2020-04-03T17:51:16Z" finished-at="2020-04-03T17:51:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_info -->
-        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="21489" started-at="2020-03-30T17:09:58Z" finished-at="2020-03-30T17:10:20Z">
+        <test-method status="PASS" signature="video_comment() throws java.io.IOException" name="video_comment" duration-ms="352" started-at="2020-04-03T17:51:16Z" finished-at="2020-04-03T17:51:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video_comment -->
+        <test-method status="PASS" signature="user_goods() throws java.io.IOException" name="user_goods" duration-ms="1116" started-at="2020-04-03T17:51:16Z" finished-at="2020-04-03T17:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_goods -->
+        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="1640" started-at="2020-04-03T17:51:16Z" finished-at="2020-04-03T17:51:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_video -->
       </class> <!-- com.tester.cases.Douyinv1Test -->
-      <class name="com.tester.cases.KuaiShouTest">
-        <test-method status="PASS" signature="get_live_square_refresh() throws java.io.IOException" name="get_live_square_refresh" duration-ms="39233" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:12:00Z">
+      <class name="com.tester.cases.MeiTuanTest">
+        <test-method status="PASS" signature="homepage_shops() throws java.io.IOException" name="homepage_shops" duration-ms="1090" started-at="2020-04-03T17:52:30Z" finished-at="2020-04-03T17:52:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_live_square_refresh -->
-        <test-method status="PASS" signature="get_live_users() throws java.io.IOException" name="get_live_users" duration-ms="35753" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:56Z">
+        </test-method> <!-- homepage_shops -->
+        <test-method status="PASS" signature="shop_comments() throws java.io.IOException" name="shop_comments" duration-ms="1795" started-at="2020-04-03T17:52:30Z" finished-at="2020-04-03T17:52:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_live_users -->
-        <test-method status="PASS" signature="nearby_feed() throws java.io.IOException" name="nearby_feed" duration-ms="22953" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:44Z">
+        </test-method> <!-- shop_comments -->
+        <test-method status="PASS" signature="shop_foods() throws java.io.IOException" name="shop_foods" duration-ms="2848" started-at="2020-04-03T17:52:30Z" finished-at="2020-04-03T17:52:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nearby_feed -->
-        <test-method status="PASS" signature="get_live_top_users() throws java.io.IOException" name="get_live_top_users" duration-ms="19400" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_live_top_users -->
-        <test-method status="PASS" signature="video_detail() throws java.io.IOException" name="video_detail" duration-ms="28512" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- video_detail -->
-        <test-method status="PASS" signature="get_live_goods() throws java.io.IOException" name="get_live_goods" duration-ms="33985" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_live_goods -->
-        <test-method status="PASS" signature="call_nums() throws java.io.IOException" name="call_nums" duration-ms="21536" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:42Z">
+        </test-method> <!-- shop_foods -->
+        <test-method status="PASS" signature="call_nums() throws java.io.IOException" name="call_nums" duration-ms="1870" started-at="2020-04-03T17:52:30Z" finished-at="2020-04-03T17:52:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- call_nums -->
-        <test-method status="PASS" signature="product_list() throws java.io.IOException" name="product_list" duration-ms="38048" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:59Z">
+      </class> <!-- com.tester.cases.MeiTuanTest -->
+      <class name="com.tester.cases.KuaiShouV1Test">
+        <test-method status="PASS" signature="get_live_top_users() throws java.io.IOException" name="get_live_top_users" duration-ms="2665" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- product_list -->
-        <test-method status="PASS" signature="get_live_square_list() throws java.io.IOException" name="get_live_square_list" duration-ms="2045" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:23Z">
+        </test-method> <!-- get_live_top_users -->
+        <test-method status="PASS" signature="get_live_square_list() throws java.io.IOException" name="get_live_square_list" duration-ms="1567" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_live_square_list -->
-        <test-method status="PASS" signature="share_video() throws java.io.IOException" name="share_video" duration-ms="37468" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:58Z">
+        <test-method status="PASS" signature="get_live_square_refresh() throws java.io.IOException" name="get_live_square_refresh" duration-ms="41655" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:52:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- share_video -->
-        <test-method status="PASS" signature="video_comment() throws java.io.IOException" name="video_comment" duration-ms="20516" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- video_comment -->
-        <test-method status="PASS" signature="hot_feed() throws java.io.IOException" name="hot_feed" duration-ms="31597" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hot_feed -->
-        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="36719" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:11:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_info -->
-        <test-method status="PASS" signature="get_live_district_rank() throws java.io.IOException" name="get_live_district_rank" duration-ms="41428" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:12:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_live_district_rank -->
-        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="42886" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:12:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_video -->
-        <test-method status="PASS" signature="get_live_info() throws java.io.IOException" name="get_live_info" duration-ms="39886" started-at="2020-03-30T17:11:21Z" finished-at="2020-03-30T17:12:01Z">
+        </test-method> <!-- get_live_square_refresh -->
+        <test-method status="PASS" signature="get_live_info() throws java.io.IOException" name="get_live_info" duration-ms="42082" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:52:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_live_info -->
-      </class> <!-- com.tester.cases.KuaiShouTest -->
-      <class name="com.tester.cases.KaoLaTest">
-        <test-method status="PASS" signature="item_detail() throws java.io.IOException" name="item_detail" duration-ms="3980" started-at="2020-03-30T17:12:04Z" finished-at="2020-03-30T17:12:08Z">
+        <test-method status="PASS" signature="video_detail() throws java.io.IOException" name="video_detail" duration-ms="9215" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- item_detail -->
-        <test-method status="PASS" signature="item_list() throws java.io.IOException" name="item_list" duration-ms="1308" started-at="2020-03-30T17:12:04Z" finished-at="2020-03-30T17:12:05Z">
+        </test-method> <!-- video_detail -->
+        <test-method status="PASS" signature="product_list() throws java.io.IOException" name="product_list" duration-ms="40642" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:52:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- product_list -->
+        <test-method status="PASS" signature="get_live_district_rank() throws java.io.IOException" name="get_live_district_rank" duration-ms="43658" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:52:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_district_rank -->
+        <test-method status="PASS" signature="get_live_users() throws java.io.IOException" name="get_live_users" duration-ms="12639" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_users -->
+        <test-method status="PASS" signature="get_live_goods() throws java.io.IOException" name="get_live_goods" duration-ms="11678" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_goods -->
+        <test-method status="PASS" signature="video_comment() throws java.io.IOException" name="video_comment" duration-ms="3128" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video_comment -->
+        <test-method status="PASS" signature="nearby_feed() throws java.io.IOException" name="nearby_feed" duration-ms="3631" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nearby_feed -->
+        <test-method status="PASS" signature="hot_feed() throws java.io.IOException" name="hot_feed" duration-ms="9855" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hot_feed -->
+        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="13219" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_info -->
+        <test-method status="PASS" signature="share_video() throws java.io.IOException" name="share_video" duration-ms="40040" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:52:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- share_video -->
+        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="44536" started-at="2020-04-03T17:51:23Z" finished-at="2020-04-03T17:52:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_video -->
+      </class> <!-- com.tester.cases.KuaiShouV1Test -->
+      <class name="com.tester.cases.KaoLaTest">
+        <test-method status="PASS" signature="item_list() throws java.io.IOException" name="item_list" duration-ms="1122" started-at="2020-04-03T17:53:36Z" finished-at="2020-04-03T17:53:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- item_list -->
-        <test-method status="PASS" signature="shop_info() throws java.io.IOException" name="shop_info" duration-ms="1990" started-at="2020-03-30T17:12:04Z" finished-at="2020-03-30T17:12:06Z">
+        <test-method status="PASS" signature="shop_info() throws java.io.IOException" name="shop_info" duration-ms="1968" started-at="2020-04-03T17:53:36Z" finished-at="2020-04-03T17:53:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shop_info -->
-        <test-method status="PASS" signature="shop_item() throws java.io.IOException" name="shop_item" duration-ms="2762" started-at="2020-03-30T17:12:04Z" finished-at="2020-03-30T17:12:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shop_item -->
-        <test-method status="PASS" signature="leaf_cate() throws java.io.IOException" name="leaf_cate" duration-ms="5311" started-at="2020-03-30T17:12:04Z" finished-at="2020-03-30T17:12:09Z">
+        <test-method status="PASS" signature="leaf_cate() throws java.io.IOException" name="leaf_cate" duration-ms="4405" started-at="2020-04-03T17:53:36Z" finished-at="2020-04-03T17:53:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- leaf_cate -->
+        <test-method status="PASS" signature="shop_item() throws java.io.IOException" name="shop_item" duration-ms="2594" started-at="2020-04-03T17:53:36Z" finished-at="2020-04-03T17:53:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_item -->
+        <test-method status="PASS" signature="item_detail() throws java.io.IOException" name="item_detail" duration-ms="4016" started-at="2020-04-03T17:53:36Z" finished-at="2020-04-03T17:53:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_detail -->
       </class> <!-- com.tester.cases.KaoLaTest -->
       <class name="com.tester.cases.DouyinTest">
-        <test-method status="PASS" signature="get_promotion_list() throws java.io.IOException" name="get_promotion_list" duration-ms="4612" started-at="2020-03-30T17:09:53Z" finished-at="2020-03-30T17:09:58Z">
+        <test-method status="PASS" signature="get_promotion_list() throws java.io.IOException" name="get_promotion_list" duration-ms="3975" started-at="2020-04-03T17:51:12Z" finished-at="2020-04-03T17:51:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_promotion_list -->
       </class> <!-- com.tester.cases.DouyinTest -->
       <class name="com.tester.cases.TBTest">
-        <test-method status="PASS" signature="get_tb_comment() throws java.io.IOException" name="get_tb_comment" duration-ms="1828" started-at="2020-03-30T17:10:52Z" finished-at="2020-03-30T17:10:53Z">
+        <test-method status="PASS" signature="get_tb_comment() throws java.io.IOException" name="get_tb_comment" duration-ms="2070" started-at="2020-04-03T17:52:35Z" finished-at="2020-04-03T17:52:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_tb_comment -->
       </class> <!-- com.tester.cases.TBTest -->
       <class name="com.tester.cases.JingDongTest">
-        <test-method status="PASS" signature="crawlCommentsCounts() throws java.io.IOException" name="crawlCommentsCounts" duration-ms="1413" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crawlCommentsCounts -->
-        <test-method status="PASS" signature="crawlShopDetails() throws java.io.IOException" name="crawlShopDetails" duration-ms="754" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crawlShopDetails -->
-        <test-method status="PASS" signature="crawlSkuPrices() throws java.io.IOException" name="crawlSkuPrices" duration-ms="1076" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crawlSkuPrices -->
-        <test-method status="PASS" signature="crawlPageByBrandName() throws java.io.IOException" name="crawlPageByBrandName" duration-ms="3482" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crawlPageByBrandName -->
-        <test-method status="PASS" signature="crawlShopVenderId() throws java.io.IOException" name="crawlShopVenderId" duration-ms="416" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:21Z">
+        <test-method status="PASS" signature="crawlShopVenderId() throws java.io.IOException" name="crawlShopVenderId" duration-ms="360" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crawlShopVenderId -->
-        <test-method status="PASS" signature="crawlSkuCommentAndCount() throws java.io.IOException" name="crawlSkuCommentAndCount" duration-ms="5001" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:26Z">
+        <test-method status="PASS" signature="crawlCommentsCounts() throws java.io.IOException" name="crawlCommentsCounts" duration-ms="1814" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crawlSkuCommentAndCount -->
-        <test-method status="PASS" signature="crawlSkuComment() throws java.io.IOException" name="crawlSkuComment" duration-ms="5491" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crawlSkuComment -->
-        <test-method status="PASS" signature="crawlPageShopProducts() throws java.io.IOException" name="crawlPageShopProducts" duration-ms="6672" started-at="2020-03-30T17:10:21Z" finished-at="2020-03-30T17:10:28Z">
+        </test-method> <!-- crawlCommentsCounts -->
+        <test-method status="PASS" signature="crawlPageShopProducts() throws java.io.IOException" name="crawlPageShopProducts" duration-ms="4569" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crawlPageShopProducts -->
+        <test-method status="PASS" signature="crawlSkuCommentAndCount() throws java.io.IOException" name="crawlSkuCommentAndCount" duration-ms="3474" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crawlSkuCommentAndCount -->
+        <test-method status="PASS" signature="crawlShopDetails() throws java.io.IOException" name="crawlShopDetails" duration-ms="658" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crawlShopDetails -->
+        <test-method status="PASS" signature="crawlSkuPrices() throws java.io.IOException" name="crawlSkuPrices" duration-ms="1403" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crawlSkuPrices -->
+        <test-method status="PASS" signature="crawlSkuComment() throws java.io.IOException" name="crawlSkuComment" duration-ms="4043" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crawlSkuComment -->
+        <test-method status="PASS" signature="crawlPageByBrandName() throws java.io.IOException" name="crawlPageByBrandName" duration-ms="2902" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crawlPageByBrandName -->
       </class> <!-- com.tester.cases.JingDongTest -->
       <class name="com.tester.cases.PddTest">
-        <test-method status="PASS" signature="get_mall_info() throws java.io.IOException" name="get_mall_info" duration-ms="3447" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:10:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_mall_info -->
-        <test-method status="PASS" signature="get_daily_good_mall() throws java.io.IOException" name="get_daily_good_mall" duration-ms="2662" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:10:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_daily_good_mall -->
-        <test-method status="PASS" signature="get_mall_most_goods() throws java.io.IOException" name="get_mall_most_goods" duration-ms="14609" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_mall_most_goods -->
-        <test-method status="PASS" signature="get_mall_similar_goods() throws java.io.IOException" name="get_mall_similar_goods" duration-ms="704" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:10:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_mall_similar_goods -->
-        <test-method status="PASS" signature="get_limited_seckill() throws java.io.IOException" name="get_limited_seckill" duration-ms="1928" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:10:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_limited_seckill -->
-        <test-method status="PASS" signature="get_99_goods() throws java.io.IOException" name="get_99_goods" duration-ms="15309" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_99_goods -->
-        <test-method status="PASS" signature="get_goods_detail() throws java.io.IOException" name="get_goods_detail" duration-ms="1248" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:10:55Z">
+        <test-method status="PASS" signature="get_goods_detail() throws java.io.IOException" name="get_goods_detail" duration-ms="5120" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:52:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_goods_detail -->
-        <test-method status="PASS" signature="get_clearance_sale_goods() throws java.io.IOException" name="get_clearance_sale_goods" duration-ms="14088" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:07Z">
+        <test-method status="PASS" signature="get_mall_similar_goods() throws java.io.IOException" name="get_mall_similar_goods" duration-ms="916" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:52:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_clearance_sale_goods -->
-        <test-method status="PASS" signature="get_hot_goods() throws java.io.IOException" name="get_hot_goods" duration-ms="13099" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:06Z">
+        </test-method> <!-- get_mall_similar_goods -->
+        <test-method status="PASS" signature="get_limited_seckill() throws java.io.IOException" name="get_limited_seckill" duration-ms="5851" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:52:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_hot_goods -->
-        <test-method status="PASS" signature="get_fenlei_goods() throws java.io.IOException" name="get_fenlei_goods" duration-ms="10267" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:04Z">
+        </test-method> <!-- get_limited_seckill -->
+        <test-method status="PASS" signature="get_99_goods() throws java.io.IOException" name="get_99_goods" duration-ms="46664" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_fenlei_goods -->
-        <test-method status="PASS" signature="get_similar_goods() throws java.io.IOException" name="get_similar_goods" duration-ms="12284" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:06Z">
+        </test-method> <!-- get_99_goods -->
+        <test-method status="PASS" signature="get_mall_most_goods() throws java.io.IOException" name="get_mall_most_goods" duration-ms="46082" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_mall_most_goods -->
+        <test-method status="PASS" signature="get_similar_goods() throws java.io.IOException" name="get_similar_goods" duration-ms="44158" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_similar_goods -->
-        <test-method status="PASS" signature="get_electrical_goods() throws java.io.IOException" name="get_electrical_goods" duration-ms="18303" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_electrical_goods -->
-        <test-method status="PASS" signature="get_new_clothes_goods() throws java.io.IOException" name="get_new_clothes_goods" duration-ms="16330" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:10Z">
+        <test-method status="PASS" signature="get_new_clothes_goods() throws java.io.IOException" name="get_new_clothes_goods" duration-ms="47330" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_new_clothes_goods -->
-        <test-method status="PASS" signature="get_subsidy_goods() throws java.io.IOException" name="get_subsidy_goods" duration-ms="19278" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:13Z">
+        <test-method status="PASS" signature="get_daily_good_mall() throws java.io.IOException" name="get_daily_good_mall" duration-ms="6387" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:52:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_subsidy_goods -->
-        <test-method status="PASS" signature="get_pdd_date() throws java.io.IOException" name="get_pdd_date" duration-ms="18716" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:12Z">
+        </test-method> <!-- get_daily_good_mall -->
+        <test-method status="PASS" signature="get_electrical_goods() throws java.io.IOException" name="get_electrical_goods" duration-ms="49379" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_pdd_date -->
-        <test-method status="PASS" signature="get_love_shopping_goods() throws java.io.IOException" name="get_love_shopping_goods" duration-ms="17566" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:11Z">
+        </test-method> <!-- get_electrical_goods -->
+        <test-method status="PASS" signature="get_love_shopping_goods() throws java.io.IOException" name="get_love_shopping_goods" duration-ms="48121" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_love_shopping_goods -->
-        <test-method status="PASS" signature="get_cat_id_list() throws java.io.IOException" name="get_cat_id_list" duration-ms="19756" started-at="2020-03-30T17:10:53Z" finished-at="2020-03-30T17:11:13Z">
+        <test-method status="PASS" signature="get_mall_info() throws java.io.IOException" name="get_mall_info" duration-ms="6937" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_mall_info -->
+        <test-method status="PASS" signature="get_clearance_sale_goods() throws java.io.IOException" name="get_clearance_sale_goods" duration-ms="45346" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_clearance_sale_goods -->
+        <test-method status="PASS" signature="get_fenlei_goods() throws java.io.IOException" name="get_fenlei_goods" duration-ms="43339" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_fenlei_goods -->
+        <test-method status="PASS" signature="get_pdd_date() throws java.io.IOException" name="get_pdd_date" duration-ms="50588" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_pdd_date -->
+        <test-method status="PASS" signature="get_hot_goods() throws java.io.IOException" name="get_hot_goods" duration-ms="44716" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_hot_goods -->
+        <test-method status="PASS" signature="get_subsidy_goods() throws java.io.IOException" name="get_subsidy_goods" duration-ms="51619" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_subsidy_goods -->
+        <test-method status="PASS" signature="get_cat_id_list() throws java.io.IOException" name="get_cat_id_list" duration-ms="51673" started-at="2020-04-03T17:52:37Z" finished-at="2020-04-03T17:53:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_cat_id_list -->
       </class> <!-- com.tester.cases.PddTest -->
       <class name="com.tester.cases.XHSv1Test">
-        <test-method status="PASS" signature="user_fans() throws java.io.IOException" name="user_fans" duration-ms="2967" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_fans -->
-        <test-method status="PASS" signature="video_detail() throws java.io.IOException" name="video_detail" duration-ms="1422" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- video_detail -->
-        <test-method status="PASS" signature="user_focus() throws java.io.IOException" name="user_focus" duration-ms="5589" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_focus -->
-        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="3398" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_info -->
-        <test-method status="PASS" signature="note_detail() throws java.io.IOException" name="note_detail" duration-ms="4831" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- note_detail -->
-        <test-method status="PASS" signature="note_comments() throws java.io.IOException" name="note_comments" duration-ms="840" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:28Z">
+        <test-method status="PASS" signature="note_comments() throws java.io.IOException" name="note_comments" duration-ms="776" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- note_comments -->
-        <test-method status="PASS" signature="user_note() throws java.io.IOException" name="user_note" duration-ms="4130" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:32Z">
+        <test-method status="PASS" signature="video_detail() throws java.io.IOException" name="video_detail" duration-ms="1755" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- user_note -->
-        <test-method status="PASS" signature="home_feed() throws java.io.IOException" name="home_feed" duration-ms="7496" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:35Z">
+        </test-method> <!-- video_detail -->
+        <test-method status="PASS" signature="user_focus() throws java.io.IOException" name="user_focus" duration-ms="6057" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_focus -->
+        <test-method status="PASS" signature="home_feed() throws java.io.IOException" name="home_feed" duration-ms="8716" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- home_feed -->
-        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="6404" started-at="2020-03-30T17:10:28Z" finished-at="2020-03-30T17:10:34Z">
+        <test-method status="PASS" signature="user_note() throws java.io.IOException" name="user_note" duration-ms="4612" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_note -->
+        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="7242" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_video -->
+        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="3887" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_info -->
+        <test-method status="PASS" signature="user_fans() throws java.io.IOException" name="user_fans" duration-ms="3273" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_fans -->
+        <test-method status="PASS" signature="note_detail() throws java.io.IOException" name="note_detail" duration-ms="5323" started-at="2020-04-03T17:52:08Z" finished-at="2020-04-03T17:52:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- note_detail -->
       </class> <!-- com.tester.cases.XHSv1Test -->
       <class name="com.tester.cases.JingDongCPSTest">
-        <test-method status="PASS" signature="items() throws java.io.IOException" name="items" duration-ms="653" started-at="2020-03-30T17:10:44Z" finished-at="2020-03-30T17:10:44Z">
+        <test-method status="PASS" signature="items() throws java.io.IOException" name="items" duration-ms="809" started-at="2020-04-03T17:52:30Z" finished-at="2020-04-03T17:52:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- items -->
       </class> <!-- com.tester.cases.JingDongCPSTest -->
       <class name="com.tester.cases.DouyinLiteTest">
-        <test-method status="PASS" signature="get_user_following_list() throws java.io.IOException" name="get_user_following_list" duration-ms="1237" started-at="2020-03-30T17:10:20Z" finished-at="2020-03-30T17:10:21Z">
+        <test-method status="PASS" signature="get_user_following_list() throws java.io.IOException" name="get_user_following_list" duration-ms="660" started-at="2020-04-03T17:51:18Z" finished-at="2020-04-03T17:51:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_user_following_list -->
       </class> <!-- com.tester.cases.DouyinLiteTest -->
       <class name="com.tester.cases.DouyinAweTest">
-        <test-method status="PASS" signature="get_aweme_info() throws java.io.IOException" name="get_aweme_info" duration-ms="5507" started-at="2020-03-30T17:10:35Z" finished-at="2020-03-30T17:10:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_aweme_info -->
-        <test-method status="PASS" signature="get_aweme_comment() throws java.io.IOException" name="get_aweme_comment" duration-ms="895" started-at="2020-03-30T17:10:35Z" finished-at="2020-03-30T17:10:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_aweme_comment -->
-        <test-method status="PASS" signature="get_user_info() throws java.io.IOException" name="get_user_info" duration-ms="3338" started-at="2020-03-30T17:10:35Z" finished-at="2020-03-30T17:10:38Z">
+        <test-method status="PASS" signature="get_user_info() throws java.io.IOException" name="get_user_info" duration-ms="11956" started-at="2020-04-03T17:52:16Z" finished-at="2020-04-03T17:52:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_user_info -->
-        <test-method status="PASS" signature="get_aweme_list() throws java.io.IOException" name="get_aweme_list" duration-ms="8679" started-at="2020-03-30T17:10:35Z" finished-at="2020-03-30T17:10:44Z">
+        <test-method status="PASS" signature="get_aweme_info() throws java.io.IOException" name="get_aweme_info" duration-ms="12577" started-at="2020-04-03T17:52:16Z" finished-at="2020-04-03T17:52:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_aweme_info -->
+        <test-method status="PASS" signature="get_aweme_list() throws java.io.IOException" name="get_aweme_list" duration-ms="13242" started-at="2020-04-03T17:52:16Z" finished-at="2020-04-03T17:52:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_aweme_list -->
-        <test-method status="PASS" signature="get_promotion_list() throws java.io.IOException" name="get_promotion_list" duration-ms="544" started-at="2020-03-30T17:10:35Z" finished-at="2020-03-30T17:10:36Z">
+        <test-method status="PASS" signature="get_aweme_comment() throws java.io.IOException" name="get_aweme_comment" duration-ms="688" started-at="2020-04-03T17:52:16Z" finished-at="2020-04-03T17:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_aweme_comment -->
+        <test-method status="PASS" signature="get_promotion_list() throws java.io.IOException" name="get_promotion_list" duration-ms="409" started-at="2020-04-03T17:52:16Z" finished-at="2020-04-03T17:52:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_promotion_list -->
       </class> <!-- com.tester.cases.DouyinAweTest -->
       <class name="com.tester.cases.DuTest">
-        <test-method status="PASS" signature="ice_shopping_tab() throws java.io.IOException" name="ice_shopping_tab" duration-ms="1894" started-at="2020-03-30T17:11:13Z" finished-at="2020-03-30T17:11:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ice_shopping_tab -->
-        <test-method status="PASS" signature="sold_list() throws java.io.IOException" name="sold_list" duration-ms="3717" started-at="2020-03-30T17:11:13Z" finished-at="2020-03-30T17:11:17Z">
+        <test-method status="PASS" signature="sold_list() throws java.io.IOException" name="sold_list" duration-ms="3257" started-at="2020-04-03T17:53:29Z" finished-at="2020-04-03T17:53:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sold_list -->
-        <test-method status="PASS" signature="call_nums() throws java.io.IOException" name="call_nums" duration-ms="4279" started-at="2020-03-30T17:11:13Z" finished-at="2020-03-30T17:11:17Z">
+        <test-method status="PASS" signature="ice_shopping_tab() throws java.io.IOException" name="ice_shopping_tab" duration-ms="1677" started-at="2020-04-03T17:53:29Z" finished-at="2020-04-03T17:53:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- call_nums -->
-        <test-method status="PASS" signature="item_detail() throws java.io.IOException" name="item_detail" duration-ms="5895" started-at="2020-03-30T17:11:13Z" finished-at="2020-03-30T17:11:19Z">
+        </test-method> <!-- ice_shopping_tab -->
+        <test-method status="PASS" signature="item_detail() throws java.io.IOException" name="item_detail" duration-ms="4917" started-at="2020-04-03T17:53:29Z" finished-at="2020-04-03T17:53:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- item_detail -->
-        <test-method status="PASS" signature="ice_shopping() throws java.io.IOException" name="ice_shopping" duration-ms="7479" started-at="2020-03-30T17:11:13Z" finished-at="2020-03-30T17:11:21Z">
+        <test-method status="PASS" signature="call_nums() throws java.io.IOException" name="call_nums" duration-ms="3346" started-at="2020-04-03T17:53:29Z" finished-at="2020-04-03T17:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call_nums -->
+        <test-method status="PASS" signature="ice_shopping() throws java.io.IOException" name="ice_shopping" duration-ms="6489" started-at="2020-04-03T17:53:29Z" finished-at="2020-04-03T17:53:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ice_shopping -->
       </class> <!-- com.tester.cases.DuTest -->
-      <class name="com.tester.cases.DouyinShareTest">
-        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="5592" started-at="2020-03-30T17:10:44Z" finished-at="2020-03-30T17:10:50Z">
+      <class name="com.tester.cases.KuaiShouV2Test">
+        <test-method status="PASS" signature="nearby_feed() throws java.io.IOException" name="nearby_feed" duration-ms="5327" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nearby_feed -->
+        <test-method status="PASS" signature="get_live_users() throws java.io.IOException" name="get_live_users" duration-ms="9920" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_users -->
+        <test-method status="PASS" signature="video_comment() throws java.io.IOException" name="video_comment" duration-ms="4486" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video_comment -->
+        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="10831" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_info -->
-        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="7171" started-at="2020-03-30T17:10:44Z" finished-at="2020-03-30T17:10:52Z">
+        <test-method status="PASS" signature="video_detail() throws java.io.IOException" name="video_detail" duration-ms="5809" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video_detail -->
+        <test-method status="PASS" signature="get_live_goods() throws java.io.IOException" name="get_live_goods" duration-ms="8686" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_goods -->
+        <test-method status="PASS" signature="call_nums() throws java.io.IOException" name="call_nums" duration-ms="4562" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call_nums -->
+        <test-method status="PASS" signature="share_video() throws java.io.IOException" name="share_video" duration-ms="11548" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- share_video -->
+        <test-method status="PASS" signature="get_live_top_users() throws java.io.IOException" name="get_live_top_users" duration-ms="3716" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_top_users -->
+        <test-method status="PASS" signature="hot_feed() throws java.io.IOException" name="hot_feed" duration-ms="7269" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hot_feed -->
+        <test-method status="PASS" signature="get_live_square_list() throws java.io.IOException" name="get_live_square_list" duration-ms="2056" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_square_list -->
+        <test-method status="PASS" signature="product_list() throws java.io.IOException" name="product_list" duration-ms="12111" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- product_list -->
+        <test-method status="PASS" signature="get_live_info() throws java.io.IOException" name="get_live_info" duration-ms="13545" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_info -->
+        <test-method status="PASS" signature="get_live_district_rank() throws java.io.IOException" name="get_live_district_rank" duration-ms="14721" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_district_rank -->
+        <test-method status="PASS" signature="get_live_square_refresh() throws java.io.IOException" name="get_live_square_refresh" duration-ms="12740" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_live_square_refresh -->
+        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="15555" started-at="2020-04-03T17:53:58Z" finished-at="2020-04-03T17:54:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_video -->
+      </class> <!-- com.tester.cases.KuaiShouV2Test -->
+      <class name="com.tester.cases.DouyinShareTest">
+        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="387" started-at="2020-04-03T17:52:33Z" finished-at="2020-04-03T17:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_info -->
+        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="2173" started-at="2020-04-03T17:52:33Z" finished-at="2020-04-03T17:52:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_video -->
       </class> <!-- com.tester.cases.DouyinShareTest -->
       <class name="com.tester.cases.XHSv2Test">
-        <test-method status="PASS" signature="item_comm() throws java.io.IOException" name="item_comm" duration-ms="1291" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- item_comm -->
-        <test-method status="PASS" signature="channel_refresh() throws java.io.IOException" name="channel_refresh" duration-ms="6169" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- channel_refresh -->
-        <test-method status="PASS" signature="topic_notes() throws java.io.IOException" name="topic_notes" duration-ms="11090" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- topic_notes -->
-        <test-method status="PASS" signature="shop_items() throws java.io.IOException" name="shop_items" duration-ms="5570" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shop_items -->
-        <test-method status="PASS" signature="item_info() throws java.io.IOException" name="item_info" duration-ms="1986" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- item_info -->
-        <test-method status="PASS" signature="shop_font() throws java.io.IOException" name="shop_font" duration-ms="2364" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shop_font -->
-        <test-method status="PASS" signature="note_comments() throws java.io.IOException" name="note_comments" duration-ms="4734" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- note_comments -->
-        <test-method status="PASS" signature="item_price() throws java.io.IOException" name="item_price" duration-ms="4143" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- item_price -->
-        <test-method status="PASS" signature="call_nums() throws java.io.IOException" name="call_nums" duration-ms="4865" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- call_nums -->
-        <test-method status="PASS" signature="shop_info() throws java.io.IOException" name="shop_info" duration-ms="2717" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:12Z">
+        <test-method status="PASS" signature="shop_info() throws java.io.IOException" name="shop_info" duration-ms="1735" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shop_info -->
-        <test-method status="PASS" signature="item_search() throws java.io.IOException" name="item_search" duration-ms="7836" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:17Z">
+        <test-method status="PASS" signature="note_comments() throws java.io.IOException" name="note_comments" duration-ms="3845" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- note_comments -->
+        <test-method status="PASS" signature="item_price() throws java.io.IOException" name="item_price" duration-ms="2437" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_price -->
+        <test-method status="PASS" signature="item_comm() throws java.io.IOException" name="item_comm" duration-ms="385" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_comm -->
+        <test-method status="PASS" signature="item_info() throws java.io.IOException" name="item_info" duration-ms="616" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_info -->
+        <test-method status="PASS" signature="call_nums() throws java.io.IOException" name="call_nums" duration-ms="3922" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call_nums -->
+        <test-method status="PASS" signature="shop_font() throws java.io.IOException" name="shop_font" duration-ms="1008" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_font -->
+        <test-method status="PASS" signature="item_search() throws java.io.IOException" name="item_search" duration-ms="6119" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- item_search -->
-        <test-method status="PASS" signature="user_fans() throws java.io.IOException" name="user_fans" duration-ms="12373" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_fans -->
-        <test-method status="PASS" signature="video_detail() throws java.io.IOException" name="video_detail" duration-ms="7165" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- video_detail -->
-        <test-method status="PASS" signature="note_search() throws java.io.IOException" name="note_search" duration-ms="19072" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- note_search -->
-        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="15543" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_video -->
-        <test-method status="PASS" signature="user_focus() throws java.io.IOException" name="user_focus" duration-ms="14973" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_focus -->
-        <test-method status="PASS" signature="note_detail() throws java.io.IOException" name="note_detail" duration-ms="14419" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- note_detail -->
-        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="13106" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_info -->
-        <test-method status="PASS" signature="home_feed() throws java.io.IOException" name="home_feed" duration-ms="19923" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:29Z">
+        <test-method status="PASS" signature="home_feed() throws java.io.IOException" name="home_feed" duration-ms="17704" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- home_feed -->
-        <test-method status="PASS" signature="user_note() throws java.io.IOException" name="user_note" duration-ms="13588" started-at="2020-03-30T17:12:09Z" finished-at="2020-03-30T17:12:22Z">
+        <test-method status="PASS" signature="user_video() throws java.io.IOException" name="user_video" duration-ms="16164" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_video -->
+        <test-method status="PASS" signature="user_fans() throws java.io.IOException" name="user_fans" duration-ms="9514" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_fans -->
+        <test-method status="PASS" signature="note_detail() throws java.io.IOException" name="note_detail" duration-ms="12982" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- note_detail -->
+        <test-method status="PASS" signature="user_focus() throws java.io.IOException" name="user_focus" duration-ms="15346" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_focus -->
+        <test-method status="PASS" signature="video_detail() throws java.io.IOException" name="video_detail" duration-ms="5723" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video_detail -->
+        <test-method status="PASS" signature="topic_notes() throws java.io.IOException" name="topic_notes" duration-ms="7777" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topic_notes -->
+        <test-method status="PASS" signature="user_note() throws java.io.IOException" name="user_note" duration-ms="12193" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_note -->
+        <test-method status="PASS" signature="shop_items() throws java.io.IOException" name="shop_items" duration-ms="4505" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_items -->
+        <test-method status="PASS" signature="user_info() throws java.io.IOException" name="user_info" duration-ms="10495" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_info -->
+        <test-method status="PASS" signature="note_search() throws java.io.IOException" name="note_search" duration-ms="16886" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- note_search -->
+        <test-method status="PASS" signature="channel_refresh() throws java.io.IOException" name="channel_refresh" duration-ms="4974" started-at="2020-04-03T17:53:40Z" finished-at="2020-04-03T17:53:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- channel_refresh -->
       </class> <!-- com.tester.cases.XHSv2Test -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
