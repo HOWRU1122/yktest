@@ -6,16 +6,13 @@ import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
-import org.apache.tomcat.util.http.fileupload.MultipartStream;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.testng.ITestResult;
 
 import java.io.IOException;
 import java.util.Date;
@@ -238,6 +235,8 @@ public class DouyinLiteTest {
         Integer code,Statuscode;
         JSONObject data;
         JSONArray followings;
+        Object msg;
+
 
         try {
             HttpResponse response = client.execute(get);
@@ -248,6 +247,8 @@ public class DouyinLiteTest {
             code = jsonObject.getInteger("code");
             data = jsonObject.getJSONObject("data");
             followings = data.getJSONArray("followings");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("DouyinLite",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_user_following_list",result);
             return;
@@ -259,6 +260,9 @@ public class DouyinLiteTest {
         if (followings == null || followings.size() == 0) {
             testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "get_user_following_list", result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv2", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_video", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinLite",code, new Date(), "业务请求错误", url,"get_user_following_list",result);

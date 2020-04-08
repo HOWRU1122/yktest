@@ -5,7 +5,6 @@ import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
@@ -64,8 +63,7 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
-        JSONObject msg;
-        //JSONObject detail;
+        Object msg;
 
         try {
             HttpResponse response = client.execute(get);
@@ -73,22 +71,25 @@ public class XHSv1Test {
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
-            msg = jsonObject.getJSONObject("msg");
-           // detail = msg.getJSONObject("detail");
-            System.out.println("msg");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
 
         } catch (Exception e) {
-            testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_info",result);
+            testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.toString(), url, "user_info",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_info",result);
 
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_info", result);
+        }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_info",result);
 
         }
+
         else {
             testResultDao.insertResult("XHSv1",200, new Date(), "成功", url,"user_info",result);
             System.out.println("成功，" + "请求url：" + url);
@@ -102,12 +103,16 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_note",result);
             return;
@@ -115,6 +120,9 @@ public class XHSv1Test {
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_note",result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_note", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_note",result);
@@ -134,12 +142,16 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "note_detail",result);
             return;
@@ -147,6 +159,9 @@ public class XHSv1Test {
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"note_detail",result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_detail", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"note_detail",result);
@@ -166,12 +181,16 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "note_comments",result);
             return;
@@ -179,6 +198,9 @@ public class XHSv1Test {
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"note_comments",result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_comments", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"note_comments",result);
@@ -198,12 +220,16 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video",result);
             return;
@@ -211,6 +237,9 @@ public class XHSv1Test {
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_video",result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_video", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_video",result);
@@ -230,12 +259,16 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_detail",result);
             return;
@@ -243,6 +276,9 @@ public class XHSv1Test {
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "video_detail", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"video_detail",result);
@@ -261,12 +297,16 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_focus",result);
             return;
@@ -274,6 +314,9 @@ public class XHSv1Test {
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_focus",result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_focus", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_focus",result);
@@ -293,12 +336,16 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_fans",result);
             return;
@@ -306,6 +353,9 @@ public class XHSv1Test {
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_fans",result);
 
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_fans", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_fans",result);

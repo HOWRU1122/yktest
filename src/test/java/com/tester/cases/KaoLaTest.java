@@ -83,7 +83,7 @@ public class KaoLaTest {
 
         }
         else {
-            testResultDao.insertResult("KaoLa",200, new Date(), "成功", url,"user_info",result);
+            testResultDao.insertResult("KaoLa",200, new Date(), "成功", url,"item_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
 

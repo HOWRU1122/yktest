@@ -5,7 +5,6 @@ import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
@@ -63,12 +62,15 @@ public class DuTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "ice_shopping",result);
             return;
@@ -76,6 +78,9 @@ public class DuTest {
         if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"ice_shopping",result);
 
+        }
+        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+            testResultDao.insertResult("Du", 400, new Date(), "Sorry, your cid can request up to 3000 times per day", url, "ice_shopping", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"ice_shopping",result);
@@ -95,12 +100,15 @@ public class DuTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "ice_shopping_tab",result);
             return;
@@ -108,6 +116,9 @@ public class DuTest {
         if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"ice_shopping_tab",result);
 
+        }
+        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+            testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "ice_shopping_tab", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"ice_shopping_tab",result);
@@ -128,12 +139,15 @@ public class DuTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "item_detail",result);
             return;
@@ -141,6 +155,9 @@ public class DuTest {
         if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"item_detail",result);
 
+        }
+        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+            testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "item_detail", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"item_detail",result);
@@ -161,12 +178,16 @@ public class DuTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "sold_list",result);
             return;
@@ -174,6 +195,9 @@ public class DuTest {
         if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"sold_list",result);
 
+        }
+        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+            testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "sold_list", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"sold_list",result);

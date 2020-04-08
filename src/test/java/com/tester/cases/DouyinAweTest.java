@@ -5,7 +5,6 @@ import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
@@ -30,12 +29,16 @@ public class DouyinAweTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("DouyinAwe",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_user_info",result);
             return;
@@ -43,6 +46,9 @@ public class DouyinAweTest {
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_user_info",result);
 
+        }
+        if (msg.toString().contains("失败，采集失败..")) {
+            testResultDao.insertResult("DouyinAwe", 400, new Date(), "失败，采集失败..", url, "get_user_info", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_user_info",result);
@@ -63,12 +69,16 @@ public class DouyinAweTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("DouyinAwe",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_promotion_list",result);
             return;
@@ -76,6 +86,9 @@ public class DouyinAweTest {
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
 
+        }
+        if (msg.toString().contains("失败，采集失败..")) {
+            testResultDao.insertResult("DouyinAwe", 400, new Date(), "失败，采集失败..", url, "get_promotion_list", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_promotion_list",result);
@@ -96,12 +109,15 @@ public class DouyinAweTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("DouyinAwe",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_aweme_list",result);
             return;
@@ -109,6 +125,9 @@ public class DouyinAweTest {
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_aweme_list",result);
 
+        }
+        if (msg.toString().contains("失败，采集失败..")) {
+            testResultDao.insertResult("DouyinAwe", 400, new Date(), "失败，采集失败..", url, "get_aweme_list", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_aweme_list",result);

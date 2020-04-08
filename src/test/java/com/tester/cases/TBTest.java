@@ -29,12 +29,15 @@ public class TBTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_tb_comment",result);
             return;
@@ -42,6 +45,9 @@ public class TBTest {
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_tb_comment",result);
 
+        }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_tb_comment", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_tb_comment",result);

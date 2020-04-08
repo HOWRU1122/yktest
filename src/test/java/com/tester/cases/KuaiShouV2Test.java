@@ -12,7 +12,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.retry.annotation.EnableRetry;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
@@ -41,6 +40,7 @@ public class KuaiShouV2Test {
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "测试异常，e:" + e.getMessage(), url, "call_nums",result);
             return;
@@ -132,12 +132,16 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_info",result);
             return;
@@ -145,6 +149,9 @@ public class KuaiShouV2Test {
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_info",result);
 
+        }
+        if (msg.toString().contains("Redis内可用设备池为空")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "Redis内可用设备池为空", url, "user_info", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"user_info",result);
@@ -165,12 +172,16 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video",result);
             return;
@@ -178,6 +189,12 @@ public class KuaiShouV2Test {
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_video",result);
 
+        }
+        if (msg.toString().contains("请求失败,返回数据为脏数据")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
+        }
+        if (msg.toString().contains("Redis内可用设备池为空")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"user_video",result);
@@ -353,12 +370,12 @@ public class KuaiShouV2Test {
         }
 
     }
-
+/*
     @Test
     public void get_live_goods() throws IOException {
         //获取直播小黄车商品 (需要登陆)
-        /*获取liveStreamId
-         */
+        //获取liveStreamId
+
         String zhiboresult = "";
         String zhibourl = "http://47.114.196.142:5000/api/ks_v2/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
@@ -426,7 +443,7 @@ public class KuaiShouV2Test {
         }
 
     }
-
+*/
     @Test
     public void get_live_users() throws IOException {
         //获取前30名直播观看用户
@@ -728,12 +745,15 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);;
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_district_rank",result);
             return;
@@ -741,6 +761,9 @@ public class KuaiShouV2Test {
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_district_rank",result);
 
+        }
+        if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_district_rank", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_district_rank",result);
