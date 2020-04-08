@@ -31,7 +31,7 @@ public class KuaiShouV1Test {
     public void hot_feed() throws IOException {
         //获取热点推荐
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/hot_feed?page=1&page_size=10";
+        String url = "http://47.114.196.142:5000/api/ks_v1/hot_feed?page=1&page_size=10";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -63,7 +63,7 @@ public class KuaiShouV1Test {
     public void nearby_feed() throws IOException {
         //获取同城推荐
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/nearby_feed?page=1&page_size=20&lon=113.712143&lat=34.593717";
+        String url = "http://47.114.196.142:5000/api/ks_v1/nearby_feed?page=1&page_size=20&lon=113.712143&lat=34.593717";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -95,7 +95,7 @@ public class KuaiShouV1Test {
     public void user_info() throws IOException {
         //获取用户信息(被检测频率较高)
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/user_info?user_id=1391625066";
+        String url = "http://47.114.196.142:5000/api/ks_v1/user_info?user_id=1391625066";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -128,7 +128,7 @@ public class KuaiShouV1Test {
     public void user_video() throws IOException {
         //获取用户视频列表(返回的不是目标用户的视频)
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/user_video?user_id=1391625066&page_size=10";
+        String url = "http://47.114.196.142:5000/api/ks_v1/user_video?user_id=1391625066&page_size=10";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -161,7 +161,7 @@ public class KuaiShouV1Test {
     public void video_comment() throws IOException {
         //获取视频评论列表
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/video_comment?user_id=191674858&photo_id=5248945383907780546&page_size=10";
+        String url = "http://47.114.196.142:5000/api/ks_v1/video_comment?user_id=191674858&photo_id=5248945383907780546&page_size=10";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -193,7 +193,7 @@ public class KuaiShouV1Test {
     public void video_detail() throws IOException {
         //获取视频信息
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/video_detail?photo_id=5248945383907780546";
+        String url = "http://47.114.196.142:5000/api/ks_v1/video_detail?photo_id=5248945383907780546";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -225,7 +225,7 @@ public class KuaiShouV1Test {
     public void share_video() throws IOException {
         //获取分享视频链接信息
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/share_video?share_url=http://kphbeijing.m.chenzhongtech.com/s/Qsh970xL";
+        String url = "http://47.114.196.142:5000/api/ks_v1/share_video?share_url=http://kphbeijing.m.chenzhongtech.com/s/Qsh970xL";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -258,7 +258,7 @@ public class KuaiShouV1Test {
     public void product_list() throws IOException {
         //获取小店商品
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/product_list?user_id=976786976&page=1";
+        String url = "http://47.114.196.142:5000/api/ks_v1/product_list?user_id=976786976&page=1";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -292,7 +292,7 @@ public class KuaiShouV1Test {
         //获取直播简介
 
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/get_live_info?user_id=1143032926";
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_info?user_id=1143032926";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -327,7 +327,7 @@ public class KuaiShouV1Test {
         /*获取liveStreamId
          */
         String zhiboresult = "";
-        String zhibourl = "http://47.97.206.10/api/ks_v1/get_live_square_refresh";
+        String zhibourl = "http://47.114.196.142:5000/api/ks_v1/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
         HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
@@ -340,7 +340,6 @@ public class KuaiShouV1Test {
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(zhiboresult);
-            // System.out.println(zhiboresult);
 
             zhibocode = jsonObject.getInteger("code");
             zhibodata1 = jsonObject.getJSONObject("data");
@@ -362,7 +361,7 @@ public class KuaiShouV1Test {
             System.out.println(e.getMessage());
         }
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/get_live_goods?live_stream_id=" + liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_goods?live_stream_id=" + liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -400,7 +399,7 @@ public class KuaiShouV1Test {
         /*获取liveStreamId
          */
         String zhiboresult = "";
-        String zhibourl = "http://47.97.206.10/api/ks_v1/get_live_square_refresh";
+        String zhibourl = "http://47.114.196.142:5000/api/ks_v1/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
         HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
@@ -435,7 +434,7 @@ public class KuaiShouV1Test {
         System.out.println(e.getMessage());
     }
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/get_live_users?live_stream_id=" + liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_users?live_stream_id=" + liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -473,7 +472,7 @@ public class KuaiShouV1Test {
         /*获取liveStreamId
         */
         String zhiboresult = "";
-        String zhibourl = "http://47.97.206.10/api/ks_v1/get_live_square_refresh";
+        String zhibourl = "http://47.114.196.142:5000/api/ks_v1/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
         HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
@@ -509,7 +508,7 @@ public class KuaiShouV1Test {
        }
 
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/get_live_district_rank?live_stream_id="+ liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_district_rank?live_stream_id="+ liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -547,7 +546,7 @@ public class KuaiShouV1Test {
         //获取直播广场刷新列表
 
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/get_live_square_refresh";
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_square_refresh";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -582,7 +581,7 @@ public class KuaiShouV1Test {
         /*获取liveStreamId
          */
         String zhiboresult = "";
-        String zhibourl = "http://47.97.206.10/api/ks_v1/get_live_square_refresh";
+        String zhibourl = "http://47.114.196.142:5000/api/ks_v1/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
         HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
@@ -617,7 +616,7 @@ public class KuaiShouV1Test {
             System.out.println(e.getMessage());
         }
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/get_live_district_rank?live_stream_id="+ liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_district_rank?live_stream_id="+ liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -656,7 +655,7 @@ public class KuaiShouV1Test {
         /*获取liveStreamId
          */
         String zhiboresult = "";
-        String zhibourl = "http://47.97.206.10/api/ks_v1/get_live_square_refresh";
+        String zhibourl = "http://47.114.196.142:5000/api/ks_v1/get_live_square_refresh";
         HttpGet zhiboget = new HttpGet(zhibourl);
         HttpClient zhiboclient = HttpClientBuilder.create().build();
         Integer zhibocode,zhiboStatuscode;
@@ -691,7 +690,7 @@ public class KuaiShouV1Test {
             System.out.println(e.getMessage());
         }
         String result = "";
-        String url = "http://47.97.206.10/api/ks_v1/get_live_district_rank?live_stream_id=" + liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_district_rank?live_stream_id=" + liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

@@ -27,7 +27,7 @@ public class DouyinShareTest {
     public void user_info() throws IOException {
         //用户信息
         String result = "";
-        String url = "http://47.97.206.10/api/douyin_share/user_info?share_id=104255897823";
+        String url = "http://47.114.196.142:5000/api/douyin_share/user_info?share_id=104255897823";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -67,7 +67,7 @@ public class DouyinShareTest {
     public void user_video() throws IOException {
         //用户视频
         String result = "";
-        String url = "http://47.97.206.10/api/douyin_share/user_video?share_id=104255897823&max_cursor=0";
+        String url = "http://47.114.196.142:5000/api/douyin_share/user_video?share_id=104255897823&max_cursor=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

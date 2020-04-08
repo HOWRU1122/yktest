@@ -26,7 +26,7 @@ public class JingDongTest {
     public void crawlPageShopProducts() throws IOException {
         //店铺内的商品列表
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlPageShopProducts?shop_id=1000000925&page=0&page_size=3";
+        String url = "http://47.114.196.142:5000/api/jd/crawlPageShopProducts?shop_id=1000000925&page=0&page_size=3";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -60,7 +60,7 @@ public class JingDongTest {
     public void crawlPageByBrandName() throws IOException {
         //获取品牌商品列表
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlPageByBrandName?brandName=三星";
+        String url = "http://47.114.196.142:5000/api/jd/crawlPageByBrandName?brandName=三星";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -93,7 +93,7 @@ public class JingDongTest {
     public void crawlSkuComment() throws IOException {
         //获取某个商品的评论列表
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlSkuComment?product_id=100000538392";
+        String url = "http://47.114.196.142:5000/api/jd/crawlSkuComment?product_id=100000538392";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -126,7 +126,7 @@ public class JingDongTest {
     public void crawlSkuCommentAndCount() throws IOException {
         //获取某个商品的评论列表和总数
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlSkuCommentAndCount?product_id=100000538392&page=0";
+        String url = "http://47.114.196.142:5000/api/jd/crawlSkuCommentAndCount?product_id=100000538392&page=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -159,7 +159,7 @@ public class JingDongTest {
     public void crawlShopDetails() throws IOException {
         //获取店铺详情
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlShopDetails?shop_list=[1000000925]";
+        String url = "http://47.114.196.142:5000/api/jd/crawlShopDetails?shop_list=[1000000925]";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -193,7 +193,7 @@ public class JingDongTest {
     public void crawlShopVenderId() throws IOException {
         //获取店铺简要概况
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlShopVenderId?shop_id=1000000925";
+        String url = "http://47.114.196.142:5000/api/jd/crawlShopVenderId?shop_id=1000000925";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -227,7 +227,7 @@ public class JingDongTest {
     public void crawlSkuPrices() throws IOException {
         //获取产品的sku列表
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlSkuPrices?product_list=[100000538392]";
+        String url = "http://47.114.196.142:5000/api/jd/crawlSkuPrices?product_list=[100000538392]";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -260,7 +260,7 @@ public class JingDongTest {
     public void crawlCommentsCounts() throws IOException {
         //获取评论的详情
         String result = "";
-        String url = "http://47.97.206.10/api/jd/crawlCommentsCounts?product_list=[100000538392]";
+        String url = "http://47.114.196.142:5000/api/jd/crawlCommentsCounts?product_list=[100000538392]";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

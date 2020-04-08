@@ -28,7 +28,7 @@ public class PddTest {
     public void get_pdd_date() throws IOException {
         //获取拼多多某个类目下的某个价格区间的某页数据信息
         String result = "";
-        String url = "http://47.97.206.10/api/pdd_spider_api/get_pdd_date?cat_id=-1&range_from=400&range_to=410&page_number=1";
+        String url = "http://47.114.196.142:5000/api/pdd_spider_api/get_pdd_date?cat_id=-1&range_from=400&range_to=410&page_number=1";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -61,7 +61,7 @@ public class PddTest {
     public void get_cat_id_list() throws IOException {
         //获取catid的列表
         String result = "";
-        String url = "http://47.97.206.10/api/pdd_spider_api/get_cat_id_list";
+        String url = "http://47.114.196.142:5000/api/pdd_spider_api/get_cat_id_list";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -93,7 +93,7 @@ public class PddTest {
     public void get_limited_seckill() throws IOException {
         //限时秒杀
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_limited_seckill?tab_id=1584100800&page=1&size=20&day_type=2";
+        String url = "http://47.114.196.142:5000/api/pdd/get_limited_seckill?tab_id=1584100800&page=1&size=20&day_type=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -126,7 +126,7 @@ public class PddTest {
     public void get_hot_goods() throws IOException {
         //热门商品
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_hot_goods?page=1&size=2";
+        String url = "http://47.114.196.142:5000/api/pdd/get_hot_goods?page=1&size=2";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -158,7 +158,7 @@ public class PddTest {
     public void get_fenlei_goods() throws IOException {
         //分类商品
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_fenlei_goods?tab_id=14&count=20&offset=0";
+        String url = "http://47.114.196.142:5000/api/pdd/get_fenlei_goods?tab_id=14&count=20&offset=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -190,7 +190,7 @@ public class PddTest {
     public void get_mall_similar_goods() throws IOException {
         //店铺相似商品
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_mall_similar_goods?goods_id=7366692450";
+        String url = "http://47.114.196.142:5000/api/pdd/get_mall_similar_goods?goods_id=7366692450";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -222,7 +222,7 @@ public class PddTest {
     public void get_similar_goods() throws IOException {
         //相似商品
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_similar_goods?goods_id=7366692450&mall_id=397048742&page=1";
+        String url = "http://47.114.196.142:5000/api/pdd/get_similar_goods?goods_id=7366692450&mall_id=397048742&page=1";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -254,7 +254,7 @@ public class PddTest {
     public void get_goods_detail() throws IOException {
         //商品详情
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_goods_detail?goods_id=7366692450";
+        String url = "http://47.114.196.142:5000/api/pdd/get_goods_detail?goods_id=7366692450";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -286,7 +286,7 @@ public class PddTest {
     public void get_mall_most_goods() throws IOException {
         //商家-大家都在拼
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_mall_most_goods?mall_id=397048742";
+        String url = "http://47.114.196.142:5000/api/pdd/get_mall_most_goods?mall_id=397048742";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -318,7 +318,7 @@ public class PddTest {
     public void get_mall_info() throws IOException {
         //商铺信息
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_mall_info?mall_id=397048742";
+        String url = "http://47.114.196.142:5000/api/pdd/get_mall_info?mall_id=397048742";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -350,7 +350,7 @@ public class PddTest {
     public void get_clearance_sale_goods() throws IOException {
         //断码清仓
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_clearance_sale_goods?tab_id=210&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/pdd/get_clearance_sale_goods?tab_id=210&page=1&size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -382,7 +382,7 @@ public class PddTest {
     public void get_new_clothes_goods() throws IOException {
         //新衣馆
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_new_clothes_goods?tab_id=6074&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/pdd/get_new_clothes_goods?tab_id=6074&page=1&size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -413,7 +413,7 @@ public class PddTest {
     public void get_99_goods() throws IOException {
         //9块9特卖
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_99_goods?tab_id=18&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/pdd/get_99_goods?tab_id=18&page=1&size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -445,7 +445,7 @@ public class PddTest {
     public void get_electrical_goods() throws IOException {
         //电器城
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_electrical_goods?tab_id=0&page=1&size=12";
+        String url = "http://47.114.196.142:5000/api/pdd/get_electrical_goods?tab_id=0&page=1&size=12";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -477,7 +477,7 @@ public class PddTest {
     public void get_love_shopping_goods() throws IOException {
         //爱逛街
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_love_shopping_goods?tab_id=3255&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/pdd/get_love_shopping_goods?tab_id=3255&page=1&size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -509,7 +509,7 @@ public class PddTest {
     public void get_daily_good_mall() throws IOException {
         //每日好店
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_daily_good_mall?tab_id=4895&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/pdd/get_daily_good_mall?tab_id=4895&page=1&size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -541,7 +541,7 @@ public class PddTest {
     public void get_subsidy_goods() throws IOException {
         //百亿补贴
         String result = "";
-        String url = "http://47.97.206.10/api/pdd/get_subsidy_goods?tab_id=3665&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/pdd/get_subsidy_goods?tab_id=3665&page=1&size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

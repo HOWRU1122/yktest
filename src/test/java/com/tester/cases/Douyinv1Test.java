@@ -33,7 +33,7 @@ public class Douyinv1Test {
     public void user_info() throws IOException {
         //调用次数
         String result = "";
-        String url = "http://47.97.206.10/api/douyin_v1/user_info?sec_user_id=MS4wLjABAAAAc3GesvcbjzGc9Yr7Qf47M1iArpbR16WIk3l-4JnfHvA";
+        String url = "http://47.114.196.142:5000/api/douyin_v1/user_info?sec_user_id=MS4wLjABAAAAc3GesvcbjzGc9Yr7Qf47M1iArpbR16WIk3l-4JnfHvA";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -75,7 +75,7 @@ public class Douyinv1Test {
     public void user_video() throws IOException {
         //获取首页推荐
         String result = "";
-        String url = "http://47.97.206.10/api/douyin_v1/user_video?sec_user_id=MS4wLjABAAAAc3GesvcbjzGc9Yr7Qf47M1iArpbR16WIk3l-4JnfHvA&max_cursor=0&count=20";
+        String url = "http://47.114.196.142:5000/api/douyin_v1/user_video?sec_user_id=MS4wLjABAAAAc3GesvcbjzGc9Yr7Qf47M1iArpbR16WIk3l-4JnfHvA&max_cursor=0&count=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code, Statuscode;
@@ -118,7 +118,7 @@ public class Douyinv1Test {
     public void user_goods() throws IOException {
         //获取首页tab页数据
         String result = "";
-        String url = "http://47.97.206.10/api/douyin_v1/user_goods?sec_user_id=MS4wLjABAAAAZk_KayH7Ze2BOUa0DunPPsGD-A5aI-ZHrEtBfd_zeu9cOmRZN6dGHhYo4mmWBRJl&user_id=1297017945466284&cursor=0&count=20";
+        String url = "http://47.114.196.142:5000/api/douyin_v1/user_goods?sec_user_id=MS4wLjABAAAAZk_KayH7Ze2BOUa0DunPPsGD-A5aI-ZHrEtBfd_zeu9cOmRZN6dGHhYo4mmWBRJl&user_id=1297017945466284&cursor=0&count=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -160,7 +160,7 @@ public class Douyinv1Test {
     public void video_detail() throws IOException {
         //获取商品详情
         String result = "";
-        String url = "http://47.97.206.10/api/douyin_v1/video_detail?aweme_id=6790276545542884615";
+        String url = "http://47.114.196.142:5000/api/douyin_v1/video_detail?aweme_id=6790276545542884615";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -196,7 +196,7 @@ public class Douyinv1Test {
     public void video_comment() throws IOException {
         //获取商品最近购买列表
         String result = "";
-        String url = "http://47.97.206.10/api/douyin_v1/video_comment?aweme_id=6790276545542884615&cursor=0&count=20";
+        String url = "http://47.114.196.142:5000/api/douyin_v1/video_comment?aweme_id=6790276545542884615&cursor=0&count=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

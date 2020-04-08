@@ -25,7 +25,7 @@ public class TBTest {
     public void get_tb_comment() throws IOException {
         //淘宝评论
         String result = new String();
-        String url = "http://47.97.206.10/api/tb/get_tb_comment?item_id=22538999781&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/tb/get_tb_comment?item_id=22538999781&page=1&size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

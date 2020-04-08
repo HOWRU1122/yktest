@@ -28,7 +28,7 @@ public class KaoLaTest {
     public void leaf_cate() throws IOException {
         //获取考拉类目id
         String result = "";
-        String url = "http://47.97.206.10/api/kaola/leaf_cate";
+        String url = "http://47.114.196.142:5000/api/kaola/leaf_cate";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -60,7 +60,7 @@ public class KaoLaTest {
     public void item_list() throws IOException {
         //根据类目获取商品
         String result = "";
-        String url = "http://47.97.206.10/api/kaola/item_list?cid=547&page_no=1&page_size=5";
+        String url = "http://47.114.196.142:5000/api/kaola/item_list?cid=547&page_no=1&page_size=5";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -92,7 +92,7 @@ public class KaoLaTest {
     public void item_detail() throws IOException {
         //获取单个商品详情
         String result = "";
-        String url = "http://47.97.206.10/api/kaola/item_detail?item_id=1991396";
+        String url = "http://47.114.196.142:5000/api/kaola/item_detail?item_id=1991396";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -124,7 +124,7 @@ public class KaoLaTest {
     public void shop_info() throws IOException {
         //获取店铺信息
         String result = "";
-        String url = "http://47.97.206.10/api/kaola/shop_info?shop_id=23072595";
+        String url = "http://47.114.196.142:5000/api/kaola/shop_info?shop_id=23072595";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -156,7 +156,7 @@ public class KaoLaTest {
     public void shop_item() throws IOException {
         //获取店铺商品
         String result = "";
-        String url = "http://47.97.206.10/api/kaola/shop_item?shop_id=104975581&page=1&page_size=5";
+        String url = "http://47.114.196.142:5000/api/kaola/shop_item?shop_id=104975581&page=1&page_size=5";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

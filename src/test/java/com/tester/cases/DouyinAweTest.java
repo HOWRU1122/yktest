@@ -26,7 +26,7 @@ public class DouyinAweTest {
     public void get_user_info() throws IOException {
         //获取抖音用户信息
         String result = new String();
-        String url = "http://47.97.206.10/api/douyin_awe/get_user_info?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo";
+        String url = "http://47.114.196.142:5000/api/douyin_awe/get_user_info?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -59,7 +59,7 @@ public class DouyinAweTest {
     public void get_promotion_list() throws IOException {
         //获得抖音商品信息
         String result = new String();
-        String url = "http://47.97.206.10/api/douyin_awe/get_promotion_list?user_id=100057983844&sec_uid=MS4wLjABAAAAnUDewltNkKWz6gNx0MZ-qZOHDB58ksYV6dG-W_EcD1k&cursor=0";
+        String url = "http://47.114.196.142:5000/api/douyin_awe/get_promotion_list?user_id=100057983844&sec_uid=MS4wLjABAAAAnUDewltNkKWz6gNx0MZ-qZOHDB58ksYV6dG-W_EcD1k&cursor=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -92,7 +92,7 @@ public class DouyinAweTest {
     public void get_aweme_list() throws IOException {
         //获得用户的抖音作品
         String result = new String();
-        String url = "http://47.97.206.10/api/douyin_awe/get_aweme_list?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo&cursor=0";
+        String url = "http://47.114.196.142:5000/api/douyin_awe/get_aweme_list?sec_uid=MS4wLjABAAAAvcLIWOv1lqH4NrB1CM-rcPGIEmaI8z8_51rYmz00Apo&cursor=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -125,7 +125,7 @@ public class DouyinAweTest {
     public void get_aweme_comment() throws IOException {
         //获特定抖音作品下面的评论
         String result = new String();
-        String url = "http://47.97.206.10/api/douyin_awe/get_aweme_comment?aweme_id=6772104868627827982&cursor=0";
+        String url = "http://47.114.196.142:5000/api/douyin_awe/get_aweme_comment?aweme_id=6772104868627827982&cursor=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -158,7 +158,7 @@ public class DouyinAweTest {
     public void get_aweme_info() throws IOException {
         //获取视频简介
         String result = new String();
-        String url = "http://47.97.206.10/api/douyin_awe/get_aweme_info?aweme_id=6729436911498267908";
+        String url = "http://47.114.196.142:5000/api/douyin_awe/get_aweme_info?aweme_id=6729436911498267908";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
 

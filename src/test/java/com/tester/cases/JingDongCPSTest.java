@@ -26,7 +26,7 @@ public class JingDongCPSTest {
     public void items() throws IOException {
         //获取京东联盟商品列表
         String result = "";
-        String url = "http://47.97.206.10/api/jd_cps/items?page_no=1&page_size=5";
+        String url = "http://47.114.196.142:5000/api/jd_cps/items?page_no=1&page_size=5";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -59,7 +59,7 @@ public class JingDongCPSTest {
     public void shops() throws IOException {
         //获取京东联盟店铺列表
         String result = "";
-        String url = "http://47.97.206.10/api/jd_cps/shops?page_no=1&page_size=5";
+        String url = "http://47.114.196.142:5000/api/jd_cps/shops?page_no=1&page_size=5";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -91,7 +91,7 @@ public class JingDongCPSTest {
     public void shop_info() throws IOException {
         //获取京东CPS店铺信息
         String result = "";
-        String url = "http://47.97.206.10/api/jd_cps/shop_info?shop_id=996822";
+        String url = "http://47.114.196.142:5000/api/jd_cps/shop_info?shop_id=996822";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;
@@ -122,7 +122,7 @@ public class JingDongCPSTest {
     public void shop_item() throws IOException {
         //获取京东CPS店铺商品
         String result = "";
-        String url = "http://47.97.206.10/api/jd_cps/shop_item?shop_id=996822&page_no=1&page_size=5";
+        String url = "http://47.114.196.142:5000/api/jd_cps/shop_item?shop_id=996822&page_no=1&page_size=5";
         HttpGet get = new HttpGet(url);
         HttpClient client = new DefaultHttpClient();
         Integer code,Statuscode;

@@ -28,7 +28,7 @@ public class XHSv2Test {
     public void call_nums() throws IOException {
         //调用次数
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/call_nums";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/call_nums";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -60,7 +60,7 @@ public class XHSv2Test {
     public void home_feed() throws IOException {
         //首页推荐
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/home_feed";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/home_feed";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -92,7 +92,7 @@ public class XHSv2Test {
     public void user_info() throws IOException {
         //用户信息
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/user_info?user_id=5a73c5fa4eacab4c4ccc9778";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/user_info?user_id=5a73c5fa4eacab4c4ccc9778";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -123,7 +123,7 @@ public class XHSv2Test {
     public void user_note() throws IOException {
         //用户笔记
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/user_note?user_id=5a73c5fa4eacab4c4ccc9778&page=1&page_size=10";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/user_note?user_id=5a73c5fa4eacab4c4ccc9778&page=1&page_size=10";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -155,7 +155,7 @@ public class XHSv2Test {
     public void note_detail() throws IOException {
         //笔记详情
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/note_detail?note_id=5df5d21d000000000100790c";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/note_detail?note_id=5df5d21d000000000100790c";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -186,7 +186,7 @@ public class XHSv2Test {
     public void note_comments() throws IOException {
         //笔记评论
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/note_comments?note_id=5df5d21d000000000100790c&num=10&start=5df738e200000000010091d4";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/note_comments?note_id=5df5d21d000000000100790c&num=10&start=5df738e200000000010091d4";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -217,7 +217,7 @@ public class XHSv2Test {
     public void user_video() throws IOException {
         //用户视频
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/user_video?user_id=5a73c5fa4eacab4c4ccc9778&page=1&page_size=10";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/user_video?user_id=5a73c5fa4eacab4c4ccc9778&page=1&page_size=10";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -248,7 +248,7 @@ public class XHSv2Test {
     public void video_detail() throws IOException {
         //视频详情
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/video_detail?note_id=5dadbbfa0000000001001129";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/video_detail?note_id=5dadbbfa0000000001001129";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -280,7 +280,7 @@ public class XHSv2Test {
     public void user_focus() throws IOException {
         //用户关注
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/user_focus?user_id=5a73c5fa4eacab4c4ccc9778";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/user_focus?user_id=5a73c5fa4eacab4c4ccc9778";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -312,7 +312,7 @@ public class XHSv2Test {
     public void user_fans() throws IOException {
         //用户粉丝
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/user_fans?user_id=5a73c5fa4eacab4c4ccc9778&start=5666f2cc82ec397fccb607a4";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/user_fans?user_id=5a73c5fa4eacab4c4ccc9778&start=5666f2cc82ec397fccb607a4";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -344,7 +344,7 @@ public class XHSv2Test {
     public void note_search() throws IOException {
         //笔记关键词搜索
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/note/search?keyword=蛋糕&page=1&page_size=20";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/note/search?keyword=蛋糕&page=1&page_size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -377,7 +377,7 @@ public class XHSv2Test {
     public void topic_notes() throws IOException {
         //话题笔记
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/topic_notes?topic_id=5cc6ce90ec9d135e33e97b7e&page=1&page_size=200";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/topic_notes?topic_id=5cc6ce90ec9d135e33e97b7e&page=1&page_size=200";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -409,7 +409,7 @@ public class XHSv2Test {
     public void channel_refresh() throws IOException {
         //刷新获取店铺及商品
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/channel_refresh";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/channel_refresh";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -440,7 +440,7 @@ public class XHSv2Test {
     public void item_search() throws IOException {
         //获取商品关键词搜索页
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/item/search?keyword=EMXEE嫚熙&filters=&page=1&page_size=20";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/item/search?keyword=EMXEE嫚熙&filters=&page=1&page_size=20";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -472,7 +472,7 @@ public class XHSv2Test {
     public void shop_items() throws IOException {
         //获取店铺商品
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/shop_items?shop_id=59c5cbf577e3086597fc4706&page=1";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/shop_items?shop_id=59c5cbf577e3086597fc4706&page=1";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -503,7 +503,7 @@ public class XHSv2Test {
     public void shop_font() throws IOException {
         //获取店铺信息1
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/shop_font?shop_id=59c5cbf577e3086597fc4706";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/shop_font?shop_id=59c5cbf577e3086597fc4706";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -534,7 +534,7 @@ public class XHSv2Test {
     public void shop_info() throws IOException {
         //获取店铺信息2
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/shop_info?shop_id=59c5cbf577e3086597fc4706";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/shop_info?shop_id=59c5cbf577e3086597fc4706";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -565,7 +565,7 @@ public class XHSv2Test {
     public void item_info() throws IOException {
         //获取商品信息: 标题、描述、图片等
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/item_info?item_id=5b1ccd8570e7527d5b74caae";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/item_info?item_id=5b1ccd8570e7527d5b74caae";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -596,7 +596,7 @@ public class XHSv2Test {
     public void item_price() throws IOException {
         //获取商品信息: 可提取商品价格
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/item_price?item_id=5b1ccd8570e7527d5b74caae";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/item_price?item_id=5b1ccd8570e7527d5b74caae";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -627,7 +627,7 @@ public class XHSv2Test {
     public void item_comm() throws IOException {
         //获取商品评论内容
         String result = "";
-        String url = "http://47.97.206.10/api/xhs_v2/item_comm?item_id=5b1ccd8570e7527d5b74caae&page=1";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/item_comm?item_id=5b1ccd8570e7527d5b74caae&page=1";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

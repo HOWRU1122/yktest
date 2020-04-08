@@ -25,7 +25,7 @@ public class MeiTuanTest {
     public void call_nums() throws IOException {
         //调用次数
         String result = new String();
-        String url = "http://47.97.206.10/api/meituan_v2/call_nums";
+        String url = "http://47.114.196.142:5000/api/meituan_v2/call_nums";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -58,7 +58,7 @@ public class MeiTuanTest {
     public void homepage_shops() throws IOException {
         //获取附近商家
         String result = new String();
-        String url = "http://47.97.206.10/api/meituan_v2/homepage_shops?lon=120010802&lat=30287490&index=0";
+        String url = "http://47.114.196.142:5000/api/meituan_v2/homepage_shops?lon=120010802&lat=30287490&index=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -91,7 +91,7 @@ public class MeiTuanTest {
     public void shop_foods() throws IOException {
         //获取附近商家
         String result = new String();
-        String url = "http://47.97.206.10/api/meituan_v2/shop_foods?wmpoiid=1005607664858484&index=0";
+        String url = "http://47.114.196.142:5000/api/meituan_v2/shop_foods?wmpoiid=1005607664858484&index=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -124,7 +124,7 @@ public class MeiTuanTest {
     public void shop_comments() throws IOException {
         //获取商家评论
         String result = new String();
-        String url = "http://47.97.206.10/api/meituan_v2/shop_comments?wmpoiid=856228702304026&offset=0";
+        String url = "http://47.114.196.142:5000/api/meituan_v2/shop_comments?wmpoiid=856228702304026&offset=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;

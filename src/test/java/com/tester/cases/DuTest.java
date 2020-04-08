@@ -27,7 +27,7 @@ public class DuTest {
     public void call_nums() throws IOException {
         //调用次数
         String result = "";
-        String url = "http://47.97.206.10/api/du/call_nums";
+        String url = "http://47.114.196.142:5000/api/du/call_nums";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -59,7 +59,7 @@ public class DuTest {
     public void ice_shopping() throws IOException {
         //获取首页推荐
         String result = "";
-        String url = "http://47.97.206.10/api/du/ice_shopping";
+        String url = "http://47.114.196.142:5000/api/du/ice_shopping";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -91,7 +91,7 @@ public class DuTest {
     public void ice_shopping_tab() throws IOException {
         //获取首页tab页数据
         String result = "";
-        String url = "http://47.97.206.10/api/du/ice_shopping_tab?tab_id=13";
+        String url = "http://47.114.196.142:5000/api/du/ice_shopping_tab?tab_id=13";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -124,7 +124,7 @@ public class DuTest {
     public void item_detail() throws IOException {
         //获取商品详情
         String result = "";
-        String url = "http://47.97.206.10/api/du/item/detail?item_id=57388";
+        String url = "http://47.114.196.142:5000/api/du/item/detail?item_id=57388";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -157,7 +157,7 @@ public class DuTest {
     public void sold_list() throws IOException {
         //获取商品最近购买列表
         String result = "";
-        String url = "http://47.97.206.10/api/du/item/sold_list?item_id=57388";
+        String url = "http://47.114.196.142:5000/api/du/item/sold_list?item_id=57388";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
