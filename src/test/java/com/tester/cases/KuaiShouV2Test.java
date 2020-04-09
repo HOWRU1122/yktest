@@ -191,10 +191,10 @@ public class KuaiShouV2Test {
 
         }
         if (msg.toString().contains("请求失败,返回数据为脏数据")) {
-            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
         }
         if (msg.toString().contains("Redis内可用设备池为空")) {
-            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"user_video",result);
@@ -508,7 +508,7 @@ public class KuaiShouV2Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_users",result);
+            testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_users",result);
 
         }
         else {
@@ -582,7 +582,7 @@ public class KuaiShouV2Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
+            testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
 
         }
         else {
@@ -690,7 +690,7 @@ public class KuaiShouV2Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
+            testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
 
         }
         else {
@@ -770,7 +770,7 @@ public class KuaiShouV2Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV2",-200, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
+            testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
 
         }
         else {

@@ -472,7 +472,7 @@ public class KuaiShouV1Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV1",-200, new Date(), "liveStreamId未取到", url,"get_live_users",result);
+            testResultDao.insertResult("KuaiShouV1",400, new Date(), "liveStreamId未取到", url,"get_live_users",result);
 
         }
         else {
@@ -546,7 +546,7 @@ public class KuaiShouV1Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV1",-200, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
+            testResultDao.insertResult("KuaiShouV1",400, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
 
         }
         else {
@@ -654,7 +654,7 @@ public class KuaiShouV1Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV1",-200, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
+            testResultDao.insertResult("KuaiShouV1",400, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
 
         }
         else {
@@ -728,7 +728,7 @@ public class KuaiShouV1Test {
 
         }
         else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV1",-200, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
+            testResultDao.insertResult("KuaiShouV1",400, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
 
         }
         else {

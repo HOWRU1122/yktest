@@ -710,7 +710,7 @@ public class DouyinTest {
 
         }
         if (columns == null || columns.size() == 0) {
-            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "get_promotion_list", result);
+            testResultDao.insertResult("Douyin", 300, new Date(), "data返回为空", url, "get_promotion_list", result);
 
         }
         else if (code != 0) {

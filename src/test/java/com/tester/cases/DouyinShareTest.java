@@ -49,7 +49,7 @@ public class DouyinShareTest {
 
         }
         if (data == null || data.hashCode() == 0) {
-            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_info", result);
+            testResultDao.insertResult("DouyinShare", 300, new Date(), "data返回为空", url, "user_info", result);
 
         }
         else if (code != 0) {
@@ -90,7 +90,7 @@ public class DouyinShareTest {
 
         }
         if (aweme_list == null || aweme_list.size() == 0) {
-            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_video", result);
+            testResultDao.insertResult("DouyinShare", 300, new Date(), "data返回为空", url, "user_video", result);
 
         }
         else if (code != 0) {

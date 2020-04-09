@@ -80,7 +80,7 @@ public class DuTest {
 
         }
         if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
-            testResultDao.insertResult("Du", 400, new Date(), "Sorry, your cid can request up to 3000 times per day", url, "ice_shopping", result);
+            testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "ice_shopping", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"ice_shopping",result);

@@ -258,11 +258,11 @@ public class DouyinLiteTest {
 
         }
         if (followings == null || followings.size() == 0) {
-            testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "get_user_following_list", result);
+            testResultDao.insertResult("DouyinLite", 300, new Date(), "data返回为空", url, "get_user_following_list", result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_video", result);
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("DouyinLite", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_user_following_list", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinLite",code, new Date(), "业务请求错误", url,"get_user_following_list",result);
