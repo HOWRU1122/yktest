@@ -42,13 +42,14 @@ public class TBTest {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_tb_comment",result);
             return;
         }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_tb_comment", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_tb_comment",result);
 
         }
-        if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_tb_comment", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_tb_comment",result);
 
@@ -81,13 +82,14 @@ public class TBTest {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_good_goods",result);
             return;
         }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_good_goods", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_good_goods",result);
 
         }
-        if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_good_goods", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_good_goods",result);
 
@@ -120,13 +122,14 @@ public class TBTest {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_goods_detail",result);
             return;
         }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_goods_detail", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_goods_detail",result);
 
         }
-        if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_goods_detail", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_goods_detail",result);
 
@@ -159,13 +162,14 @@ public class TBTest {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_daren_info",result);
             return;
         }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_daren_info", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_daren_info",result);
 
         }
-        if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_daren_info", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_daren_info",result);
 
@@ -198,13 +202,14 @@ public class TBTest {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_daren_feed",result);
             return;
         }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_daren_feed", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_daren_feed",result);
 
         }
-        if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_daren_feed", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_daren_feed",result);
 
@@ -237,13 +242,14 @@ public class TBTest {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_questions",result);
             return;
         }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_questions", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_questions",result);
 
         }
-        if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_questions", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_questions",result);
 
@@ -276,13 +282,14 @@ public class TBTest {
             testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_ask_tag",result);
             return;
         }
+        if (msg.toString().contains("RemoteDisconnected")) {
+            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_ask_tag", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_ask_tag",result);
 
         }
-        if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_ask_tag", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_ask_tag",result);
 

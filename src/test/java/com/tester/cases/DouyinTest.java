@@ -705,14 +705,15 @@ public class DouyinTest {
             testResultDao.insertResult("Douyin",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_promotion_list",result);
             return;
         }
-        if (Statuscode != 200){
-            testResultDao.insertResult("Douyin",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
-
-        }
         if (columns == null || columns.size() == 0) {
             testResultDao.insertResult("Douyin", 300, new Date(), "data返回为空", url, "get_promotion_list", result);
 
         }
+        if (Statuscode != 200){
+            testResultDao.insertResult("Douyin",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
+
+        }
+
         else if (code != 0) {
             testResultDao.insertResult("Douyin",code, new Date(), "业务请求错误", url,"get_promotion_list",result);
 

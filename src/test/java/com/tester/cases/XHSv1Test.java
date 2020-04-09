@@ -78,13 +78,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.toString(), url, "user_info",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_info", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_info",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_info", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_info",result);
 
@@ -117,13 +118,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_note",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_note", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_note",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_note", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_note",result);
 
@@ -156,13 +158,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "note_detail",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_detail", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"note_detail",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_detail", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"note_detail",result);
 
@@ -195,13 +198,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "note_comments",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_comments", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"note_comments",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_comments", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"note_comments",result);
 
@@ -234,13 +238,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_video", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_video",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_video", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_video",result);
 
@@ -273,13 +278,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_detail",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "video_detail", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "video_detail", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"video_detail",result);
 
@@ -311,13 +317,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_focus",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_focus", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_focus",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_focus", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_focus",result);
 
@@ -350,13 +357,14 @@ public class XHSv1Test {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_fans",result);
             return;
         }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_fans", result);
+        }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_fans",result);
 
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_fans", result);
-        }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"user_fans",result);
 
