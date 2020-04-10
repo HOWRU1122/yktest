@@ -838,6 +838,48 @@ public class XHSv2Test {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+    @Test
+    public void user_search() throws IOException {
+        //用户关键词搜索
+        String result = "";
+        String url = "http://47.114.196.142:5000/api/xhs_v2/user/search?keyword=hello&page=1&page_size=20";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = HttpClientBuilder.create().build();
+        Integer code,Statuscode;
+        Object msg;
 
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
+        } catch (Exception e) {
+            testResultDao.insertResult("XHSv2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_search",result);
+            return;
+        }
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_search", result);
+        }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+        }
+        else if (Statuscode != 200){
+            testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_search",result);
+
+        }
+
+        else if (code != 0) {
+            testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"user_search",result);
+
+        }
+        else {
+            testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_search",result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+
+    }
 
 }
