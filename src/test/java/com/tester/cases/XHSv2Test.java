@@ -861,7 +861,10 @@ public class XHSv2Test {
             return;
         }
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_search", result);
+        }
+        else if (msg.toString().contains("Sorry, your cid can request up to 200000 times per day")) {
+            testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "sold_list", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
             testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
