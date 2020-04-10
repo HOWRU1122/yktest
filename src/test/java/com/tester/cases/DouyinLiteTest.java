@@ -257,10 +257,10 @@ public class DouyinLiteTest {
             testResultDao.insertResult("DouyinLite", 300, new Date(), "data返回为空", url, "get_user_following_list", result);
 
         }
-        if (msg.toString().contains("重试超过阈值")) {
+       else if (msg.toString().contains("重试超过阈值")) {
             testResultDao.insertResult("DouyinLite", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_user_following_list", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("DouyinLite",Statuscode, new Date(), "http请求错误", url,"get_user_following_list",result);
 
         }

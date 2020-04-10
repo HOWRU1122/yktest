@@ -48,7 +48,7 @@ public class DouyinShareTest {
             testResultDao.insertResult("DouyinShare", 300, new Date(), "data返回为空", url, "user_info", result);
 
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("DouyinShare",Statuscode, new Date(), "http请求错误", url,"user_info",result);
 
         }
@@ -90,7 +90,7 @@ public class DouyinShareTest {
             testResultDao.insertResult("DouyinShare", 300, new Date(), "data返回为空", url, "user_video", result);
 
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("DouyinShare",Statuscode, new Date(), "http请求错误", url,"user_video",result);
 
         }

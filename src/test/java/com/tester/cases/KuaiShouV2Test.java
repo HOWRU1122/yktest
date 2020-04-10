@@ -149,7 +149,7 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "Redis内可用设备池为空", url, "user_info", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_info",result);
 
         }
@@ -190,10 +190,10 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("请求失败,返回数据为脏数据")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
         }
-        if (msg.toString().contains("Redis内可用设备池为空")) {
+       else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_video",result);
 
         }
@@ -505,7 +505,7 @@ public class KuaiShouV2Test {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_users",result);
 
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_users",result);
 
         }
@@ -580,7 +580,7 @@ public class KuaiShouV2Test {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
 
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_top_users",result);
 
         }
@@ -689,7 +689,7 @@ public class KuaiShouV2Test {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
 
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_square_list",result);
 
         }
@@ -766,10 +766,10 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_district_rank", result);
         }
-        if (liveStreamId == null) {
+       else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_district_rank",result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_district_rank",result);
         }
 

@@ -398,7 +398,7 @@ public class PddTest {
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_clearance_sale_goods", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_clearance_sale_goods",result);
 
         }

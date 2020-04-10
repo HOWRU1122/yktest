@@ -709,7 +709,7 @@ public class DouyinTest {
             testResultDao.insertResult("Douyin", 300, new Date(), "data返回为空", url, "get_promotion_list", result);
 
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("Douyin",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
 
         }

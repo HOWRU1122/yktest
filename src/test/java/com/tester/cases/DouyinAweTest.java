@@ -46,7 +46,7 @@ public class DouyinAweTest {
         if (msg.toString().contains("失败，采集失败")) {
             testResultDao.insertResult("DouyinAwe", 400, new Date(), "失败，采集失败", url, "get_user_info", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_user_info",result);
 
         }
@@ -87,7 +87,7 @@ public class DouyinAweTest {
         if (msg.toString().contains("失败，采集失败")) {
             testResultDao.insertResult("DouyinAwe", 400, new Date(), "失败，采集失败", url, "get_promotion_list", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
 
         }
@@ -127,7 +127,7 @@ public class DouyinAweTest {
         if (msg.toString().contains("失败，采集失败")) {
             testResultDao.insertResult("DouyinAwe", 400, new Date(), "失败，采集失败", url, "get_aweme_list", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_aweme_list",result);
 
         }

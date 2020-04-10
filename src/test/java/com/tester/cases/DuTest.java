@@ -78,7 +78,7 @@ public class DuTest {
         if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "ice_shopping", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"ice_shopping",result);
 
         }
@@ -117,7 +117,7 @@ public class DuTest {
         if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "ice_shopping_tab", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"ice_shopping_tab",result);
 
         }
@@ -157,7 +157,7 @@ public class DuTest {
         if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "item_detail", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"item_detail",result);
 
         }
@@ -198,7 +198,7 @@ public class DuTest {
         if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "sold_list", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"sold_list",result);
 
         }

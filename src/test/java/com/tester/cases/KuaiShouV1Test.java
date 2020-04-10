@@ -116,7 +116,7 @@ public class KuaiShouV1Test {
             testResultDao.insertResult("KuaiShouV1",Statuscode, new Date(), "http请求错误", url,"user_info",result);
 
         }
-        if (msg.toString().contains("Redis内可用设备池为空")) {
+       else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_info", result);
         }
         else if (code != 0) {
@@ -155,10 +155,10 @@ public class KuaiShouV1Test {
         if (msg.toString().contains("请求失败,返回数据为脏数据")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
         }
-        if (msg.toString().contains("Redis内可用设备池为空")) {
+       else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
         }
-        if (Statuscode != 200){
+       else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV1",Statuscode, new Date(), "http请求错误", url,"user_video",result);
 
         }
