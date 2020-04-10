@@ -32,17 +32,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_pdd_date",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_pdd_date",result);
 
         }
@@ -65,17 +75,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_cat_id_list",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_cat_id_list",result);
 
         }
@@ -97,17 +117,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_limited_seckill",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_limited_seckill",result);
 
         }
@@ -130,17 +160,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_hot_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_hot_goods",result);
 
         }
@@ -176,12 +216,16 @@ public class PddTest {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_fenlei_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_fenlei_goods",result);
 
-        }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_fenlei_goods", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("Pdd",code, new Date(), "业务请求错误", url,"get_fenlei_goods",result);
@@ -201,17 +245,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_mall_similar_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_mall_similar_goods",result);
 
         }
@@ -246,10 +300,14 @@ public class PddTest {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_similar_goods",result);
             return;
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_similar_goods", result);
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
         }
-        if (Statuscode != 200){
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_similar_goods",result);
 
         }
@@ -272,17 +330,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_goods_detail",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_goods_detail",result);
 
         }
@@ -317,10 +385,14 @@ public class PddTest {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_mall_most_goods",result);
             return;
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_mall_most_goods", result);
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
         }
-        if (Statuscode != 200){
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_mall_most_goods",result);
 
         }
@@ -356,10 +428,14 @@ public class PddTest {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_mall_info",result);
             return;
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_mall_info", result);
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
         }
-        if (Statuscode != 200){
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_mall_info",result);
 
         }
@@ -395,10 +471,14 @@ public class PddTest {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_clearance_sale_goods",result);
             return;
         }
-        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
-            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_clearance_sale_goods", result);
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
         }
-       else if (Statuscode != 200){
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_clearance_sale_goods",result);
 
         }
@@ -421,17 +501,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_new_clothes_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_new_clothes_goods",result);
 
         }
@@ -452,17 +542,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_99_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_99_goods",result);
 
         }
@@ -484,17 +584,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_electrical_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_electrical_goods",result);
 
         }
@@ -516,17 +626,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_love_shopping_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_love_shopping_goods",result);
 
         }
@@ -548,17 +668,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_daily_good_mall",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_daily_good_mall",result);
 
         }
@@ -580,17 +710,27 @@ public class PddTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Pdd",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_subsidy_goods",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("请求失败")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "请求失败，重试", url, "get_subsidy_goods", result);
+        }
+
+        else if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("Pdd", 400, new Date(), "获取响应失败,重试超过阈值", url, "get_subsidy_goods", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("Pdd",Statuscode, new Date(), "http请求错误", url,"get_subsidy_goods",result);
 
         }

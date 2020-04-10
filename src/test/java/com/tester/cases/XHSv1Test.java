@@ -31,20 +31,31 @@ public class XHSv1Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("XHSv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "home_feed",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("获取响应失败,重试超过阈值")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "home_feed", result);
+        }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "home_feed", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"home_feed",result);
 
         }
+
         else if (code != 0) {
             testResultDao.insertResult("XHSv1",code, new Date(), "业务请求错误", url,"home_feed",result);
 
@@ -80,6 +91,9 @@ public class XHSv1Test {
         }
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_info", result);
+        }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "user_info", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_info",result);
@@ -121,6 +135,9 @@ public class XHSv1Test {
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_note", result);
         }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "user_note", result);
+        }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_note",result);
 
@@ -160,6 +177,9 @@ public class XHSv1Test {
         }
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_detail", result);
+        }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "note_detail", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"note_detail",result);
@@ -201,6 +221,9 @@ public class XHSv1Test {
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "note_comments", result);
         }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "note_comments", result);
+        }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"note_comments",result);
 
@@ -240,6 +263,9 @@ public class XHSv1Test {
         }
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_video", result);
+        }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "user_video", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_video",result);
@@ -281,6 +307,9 @@ public class XHSv1Test {
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "video_detail", result);
         }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "video_detail", result);
+        }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
 
@@ -319,6 +348,9 @@ public class XHSv1Test {
         }
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_focus", result);
+        }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "user_focus", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_focus",result);
@@ -359,6 +391,9 @@ public class XHSv1Test {
         }
         if (msg.toString().contains("获取响应失败,重试超过阈值")) {
             testResultDao.insertResult("XHSv1", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_fans", result);
+        }
+        else if (msg.toString().contains("加密参数错误")) {
+            testResultDao.insertResult("XHSv1", 400, new Date(), "加密参数错误,重试", url, "user_fans", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv1",Statuscode, new Date(), "http请求错误", url,"user_fans",result);

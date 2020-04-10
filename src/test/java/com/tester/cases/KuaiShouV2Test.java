@@ -190,6 +190,9 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("请求失败,返回数据为脏数据")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
         }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "user_video", result);
+        }
        else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
         }
@@ -217,17 +220,23 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_comment",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "video_comment", result);
+        }
+         else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"video_comment",result);
 
         }
@@ -491,17 +500,26 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_users",result);
             return;
         }
-        if (liveStreamId == null) {
+        if (msg.toString().contains("参数异常")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_top_users", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
+        }
+        else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_users",result);
 
         }
@@ -562,21 +580,30 @@ public class KuaiShouV2Test {
        }
 
         String result = "";
-        String url = "http://47.114.196.142:5000/api/ks_v2/get_live_district_rank?live_stream_id="+ liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v2/get_live_district_rank?live_stream_id="+liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_top_users",result);
             return;
         }
-        if (liveStreamId == null) {
+        if (msg.toString().contains("参数异常")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_top_users", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
+        }
+        else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
 
         }
@@ -593,7 +620,6 @@ public class KuaiShouV2Test {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_top_users",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-        System.out.println(url);
     }
 
     @Test
@@ -671,21 +697,30 @@ public class KuaiShouV2Test {
             System.out.println(e.getMessage());
         }
         String result = "";
-        String url = "http://47.114.196.142:5000/api/ks_v2/get_live_district_rank?live_stream_id="+ liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v2/get_live_district_rank?live_stream_id="+liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_list",result);
             return;
         }
-        if (liveStreamId == null) {
+        if (msg.toString().contains("参数异常")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_square_list", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_square_list", result);
+        }
+        else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
 
         }
@@ -746,7 +781,7 @@ public class KuaiShouV2Test {
             System.out.println(e.getMessage());
         }
         String result = "";
-        String url = "http://47.114.196.142:5000/api/ks_v2/get_live_district_rank?live_stream_id=" + liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v2/get_live_district_rank?live_stream_id="+liveStreamId;
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -763,7 +798,10 @@ public class KuaiShouV2Test {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_district_rank",result);
             return;
         }
-        if (msg.toString().contains("签名验证失败")) {
+        if (msg.toString().contains("参数异常")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_district_rank", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_district_rank", result);
         }
        else if (liveStreamId == null) {
