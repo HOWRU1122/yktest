@@ -44,18 +44,16 @@ public class KaoLaTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KaoLa",Statuscode, new Date(), "http请求错误", url,"leaf_cate",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KaoLa",code, new Date(), "业务请求错误", url,"leaf_cate",result);
-
         }
         else {
             testResultDao.insertResult("KaoLa",200, new Date(), "成功", url,"leaf_cate",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void item_list() throws IOException {
         //根据类目获取商品
@@ -76,17 +74,14 @@ public class KaoLaTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KaoLa",Statuscode, new Date(), "http请求错误", url,"item_list",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KaoLa",code, new Date(), "业务请求错误", url,"item_list",result);
-
         }
         else {
             testResultDao.insertResult("KaoLa",200, new Date(), "成功", url,"item_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
     @Test
     public void item_detail() throws IOException {
@@ -108,18 +103,16 @@ public class KaoLaTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KaoLa",Statuscode, new Date(), "http请求错误", url,"item_detail",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KaoLa",code, new Date(), "业务请求错误", url,"item_detail",result);
-
         }
         else {
             testResultDao.insertResult("KaoLa",200, new Date(), "成功", url,"item_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void shop_info() throws IOException {
         //获取店铺信息
@@ -140,18 +133,16 @@ public class KaoLaTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KaoLa",Statuscode, new Date(), "http请求错误", url,"shop_info",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KaoLa",code, new Date(), "业务请求错误", url,"shop_info",result);
-
         }
         else {
             testResultDao.insertResult("KaoLa",200, new Date(), "成功", url,"shop_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void shop_item() throws IOException {
         //获取店铺商品
@@ -172,16 +163,13 @@ public class KaoLaTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KaoLa",Statuscode, new Date(), "http请求错误", url,"shop_item",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KaoLa",code, new Date(), "业务请求错误", url,"shop_item",result);
-
         }
         else {
             testResultDao.insertResult("KaoLa",200, new Date(), "成功", url,"shop_item",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 }

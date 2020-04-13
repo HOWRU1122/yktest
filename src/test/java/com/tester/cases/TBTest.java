@@ -50,18 +50,14 @@ public class TBTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_tb_comment",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_tb_comment",result);
-
         }
         else {
             testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_tb_comment",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -93,18 +89,14 @@ public class TBTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_good_goods",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_good_goods",result);
-
         }
         else {
             testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_good_goods",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -136,18 +128,14 @@ public class TBTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_goods_detail",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_goods_detail",result);
-
         }
         else {
             testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_goods_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -179,18 +167,14 @@ public class TBTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_daren_info",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_daren_info",result);
-
         }
         else {
             testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_goods_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -222,18 +206,14 @@ public class TBTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_daren_feed",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_daren_feed",result);
-
         }
         else {
             testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_daren_feed",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test

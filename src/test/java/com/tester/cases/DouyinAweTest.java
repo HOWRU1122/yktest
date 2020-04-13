@@ -31,7 +31,6 @@ public class DouyinAweTest {
         Integer code,Statuscode;
         Object msg;
         JSONObject data;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -73,7 +72,6 @@ public class DouyinAweTest {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -91,18 +89,16 @@ public class DouyinAweTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_promotion_list",result);
-
         }
         else {
             testResultDao.insertResult("DouyinAwe",200, new Date(), "成功", url,"get_promotion_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void get_aweme_list() throws IOException {
         //获得用户的抖音作品
@@ -129,18 +125,16 @@ public class DouyinAweTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_aweme_list",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_aweme_list",result);
-
         }
         else {
             testResultDao.insertResult("DouyinAwe",200, new Date(), "成功", url,"get_aweme_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void get_aweme_comment() throws IOException {
         //获特定抖音作品下面的评论
@@ -161,19 +155,16 @@ public class DouyinAweTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_aweme_comment",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_aweme_comment",result);
-
         }
         else {
             testResultDao.insertResult("DouyinAwe",200, new Date(), "成功", url,"get_aweme_comment",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void get_aweme_info() throws IOException {
         //获取视频简介
@@ -181,7 +172,6 @@ public class DouyinAweTest {
         String url = "http://47.114.196.142:5000/api/douyin_awe/get_aweme_info?aweme_id=6729436911498267908";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
-
         Integer code,Statuscode;
         try {
             HttpResponse response = client.execute(get);
@@ -195,17 +185,16 @@ public class DouyinAweTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_aweme_info",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_aweme_info",result);
-
         }
         else {
             testResultDao.insertResult("DouyinAwe",200, new Date(), "成功", url,"get_aweme_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void user_info() throws IOException {
         //用户信息
@@ -232,19 +221,16 @@ public class DouyinAweTest {
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"user_info",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"user_info",result);
-
         }
         else {
             testResultDao.insertResult("DouyinAwe",200, new Date(), "成功", url,"user_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void user_video() throws IOException {
         //用户视频
@@ -280,6 +266,7 @@ public class DouyinAweTest {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void user_room() throws IOException {
         //获取用户直播间
@@ -315,6 +302,7 @@ public class DouyinAweTest {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void hot_recommend() throws IOException {
         //获取热门推荐
@@ -350,6 +338,7 @@ public class DouyinAweTest {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void video_info() throws IOException {
         //获取视频信息
@@ -385,6 +374,7 @@ public class DouyinAweTest {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void user_hot_video() throws IOException {
         //获取用户热门视频

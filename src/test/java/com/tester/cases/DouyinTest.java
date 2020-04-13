@@ -707,16 +707,12 @@ public class DouyinTest {
         }
         if (columns == null || columns.size() == 0) {
             testResultDao.insertResult("Douyin", 300, new Date(), "data返回为空", url, "get_promotion_list", result);
-
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("Douyin",Statuscode, new Date(), "http请求错误", url,"get_promotion_list",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Douyin",code, new Date(), "业务请求错误", url,"get_promotion_list",result);
-
         }
         else {
             testResultDao.insertResult("Douyin",200, new Date(), "成功", url,"get_promotion_list",result);
@@ -724,7 +720,6 @@ public class DouyinTest {
         }
         System.out.println(columns);
         System.out.println(result);
-
     }
     /*
     @Test

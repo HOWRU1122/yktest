@@ -40,24 +40,20 @@ public class KuaiShouV2Test {
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
-
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "测试异常，e:" + e.getMessage(), url, "call_nums",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"call_nums",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"call_nums",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -86,18 +82,16 @@ public class KuaiShouV2Test {
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"hot_feed",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"hot_feed",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"hot_feed",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void nearby_feed() throws IOException {
         //获取同城推荐
@@ -118,18 +112,16 @@ public class KuaiShouV2Test {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"nearby_feed",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"nearby_feed",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"nearby_feed",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void user_info() throws IOException {
         //获取用户信息(被检测频率较高)
@@ -139,7 +131,6 @@ public class KuaiShouV2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -157,20 +148,16 @@ public class KuaiShouV2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_info",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"user_info",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"user_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void user_video() throws IOException {
         //获取用户视频列表(返回的不是目标用户的视频)
@@ -180,7 +167,6 @@ public class KuaiShouV2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -204,20 +190,16 @@ public class KuaiShouV2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_video",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"user_video",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"user_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void video_comment() throws IOException {
         //获取视频评论列表
@@ -244,18 +226,16 @@ public class KuaiShouV2Test {
         }
          else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"video_comment",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"video_comment",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"video_comment",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void video_detail() throws IOException {
         //获取视频信息
@@ -276,18 +256,16 @@ public class KuaiShouV2Test {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"video_detail",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"video_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void share_video() throws IOException {
         //获取分享视频链接信息
@@ -308,19 +286,16 @@ public class KuaiShouV2Test {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"share_video",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"share_video",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"share_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void product_list() throws IOException {
         //获取小店商品
@@ -341,17 +316,14 @@ public class KuaiShouV2Test {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"product_list",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"product_list",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"product_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -375,17 +347,14 @@ public class KuaiShouV2Test {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_info",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_info",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 /*
     @Test
@@ -480,13 +449,11 @@ public class KuaiShouV2Test {
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(zhiboresult);
-            // System.out.println(zhiboresult);
 
             zhibocode = jsonObject.getInteger("code");
             zhibodata1 = jsonObject.getJSONObject("data");
             zhibodata2 = zhibodata1.getJSONObject("data");
             zhibofeeds = zhibodata2.getJSONArray("feeds");
-
 
             Map<String, JSONObject> feedMap = zhibofeeds.stream().map(obj -> {
                 if (obj instanceof JSONObject) {
@@ -527,17 +494,13 @@ public class KuaiShouV2Test {
         }
         else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_users",result);
-
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_users",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_users",result);
-
         }
-
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_users",result);
             System.out.println("成功，" + "请求url：" + url);
@@ -563,13 +526,11 @@ public class KuaiShouV2Test {
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(zhiboresult);
-           // System.out.println(zhiboresult);
 
             zhibocode = jsonObject.getInteger("code");
             zhibodata1 = jsonObject.getJSONObject("data");
             zhibodata2 = zhibodata1.getJSONObject("data");
             zhibofeeds = zhibodata2.getJSONArray("feeds");
-
 
             Map<String, JSONObject> feedMap = zhibofeeds.stream().map(obj -> {
                 if (obj instanceof JSONObject) {
@@ -584,7 +545,6 @@ public class KuaiShouV2Test {
         }catch (Exception e){
            System.out.println(e.getMessage());
        }
-
         String result = "";
         String url = "http://47.114.196.142:5000/api/ks_v2/get_live_district_rank?live_stream_id="+liveStreamId;
         HttpGet get = new HttpGet(url);
@@ -611,17 +571,13 @@ public class KuaiShouV2Test {
         }
         else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_top_users",result);
-
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_top_users",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_top_users",result);
-
         }
-
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_top_users",result);
             System.out.println("成功，" + "请求url：" + url);
@@ -631,7 +587,6 @@ public class KuaiShouV2Test {
     @Test
     public void get_live_square_refresh() throws IOException {
         //获取直播广场刷新列表
-
         String result = "";
         String url = "http://47.114.196.142:5000/api/ks_v2/get_live_square_refresh";
         HttpGet get = new HttpGet(url);
@@ -649,17 +604,14 @@ public class KuaiShouV2Test {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_square_refresh",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_square_refresh",result);
-
         }
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_square_refresh",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -681,13 +633,11 @@ public class KuaiShouV2Test {
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(zhiboresult);
-            // System.out.println(zhiboresult);
 
             zhibocode = jsonObject.getInteger("code");
             zhibodata1 = jsonObject.getJSONObject("data");
             zhibodata2 = zhibodata1.getJSONObject("data");
             zhibofeeds = zhibodata2.getJSONArray("feeds");
-
 
             Map<String, JSONObject> feedMap = zhibofeeds.stream().map(obj -> {
                 if (obj instanceof JSONObject) {
@@ -728,22 +678,17 @@ public class KuaiShouV2Test {
         }
         else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV2",400, new Date(), "liveStreamId未取到", url,"get_live_square_list",result);
-
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_square_list",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_square_list",result);
-
         }
-
         else {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_square_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -765,13 +710,11 @@ public class KuaiShouV2Test {
             zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
             zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(zhiboresult);
-            // System.out.println(zhiboresult);
 
             zhibocode = jsonObject.getInteger("code");
             zhibodata1 = jsonObject.getJSONObject("data");
             zhibodata2 = zhibodata1.getJSONObject("data");
             zhibofeeds = zhibodata2.getJSONArray("feeds");
-
 
             Map<String, JSONObject> feedMap = zhibofeeds.stream().map(obj -> {
                 if (obj instanceof JSONObject) {
@@ -816,7 +759,6 @@ public class KuaiShouV2Test {
        else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_district_rank",result);
         }
-
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_district_rank",result);
         }
@@ -824,6 +766,5 @@ public class KuaiShouV2Test {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "成功", url,"get_live_district_rank",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 }

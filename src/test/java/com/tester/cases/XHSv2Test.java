@@ -31,7 +31,6 @@ public class XHSv2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -44,11 +43,9 @@ public class XHSv2Test {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"call_nums",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"call_nums",result);
@@ -65,7 +62,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -92,18 +88,16 @@ public class XHSv2Test {
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"home_feed",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"home_feed",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"home_feed",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void user_info() throws IOException {
         //用户信息
@@ -113,7 +107,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -140,17 +133,16 @@ public class XHSv2Test {
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_info",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"user_info",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void user_note() throws IOException {
         //用户笔记
@@ -160,7 +152,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -190,7 +181,6 @@ public class XHSv2Test {
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"user_note",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_note",result);
@@ -207,7 +197,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -234,7 +223,6 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"note_detail",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"note_detail",result);
@@ -244,6 +232,7 @@ public class XHSv2Test {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void note_comments() throws IOException {
         //笔记评论
@@ -279,17 +268,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"note_comments",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"note_comments",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"note_comments",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void user_video() throws IOException {
         //用户视频
@@ -325,17 +313,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_video",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"user_video",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void video_detail() throws IOException {
         //视频详情
@@ -345,7 +332,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -372,18 +358,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"video_detail",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"video_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void user_focus() throws IOException {
         //用户关注
@@ -419,18 +403,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_focus",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"user_focus",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_focus",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void user_fans() throws IOException {
         //用户粉丝
@@ -466,18 +448,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_fans",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"user_fans",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_fans",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void note_search() throws IOException {
         //笔记关键词搜索
@@ -513,17 +493,14 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"note_search",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"note_search",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_video",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -535,7 +512,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -562,18 +538,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"topic_notes",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"topic_notes",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"topic_notes",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void channel_refresh() throws IOException {
         //刷新获取店铺及商品
@@ -609,17 +583,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"channel_refresh",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"channel_refresh",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"channel_refresh",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void item_search() throws IOException {
         //获取商品关键词搜索页
@@ -629,7 +602,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -656,18 +628,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"item_search",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"item_search",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"item_search",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void shop_items() throws IOException {
         //获取店铺商品
@@ -677,7 +647,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -704,17 +673,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"shop_items",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"shop_items",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"shop_items",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void shop_font() throws IOException {
         //获取店铺信息1
@@ -724,7 +692,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -751,17 +718,16 @@ public class XHSv2Test {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"shop_font",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"shop_font",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"shop_font",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void shop_info() throws IOException {
         //获取店铺信息2
@@ -771,7 +737,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -801,13 +766,13 @@ public class XHSv2Test {
         }
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"shop_info",result);
-
         }
         else {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"shop_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void item_info() throws IOException {
         //获取商品信息: 标题、描述、图片等
@@ -817,7 +782,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -853,6 +817,7 @@ public class XHSv2Test {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void item_price() throws IOException {
         //获取商品信息: 可提取商品价格
@@ -862,7 +827,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -898,6 +862,7 @@ public class XHSv2Test {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void item_comm() throws IOException {
         //获取商品评论内容
@@ -907,7 +872,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -935,7 +899,6 @@ public class XHSv2Test {
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"item_comm",result);
         }
-
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"item_comm",result);
         }
@@ -944,6 +907,7 @@ public class XHSv2Test {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void user_search() throws IOException {
         //用户关键词搜索
@@ -953,7 +917,6 @@ public class XHSv2Test {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -984,7 +947,6 @@ public class XHSv2Test {
         else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_search",result);
         }
-
         else if (code != 0) {
             testResultDao.insertResult("XHSv2",code, new Date(), "业务请求错误", url,"user_search",result);
         }
@@ -992,7 +954,5 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2",200, new Date(), "成功", url,"user_search",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
-
 }

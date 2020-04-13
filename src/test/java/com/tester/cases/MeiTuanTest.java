@@ -41,17 +41,14 @@ public class MeiTuanTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("MeiTuanV2",code, new Date(), "业务请求错误", url,"call_nums",result);
-
         }
         else {
             testResultDao.insertResult("MeiTuanV2",200, new Date(), "成功", url,"call_nums",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -74,17 +71,14 @@ public class MeiTuanTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"homepage_shops",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("MeiTuanV2",code, new Date(), "业务请求错误", url,"homepage_shops",result);
-
         }
         else {
             testResultDao.insertResult("MeiTuanV2",200, new Date(), "成功", url,"homepage_shops",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -107,17 +101,14 @@ public class MeiTuanTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"shop_foods",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("MeiTuanV2",code, new Date(), "业务请求错误", url,"shop_foods",result);
-
         }
         else {
             testResultDao.insertResult("MeiTuanV2",200, new Date(), "成功", url,"shop_foods",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 
     @Test
@@ -140,16 +131,13 @@ public class MeiTuanTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"shop_comments",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("MeiTuanV2",code, new Date(), "业务请求错误", url,"shop_comments",result);
-
         }
         else {
             testResultDao.insertResult("MeiTuanV2",200, new Date(), "成功", url,"shop_comments",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 }

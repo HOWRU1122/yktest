@@ -42,18 +42,16 @@ public class DuTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"call_nums",result);
-
         }
         else {
             testResultDao.insertResult("Du",200, new Date(), "成功", url,"call_nums",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void ice_shopping() throws IOException {
         //获取首页推荐
@@ -80,19 +78,16 @@ public class DuTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"ice_shopping",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"ice_shopping",result);
-
         }
         else {
             testResultDao.insertResult("Du",200, new Date(), "成功", url,"ice_shopping",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
+
     @Test
     public void ice_shopping_tab() throws IOException {
         //获取首页tab页数据
@@ -119,20 +114,16 @@ public class DuTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"ice_shopping_tab",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"ice_shopping_tab",result);
-
         }
         else {
             testResultDao.insertResult("Du",200, new Date(), "成功", url,"ice_shopping_tab",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void item_detail() throws IOException {
         //获取商品详情
@@ -159,20 +150,16 @@ public class DuTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"item_detail",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"item_detail",result);
-
         }
         else {
             testResultDao.insertResult("Du",200, new Date(), "成功", url,"item_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void sold_list() throws IOException {
         //获取商品最近购买列表
@@ -182,7 +169,6 @@ public class DuTest {
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
         Object msg;
-
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -200,17 +186,13 @@ public class DuTest {
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("Du",Statuscode, new Date(), "http请求错误", url,"sold_list",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Du",code, new Date(), "业务请求错误", url,"sold_list",result);
-
         }
         else {
             testResultDao.insertResult("Du",200, new Date(), "成功", url,"sold_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 }

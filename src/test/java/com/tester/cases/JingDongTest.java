@@ -41,18 +41,14 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlPageShopProducts",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlPageShopProducts",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlPageShopProducts",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
 
     @Test
@@ -75,19 +71,16 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlPageByBrandName",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlPageByBrandName",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlPageByBrandName",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void crawlSkuComment() throws IOException {
         //获取某个商品的评论列表
@@ -108,19 +101,16 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlSkuComment",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlSkuComment",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlSkuComment",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void crawlSkuCommentAndCount() throws IOException {
         //获取某个商品的评论列表和总数
@@ -141,19 +131,16 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlSkuCommentAndCount",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlSkuCommentAndCount",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlSkuCommentAndCount",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void crawlShopDetails() throws IOException {
         //获取店铺详情
@@ -174,20 +161,16 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlShopDetails",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlShopDetails",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlShopDetails",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
-
     }
+
     @Test
     public void crawlShopVenderId() throws IOException {
         //获取店铺简要概况
@@ -208,20 +191,16 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlShopVenderId",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlShopVenderId",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlShopVenderId",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
-
     }
+
     @Test
     public void crawlSkuPrices() throws IOException {
         //获取产品的sku列表
@@ -242,19 +221,16 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlSkuPrices",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlSkuPrices",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlSkuPrices",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
+
     @Test
     public void crawlCommentsCounts() throws IOException {
         //获取评论的详情
@@ -275,17 +251,13 @@ public class JingDongTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlCommentsCounts",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDong",code, new Date(), "业务请求错误", url,"crawlCommentsCounts",result);
-
         }
         else {
             testResultDao.insertResult("JingDong",200, new Date(), "成功", url,"crawlCommentsCounts",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
-
     }
 }

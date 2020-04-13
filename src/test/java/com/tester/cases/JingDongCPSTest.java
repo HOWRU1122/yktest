@@ -41,17 +41,14 @@ public class JingDongCPSTest {
         }
         if (Statuscode != 200){
             testResultDao.insertResult("JingDongCPS",Statuscode, new Date(), "http请求错误", url,"items",result);
-
         }
         else if (code != 0) {
             testResultDao.insertResult("JingDongCPS",code, new Date(), "业务请求错误", url,"items",result);
-
         }
         else {
             testResultDao.insertResult("JingDongCPS",200, new Date(), "成功", url,"items",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
 /*
     @Test

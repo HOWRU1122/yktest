@@ -43,29 +43,25 @@ public class Douyinv1Test {
             data = jsonObject.getJSONObject("data");
             user = data.getJSONObject("user");
 
-
         } catch (Exception e) {
             testResultDao.insertResult("Douyinv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_info",result);
             return;
         }
         if (user == null || user.hashCode() == 0){
             testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_info",result);
-
         }
         if (Statuscode != 200){
             testResultDao.insertResult("Douyinv1",Statuscode, new Date(), "http请求错误", url,"user_info",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Douyinv1",code, new Date(), "业务请求错误", url,"user_info",result);
-
         }
         else {
             testResultDao.insertResult("Douyinv1",200, new Date(), "成功", url,"user_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
+
     @Test
     public void user_video() throws IOException {
         //获取首页推荐
@@ -92,23 +88,17 @@ public class Douyinv1Test {
         }
         if (aweme_list == null || aweme_list.size() == 0) {
             testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_video", result);
-
         }
        else if (Statuscode != 200) {
             testResultDao.insertResult("Douyinv1", Statuscode, new Date(), "http请求错误", url, "user_video", result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Douyinv1", code, new Date(), "业务请求错误", url, "user_video", result);
-
         } else {
             testResultDao.insertResult("Douyinv1", 200, new Date(), "成功", url, "user_video", result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
-
 
     @Test
     public void user_goods() throws IOException {
@@ -135,22 +125,17 @@ public class Douyinv1Test {
         }
         if (columns == null || columns.size() == 0){
             testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_goods",result);
-
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("Douyinv1",Statuscode, new Date(), "http请求错误", url,"user_goods",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Douyinv1",code, new Date(), "业务请求错误", url,"user_goods",result);
-
         }
         else {
             testResultDao.insertResult("Douyinv1",200, new Date(), "成功", url,"user_goods",result);
             System.out.println("成功，" + "请求url：" + url);
         }
-
     }
     /*
     @Test
@@ -214,16 +199,12 @@ public class Douyinv1Test {
         }
         if (comments == null || comments.size() == 0){
             testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "video_comment",result);
-
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("Douyinv1",Statuscode, new Date(), "http请求错误", url,"video_comment",result);
-
         }
-
         else if (code != 0) {
             testResultDao.insertResult("Douyinv1",code, new Date(), "业务请求错误", url,"video_comment",result);
-
         }
         else {
             testResultDao.insertResult("Douyinv1",200, new Date(), "成功", url,"video_comment",result);
