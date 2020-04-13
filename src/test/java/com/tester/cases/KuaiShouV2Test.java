@@ -82,7 +82,7 @@ public class KuaiShouV2Test {
             return;
         }
         if (msg.toString().contains("签名验证失败")) {
-            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "user_video", result);
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "hot_feed", result);
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"hot_feed",result);

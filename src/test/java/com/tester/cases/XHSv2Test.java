@@ -85,10 +85,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "home_feed", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "home_feed", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "home_feed", result);
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"home_feed",result);
@@ -133,10 +133,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "user_info", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_info", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_info", result);
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_info",result);
@@ -180,10 +180,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "user_note", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_note", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_note", result);
         }
         else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_note",result);
@@ -227,10 +227,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "note_detail", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "note_detail", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "note_detail", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"note_detail",result);
@@ -272,10 +272,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "note_comments", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "note_comments", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "note_comments", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"note_comments",result);
@@ -318,10 +318,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "user_video", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_video", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_video", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_video",result);
@@ -365,10 +365,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "video_detail", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "video_detail", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "video_detail", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
@@ -412,10 +412,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "user_focus", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_focus", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_focus", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_focus",result);
@@ -459,10 +459,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "user_fans", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_fans", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_fans", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"user_fans",result);
@@ -506,10 +506,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "note_search", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "note_search", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "note_search", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"note_search",result);
@@ -555,10 +555,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "topic_notes", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "topic_notes", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "topic_notes", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"topic_notes",result);
@@ -602,10 +602,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "channel_refresh", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "channel_refresh", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "channel_refresh", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"channel_refresh",result);
@@ -649,10 +649,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "item_search", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "item_search", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "item_search", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"item_search",result);
@@ -697,10 +697,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "shop_items", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "shop_items", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "shop_items", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"shop_items",result);
@@ -744,10 +744,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "shop_font", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "shop_font", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "shop_font", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"shop_font",result);
@@ -791,10 +791,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "shop_info", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "shop_info", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "shop_info", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"shop_info",result);
@@ -837,10 +837,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "item_info", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "item_info", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "item_info", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"item_info",result);
@@ -882,10 +882,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "item_price", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "item_price", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "item_price", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"item_price",result);
@@ -927,10 +927,10 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "item_comm", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "item_comm", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "user_search", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "Traceback，回溯", url, "item_comm", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("XHSv2",Statuscode, new Date(), "http请求错误", url,"item_comm",result);
@@ -970,7 +970,7 @@ public class XHSv2Test {
             testResultDao.insertResult("XHSv2", 400, new Date(), "获取响应失败,重试超过阈值", url, "user_search", result);
         }
         else if (msg.toString().contains("Sorry, your cid can request up to 200000 times per day")) {
-            testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "sold_list", result);
+            testResultDao.insertResult("XHSv2", 400, new Date(), "次数用完", url, "user_search", result);
         }
         else if (msg.toString().contains("加密参数错误")) {
             testResultDao.insertResult("XHSv2", 400, new Date(), "加密参数错误,重试", url, "user_search", result);

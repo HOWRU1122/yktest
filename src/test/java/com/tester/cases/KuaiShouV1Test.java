@@ -78,10 +78,12 @@ public class KuaiShouV1Test {
         if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "nearby_feed", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "nearby_feed", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "nearby_feed", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -113,12 +115,18 @@ public class KuaiShouV1Test {
         if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "user_info", result);
 
-        } else if (msg.toString().contains("Redis内可用设备池为空")) {
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "user_info", result);
+        }
+        else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_info", result);
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "user_info", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "user_info", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -150,15 +158,22 @@ public class KuaiShouV1Test {
         }
         if (msg.toString().contains("请求失败,返回数据为脏数据")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
-        } else if (msg.toString().contains("Redis内可用设备池为空")) {
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "user_video", result);
+        }
+        else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
-        } else if (Statuscode != 200) {
+        }
+        else if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "user_video", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "user_video", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "user_video", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -218,10 +233,12 @@ public class KuaiShouV1Test {
         if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "video_detail", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "video_detail", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "video_detail", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -249,10 +266,12 @@ public class KuaiShouV1Test {
         if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "share_video", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "share_video", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "share_video", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -281,10 +300,12 @@ public class KuaiShouV1Test {
         if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "product_list", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "product_list", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "product_list", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -313,10 +334,12 @@ public class KuaiShouV1Test {
         if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_info", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_info", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_info", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -455,18 +478,26 @@ public class KuaiShouV1Test {
         }
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_live_top_users", result);
-        } else if (msg.toString().contains("签名验证失败")) {
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_live_top_users", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
-        } else if (liveStreamId == null) {
+        }
+        else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_users", result);
 
-        } else if (Statuscode != 200) {
+        }
+        else if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_users", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_users", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_users", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -533,18 +564,26 @@ public class KuaiShouV1Test {
         }
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_live_top_users", result);
-        } else if (msg.toString().contains("签名验证失败")) {
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_live_top_users", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
-        } else if (liveStreamId == null) {
+        }
+        else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_top_users", result);
 
-        } else if (Statuscode != 200) {
+        }
+        else if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_top_users", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_top_users", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_top_users", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -572,10 +611,12 @@ public class KuaiShouV1Test {
         if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_square_refresh", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_square_refresh", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_square_refresh", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -642,18 +683,26 @@ public class KuaiShouV1Test {
         }
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_live_square_list", result);
-        } else if (msg.toString().contains("签名验证失败")) {
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_live_square_list", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_square_list", result);
-        } else if (liveStreamId == null) {
+        }
+        else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_square_list", result);
 
-        } else if (Statuscode != 200) {
+        }
+        else if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_square_list", result);
 
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_square_list", result);
 
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_square_list", result);
             System.out.println("成功，" + "请求url：" + url);
         }
@@ -722,15 +771,23 @@ public class KuaiShouV1Test {
         }
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_live_district_rank", result);
-        } else if (msg.toString().contains("签名验证失败")) {
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_live_district_rank", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_district_rank", result);
-        } else if (liveStreamId == null) {
+        }
+        else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_district_rank", result);
-        } else if (Statuscode != 200) {
+        }
+        else if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_district_rank", result);
-        } else if (code != 0) {
+        }
+        else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_district_rank", result);
-        } else {
+        }
+        else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_district_rank", result);
             System.out.println("成功，" + "请求url：" + url);
         }
