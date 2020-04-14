@@ -173,18 +173,27 @@ public class DouyinAweTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+        JSONObject data;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            data = jsonObject.getJSONObject("data");
+            System.out.println(msg);
+            System.out.println(data);
         } catch (Exception e) {
             testResultDao.insertResult("DouyinAwe",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_aweme_info",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("DouyinAwe",Statuscode, new Date(), "http请求错误", url,"get_aweme_info",result);
+        }
+        else if (data == null){
+            testResultDao.insertResult("DouyinAwe", 400, new Date(), "数据为空", url, "get_aweme_info", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("DouyinAwe",code, new Date(), "业务请求错误", url,"get_aweme_info",result);
