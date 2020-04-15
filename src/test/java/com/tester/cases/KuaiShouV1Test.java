@@ -114,6 +114,9 @@ public class KuaiShouV1Test {
         else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_info", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "user_info", result);
+        }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "user_info", result);
         }
@@ -152,6 +155,9 @@ public class KuaiShouV1Test {
         }
         else if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "Redis内可用设备池为空", url, "user_video", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "user_video", result);
         }
         else if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "user_video", result);
@@ -450,6 +456,9 @@ public class KuaiShouV1Test {
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_live_top_users", result);
+        }
         else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_users", result);
         }
@@ -530,6 +539,9 @@ public class KuaiShouV1Test {
         }
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_live_top_users", result);
         }
         else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_top_users", result);
@@ -641,6 +653,9 @@ public class KuaiShouV1Test {
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_square_list", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_live_square_list", result);
+        }
         else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_square_list", result);
         }
@@ -720,6 +735,9 @@ public class KuaiShouV1Test {
         }
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_district_rank", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_live_district_rank", result);
         }
         else if (liveStreamId == null) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_district_rank", result);
