@@ -29,15 +29,22 @@ public class MeiTuanTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("MeiTuanV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "call_nums",result);
             return;
+        }
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("MeiTuanV2", 400, new Date(), "获取响应失败,重试超过阈值", url, "call_nums", result);
         }
         if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
@@ -59,15 +66,21 @@ public class MeiTuanTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("MeiTuanV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "homepage_shops",result);
             return;
+        }
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("MeiTuanV2", 400, new Date(), "获取响应失败,重试超过阈值", url, "homepage_shops", result);
         }
         if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"homepage_shops",result);
@@ -89,15 +102,22 @@ public class MeiTuanTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("MeiTuanV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "shop_foods",result);
             return;
+        }
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("MeiTuanV2", 400, new Date(), "获取响应失败,重试超过阈值", url, "shop_foods", result);
         }
         if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"shop_foods",result);
@@ -119,17 +139,23 @@ public class MeiTuanTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("MeiTuanV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "shop_comments",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("MeiTuanV2", 400, new Date(), "获取响应失败,重试超过阈值", url, "shop_comments", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("MeiTuanV2",Statuscode, new Date(), "http请求错误", url,"shop_comments",result);
         }
         else if (code != 0) {
