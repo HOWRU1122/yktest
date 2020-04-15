@@ -29,17 +29,24 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlPageShopProducts",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlPageShopProducts", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlPageShopProducts",result);
         }
         else if (code != 0) {
@@ -59,17 +66,24 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlPageByBrandName",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlPageByBrandName", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlPageByBrandName",result);
         }
         else if (code != 0) {
@@ -89,17 +103,24 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlSkuComment",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlSkuComment", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlSkuComment",result);
         }
         else if (code != 0) {
@@ -119,17 +140,24 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlSkuCommentAndCount",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlSkuCommentAndCount", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlSkuCommentAndCount",result);
         }
         else if (code != 0) {
@@ -149,17 +177,24 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlShopDetails",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlShopDetails", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlShopDetails",result);
         }
         else if (code != 0) {
@@ -179,17 +214,24 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlShopVenderId",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlShopVenderId", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlShopVenderId",result);
         }
         else if (code != 0) {
@@ -209,17 +251,24 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlSkuPrices",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlSkuPrices", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlSkuPrices",result);
         }
         else if (code != 0) {
@@ -239,17 +288,23 @@ public class JingDongTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("JingDong",500, new Date(), "测试异常，e:" + e.getMessage(), url, "crawlCommentsCounts",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("timed out")) {
+            testResultDao.insertResult("JingDong", 400, new Date(), "timed out", url, "crawlCommentsCounts", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("JingDong",Statuscode, new Date(), "http请求错误", url,"crawlCommentsCounts",result);
         }
         else if (code != 0) {
