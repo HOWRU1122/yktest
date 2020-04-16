@@ -45,6 +45,9 @@ public class TBAPPTest {
         if (msg.toString().contains("RemoteDisconnected")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "call_nums", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("TBAPP", 400, new Date(), "重试超过阈值", url, "call_nums", result);
+        }
         else if (msg.toString().contains("Traceback")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "call_nums", result);
         }
@@ -83,6 +86,9 @@ public class TBAPPTest {
         }
         if (msg.toString().contains("RemoteDisconnected")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "video_list", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("TBAPP", 400, new Date(), "重试超过阈值", url, "video_list", result);
         }
         else if (msg.toString().contains("Traceback")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "video_list", result);
@@ -123,6 +129,9 @@ public class TBAPPTest {
         if (msg.toString().contains("RemoteDisconnected")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "broadcaster_info", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("TBAPP", 400, new Date(), "重试超过阈值", url, "broadcaster_info", result);
+        }
         else if (msg.toString().contains("Traceback")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "broadcaster_info", result);
         }
@@ -161,6 +170,9 @@ public class TBAPPTest {
         }
         if (msg.toString().contains("RemoteDisconnected")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "live_detail", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("TBAPP", 400, new Date(), "重试超过阈值", url, "call_nums", result);
         }
         else if (msg.toString().contains("Traceback")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "live_detail", result);
@@ -201,6 +213,9 @@ public class TBAPPTest {
         if (msg.toString().contains("RemoteDisconnected")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "goods_list", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("TBAPP", 400, new Date(), "重试超过阈值", url, "goods_list", result);
+        }
         else if (msg.toString().contains("Traceback")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "goods_list", result);
         }
@@ -240,6 +255,9 @@ public class TBAPPTest {
         if (msg.toString().contains("RemoteDisconnected")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "channel_info", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("TBAPP", 400, new Date(), "重试超过阈值", url, "channel_info", result);
+        }
         else if (Statuscode != 200){
             testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"channel_info",result);
         }
@@ -278,6 +296,9 @@ public class TBAPPTest {
         }
         if (msg.toString().contains("RemoteDisconnected")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "get_shop_items", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("TBAPP", 400, new Date(), "重试超过阈值", url, "get_shop_items", result);
         }
         else if (msg.toString().contains("Traceback")) {
             testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "get_shop_items", result);
