@@ -33,6 +33,8 @@ public class Douyinv1Test {
         Integer code,Statuscode;
         JSONObject data;
         JSONObject user;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -42,10 +44,14 @@ public class Douyinv1Test {
             code = jsonObject.getInteger("code");
             data = jsonObject.getJSONObject("data");
             user = data.getJSONObject("user");
-
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Douyinv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_info",result);
             return;
+        }
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("Douyinv1", 400, new Date(), "重试超过阈值", url, "user_info", result);
         }
         if (user == null || user.hashCode() == 0){
             testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_info",result);
@@ -72,6 +78,7 @@ public class Douyinv1Test {
         Integer code, Statuscode;
         JSONObject data;
         JSONArray aweme_list;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -81,12 +88,16 @@ public class Douyinv1Test {
             code = jsonObject.getInteger("code");
             data = jsonObject.getJSONObject("data");
             aweme_list = data.getJSONArray("aweme_list");
-
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Douyinv1", 500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_video", result);
             return;
         }
-        if (aweme_list == null || aweme_list.size() == 0) {
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("Douyinv1", 400, new Date(), "重试超过阈值", url, "user_video", result);
+        }
+        else if (aweme_list == null || aweme_list.size() == 0) {
             testResultDao.insertResult("Douyinv1", 300, new Date(), "data返回为空", url, "user_video", result);
         }
        else if (Statuscode != 200) {
@@ -110,6 +121,8 @@ public class Douyinv1Test {
         Integer code,Statuscode;
         JSONObject data;
         JSONArray columns;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -119,11 +132,16 @@ public class Douyinv1Test {
             code = jsonObject.getInteger("code");
             data = jsonObject.getJSONObject("data");
             columns = data.getJSONArray("columns");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Douyinv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "user_goods",result);
             return;
         }
-        if (columns == null || columns.size() == 0){
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("Douyinv1", 400, new Date(), "重试超过阈值", url, "user_goods", result);
+        }
+        else if (columns == null || columns.size() == 0){
             testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "user_goods",result);
         }
        else if (Statuscode != 200){
@@ -184,6 +202,7 @@ public class Douyinv1Test {
         Integer code,Statuscode;
         JSONObject data;
         JSONArray comments;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -193,11 +212,16 @@ public class Douyinv1Test {
             code = jsonObject.getInteger("code");
             data = jsonObject.getJSONObject("data");
             comments = data.getJSONArray("comments");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("Douyinv1",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_comment",result);
             return;
         }
-        if (comments == null || comments.size() == 0){
+        if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("Douyinv1", 400, new Date(), "重试超过阈值", url, "video_comment", result);
+        }
+        else if (comments == null || comments.size() == 0){
             testResultDao.insertResult("Douyinv1",300, new Date(), "data返回为空", url, "video_comment",result);
         }
        else if (Statuscode != 200){

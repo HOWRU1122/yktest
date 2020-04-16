@@ -591,43 +591,8 @@ public class KuaiShouV1Test {
     @Test
     public void get_live_square_list() throws IOException {
         //获取直播广场分页列表
-        /*获取liveStreamId
-         */
-        String zhiboresult = "";
-        String zhibourl = "http://47.114.196.142:5000/api/ks_v1/get_live_square_refresh";
-        HttpGet zhiboget = new HttpGet(zhibourl);
-        HttpClient zhiboclient = HttpClientBuilder.create().build();
-        Integer zhibocode, zhiboStatuscode;
-        JSONObject zhibodata1;
-        JSONObject zhibodata2;
-        JSONArray zhibofeeds = new JSONArray();
-        String liveStreamId = "";
-        try {
-            HttpResponse zhiboresponse = zhiboclient.execute(zhiboget);
-            zhiboresult = EntityUtils.toString(zhiboresponse.getEntity(), "utf-8");
-            zhiboStatuscode = zhiboresponse.getStatusLine().getStatusCode();
-            JSONObject jsonObject = JSONObject.parseObject(zhiboresult);
-
-            zhibocode = jsonObject.getInteger("code");
-            zhibodata1 = jsonObject.getJSONObject("data");
-            zhibodata2 = zhibodata1.getJSONObject("data");
-            zhibofeeds = zhibodata2.getJSONArray("feeds");
-
-            Map<String, JSONObject> feedMap = zhibofeeds.stream().map(obj -> {
-                if (obj instanceof JSONObject) {
-                    return (JSONObject) obj;
-                } else {
-                    return JSONObject.parseObject(obj.toString());
-                }
-            }).collect(Collectors.toMap(feed -> feed.getString("liveStreamId"), feed -> feed));
-            JSONObject feedObj = feedMap.get(1);
-            liveStreamId = feedMap.keySet().iterator().next();
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
         String result = "";
-        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_district_rank?live_stream_id=" + liveStreamId;
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_square_list?pcursor=8";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code, Statuscode;
@@ -655,9 +620,6 @@ public class KuaiShouV1Test {
         }
         else if (msg.toString().contains("重试超过阈值")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_live_square_list", result);
-        }
-        else if (liveStreamId == null) {
-            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "liveStreamId未取到", url, "get_live_square_list", result);
         }
         else if (Statuscode != 200) {
             testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_square_list", result);
@@ -750,6 +712,141 @@ public class KuaiShouV1Test {
         }
         else {
             testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_district_rank", result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+    }
+
+    @Test
+    public void get_user_card_info() throws IOException {
+        //获取用户名片信息
+        String result = "";
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_user_card_info?principal_id=Tina__2020";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = HttpClientBuilder.create().build();
+        Integer code, Statuscode;
+        Object msg;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShouV1", 500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_user_card_info", result);
+            return;
+        }
+        if (msg.toString().contains("参数异常")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_user_card_info", result);
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_user_card_info", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_user_card_info", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_user_card_info", result);
+        }
+        else if (Statuscode != 200) {
+            testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_user_card_info", result);
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_user_card_info", result);
+        }
+        else {
+            testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_square_list", result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+    }
+
+    @Test
+    public void get_comm_list() throws IOException {
+        //获取视频评论
+        String result = "";
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_comm_list?photo_id=5191524499654918752&page=1&page_size=20";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = HttpClientBuilder.create().build();
+        Integer code, Statuscode;
+        Object msg;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShouV1", 500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_comm_list", result);
+            return;
+        }
+        if (msg.toString().contains("参数异常")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_comm_list", result);
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_comm_list", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_comm_list", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_comm_list", result);
+        }
+        else if (Statuscode != 200) {
+            testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_comm_list", result);
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_comm_list", result);
+        }
+        else {
+            testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_comm_list", result);
+            System.out.println("成功，" + "请求url：" + url);
+        }
+    }
+
+    @Test
+    public void get_live_detail() throws IOException {
+        // 获取用户直播信息
+        String result = "";
+        String url = "http://47.114.196.142:5000/api/ks_v1/get_live_detail?principal_id=jiutianhu";
+        HttpGet get = new HttpGet(url);
+        HttpClient client = HttpClientBuilder.create().build();
+        Integer code, Statuscode;
+        Object msg;
+        try {
+            HttpResponse response = client.execute(get);
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+            Statuscode = response.getStatusLine().getStatusCode();
+            JSONObject jsonObject = JSONObject.parseObject(result);
+            code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+
+        } catch (Exception e) {
+            testResultDao.insertResult("KuaiShouV1", 500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_detail", result);
+            return;
+        }
+        if (msg.toString().contains("参数异常")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_live_detail", result);
+        }
+        else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_live_detail", result);
+        }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "签名验证失败", url, "get_live_detail", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "重试超过阈值", url, "get_live_detail", result);
+        }
+        else if (Statuscode != 200) {
+            testResultDao.insertResult("KuaiShouV1", Statuscode, new Date(), "http请求错误", url, "get_live_detail", result);
+        }
+        else if (code != 0) {
+            testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_detail", result);
+        }
+        else {
+            testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_comm_list", result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }

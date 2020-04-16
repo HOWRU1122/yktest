@@ -5,7 +5,6 @@ import com.tester.dao.TestResultDao;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
@@ -16,16 +15,17 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
 import java.util.Date;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TBTest {
+public class TBAPPTest {
     @Autowired
     private TestResultDao testResultDao;
     @Test
-    public void get_tb_comment() throws IOException {
-        //淘宝评论
+    public void call_nums() throws IOException {
+        //调用次数
         String result = new String();
-        String url = "http://47.114.196.142:5000/api/tb_wap/get_tb_comment?item_id=22538999781&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/tb_app/call_nums";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -39,32 +39,32 @@ public class TBTest {
             msg = jsonObject.get("msg");
             System.out.println(msg);
         } catch (Exception e) {
-            testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_tb_comment",result);
+            testResultDao.insertResult("TBAPP",500, new Date(), "测试异常，e:" + e.getMessage(), url, "call_nums",result);
             return;
         }
         if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_tb_comment", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "call_nums", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("TB", 400, new Date(), "Traceback，回溯", url, "get_tb_comment", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "call_nums", result);
         }
        else if (Statuscode != 200){
-            testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_tb_comment",result);
+            testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
         }
         else if (code != 0) {
-            testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_tb_comment",result);
+            testResultDao.insertResult("TBAPP",code, new Date(), "业务请求错误", url,"call_nums",result);
         }
         else {
-            testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_tb_comment",result);
+            testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"call_nums",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
 
     @Test
-    public void get_good_goods() throws IOException {
-        //获取 "有好货" 商品
+    public void video_list() throws IOException {
+        //获取首页频道页视频列表
         String result = new String();
-        String url = "http://47.114.196.142:5000/api/tb_wap/get_good_goods?tab_id=0&page=1&size=20";
+        String url = "http://47.114.196.142:5000/api/tb_app/video_list?channel_id=0&s=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -78,32 +78,32 @@ public class TBTest {
             msg = jsonObject.get("msg");
             System.out.println(msg);
         } catch (Exception e) {
-            testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_good_goods",result);
+            testResultDao.insertResult("TBAPP",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_list",result);
             return;
         }
         if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_good_goods", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "video_list", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("TB", 400, new Date(), "Traceback，回溯", url, "get_good_goods", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "video_list", result);
         }
        else if (Statuscode != 200){
-            testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_good_goods",result);
+            testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"video_list",result);
         }
         else if (code != 0) {
-            testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_good_goods",result);
+            testResultDao.insertResult("TBAPP",code, new Date(), "业务请求错误", url,"video_list",result);
         }
         else {
-            testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_good_goods",result);
+            testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"video_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
 
     @Test
-    public void get_goods_detail() throws IOException {
-        //获取 "有好货" 商品详情
+    public void broadcaster_info() throws IOException {
+        //获取主播信息
         String result = new String();
-        String url = "http://47.114.196.142:5000/api/tb_wap/get_goods_detail?item_id=226527479393";
+        String url = "http://47.114.196.142:5000/api/tb_app/broadcaster_info?broadcaster_id=1822619121&start=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -117,32 +117,32 @@ public class TBTest {
             msg = jsonObject.get("msg");
             System.out.println(msg);
         } catch (Exception e) {
-            testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_goods_detail",result);
+            testResultDao.insertResult("TBAPP",500, new Date(), "测试异常，e:" + e.getMessage(), url, "broadcaster_info",result);
             return;
         }
         if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_goods_detail", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "broadcaster_info", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("TB", 400, new Date(), "Traceback，回溯", url, "get_goods_detail", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "broadcaster_info", result);
         }
        else if (Statuscode != 200){
-            testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_goods_detail",result);
+            testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"broadcaster_info",result);
         }
         else if (code != 0) {
-            testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_goods_detail",result);
+            testResultDao.insertResult("TBAPP",code, new Date(), "业务请求错误", url,"broadcaster_info",result);
         }
         else {
-            testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_goods_detail",result);
+            testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"broadcaster_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
 
     @Test
-    public void get_daren_info() throws IOException {
-        //获取达人信息
+    public void live_detail() throws IOException {
+        //获取直播详情
         String result = new String();
-        String url = "http://47.114.196.142:5000/api/tb_wap/get_daren_info?user_id=3327431407";
+        String url = "http://47.114.196.142:5000/api/tb_app/live_detail?live_id=252617963475";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -156,32 +156,32 @@ public class TBTest {
             msg = jsonObject.get("msg");
             System.out.println(msg);
         } catch (Exception e) {
-            testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_daren_info",result);
+            testResultDao.insertResult("TBAPP",500, new Date(), "测试异常，e:" + e.getMessage(), url, "live_detail",result);
             return;
         }
         if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_daren_info", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "live_detail", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("TB", 400, new Date(), "Traceback，回溯", url, "get_daren_info", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "live_detail", result);
         }
        else if (Statuscode != 200){
-            testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_daren_info",result);
+            testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"live_detail",result);
         }
         else if (code != 0) {
-            testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_daren_info",result);
+            testResultDao.insertResult("TBAPP",code, new Date(), "业务请求错误", url,"live_detail",result);
         }
         else {
-            testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_goods_detail",result);
+            testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"live_detail",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
 
     @Test
-    public void get_daren_feed() throws IOException {
-        //获取达人内容
+    public void goods_list() throws IOException {
+        //获取直播视频下的商品列表
         String result = new String();
-        String url = "http://47.114.196.142:5000/api/tb_wap/get_daren_feed?user_id=3327431407&page=1&tab=10000";
+        String url = "http://47.114.196.142:5000/api/tb_app/goods_list?live_id=252617963475&group_num=0";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -195,32 +195,32 @@ public class TBTest {
             msg = jsonObject.get("msg");
             System.out.println(msg);
         } catch (Exception e) {
-            testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_daren_feed",result);
+            testResultDao.insertResult("TBAPP",500, new Date(), "测试异常，e:" + e.getMessage(), url, "goods_list",result);
             return;
         }
         if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_daren_feed", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "goods_list", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("TB", 400, new Date(), "Traceback，回溯", url, "get_daren_feed", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "goods_list", result);
         }
        else if (Statuscode != 200){
-            testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_daren_feed",result);
+            testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"goods_list",result);
         }
         else if (code != 0) {
-            testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_daren_feed",result);
+            testResultDao.insertResult("TBAPP",code, new Date(), "业务请求错误", url,"goods_list",result);
         }
         else {
-            testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_daren_feed",result);
+            testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"goods_list",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
 
     @Test
-    public void get_questions() throws IOException {
-        //获取用户问题列表
+    public void channel_info() throws IOException {
+        //获取频道id信息
         String result = new String();
-        String url = "http://47.114.196.142:5000/api/tb_wap/get_questions?item_id=586018840145&page=1&size=10";
+        String url = "http://47.114.196.142:5000/api/tb_app/channel_info";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -234,32 +234,32 @@ public class TBTest {
             msg = jsonObject.get("msg");
             System.out.println(msg);
         } catch (Exception e) {
-            testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_questions",result);
+            testResultDao.insertResult("TBAPP",500, new Date(), "测试异常，e:" + e.getMessage(), url, "channel_info",result);
             return;
         }
         if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_questions", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "channel_info", result);
         }
         else if (Statuscode != 200){
-            testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_questions",result);
+            testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"channel_info",result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("TB", 400, new Date(), "Traceback，回溯", url, "get_questions", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "channel_info", result);
         }
         else if (code != 0) {
-            testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_questions",result);
+            testResultDao.insertResult("TBAPP",code, new Date(), "业务请求错误", url,"channel_info",result);
         }
         else {
-            testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_questions",result);
+            testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"channel_info",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }
 
     @Test
-    public void get_ask_tag() throws IOException {
-        //获取问答标签
+    public void get_shop_items() throws IOException {
+        //获取店铺商品列表
         String result = new String();
-        String url = "http://47.114.196.142:5000/api/tb_wap/get_ask_tag?item_id=586018840145";
+        String url = "http://47.114.196.142:5000/api/tb_app/get_shop_items?seller_id=seller_id&page=1&size=10";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -273,23 +273,23 @@ public class TBTest {
             msg = jsonObject.get("msg");
             System.out.println(msg);
         } catch (Exception e) {
-            testResultDao.insertResult("TB",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_ask_tag",result);
+            testResultDao.insertResult("TBAPP",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_shop_items",result);
             return;
         }
         if (msg.toString().contains("RemoteDisconnected")) {
-            testResultDao.insertResult("TB", 400, new Date(), "拒绝访问", url, "get_ask_tag", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "拒绝访问", url, "get_shop_items", result);
         }
         else if (msg.toString().contains("Traceback")) {
-            testResultDao.insertResult("TB", 400, new Date(), "Traceback，回溯", url, "get_ask_tag", result);
+            testResultDao.insertResult("TBAPP", 400, new Date(), "Traceback，回溯", url, "get_shop_items", result);
         }
        else if (Statuscode != 200){
-            testResultDao.insertResult("TB",Statuscode, new Date(), "http请求错误", url,"get_ask_tag",result);
+            testResultDao.insertResult("TBAPP",Statuscode, new Date(), "http请求错误", url,"get_shop_items",result);
         }
         else if (code != 0) {
-            testResultDao.insertResult("TB",code, new Date(), "业务请求错误", url,"get_ask_tag",result);
+            testResultDao.insertResult("TBAPP",code, new Date(), "业务请求错误", url,"get_shop_items",result);
         }
         else {
-            testResultDao.insertResult("TB",200, new Date(), "成功", url,"get_ask_tag",result);
+            testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"get_shop_items",result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }

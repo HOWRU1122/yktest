@@ -34,18 +34,24 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",200, new Date(), "测试异常，e:" + e.getMessage(), url, "call_nums",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"call_nums",result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "call_nums", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"call_nums",result);
@@ -80,6 +86,9 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "hot_feed", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "hot_feed", result);
+        }
         else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"hot_feed",result);
         }
@@ -100,18 +109,24 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "nearby_feed",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"nearby_feed",result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "nearby_feed", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"nearby_feed",result);
@@ -145,6 +160,9 @@ public class KuaiShouV2Test {
         }
         if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "Redis内可用设备池为空", url, "user_info", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "user_info", result);
         }
        else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"user_info",result);
@@ -181,6 +199,9 @@ public class KuaiShouV2Test {
         }
         if (msg.toString().contains("请求失败,返回数据为脏数据")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "请求失败,返回数据为脏数据", url, "user_video", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "user_video", result);
         }
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "user_video", result);
@@ -224,6 +245,9 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "video_comment", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "video_comment", result);
+        }
          else if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"video_comment",result);
         }
@@ -244,18 +268,24 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "video_detail",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"video_detail",result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "video_detail", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"video_detail",result);
@@ -274,18 +304,24 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "share_video",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"share_video",result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "share_video", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"share_video",result);
@@ -304,18 +340,24 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "product_list",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"product_list",result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "product_list", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"product_list",result);
@@ -335,18 +377,24 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_info",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_info",result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "get_live_info", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_info",result);
@@ -489,6 +537,9 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_top_users", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "get_live_top_users", result);
+        }
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
         }
@@ -566,6 +617,9 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_top_users", result);
         }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "get_live_top_users", result);
+        }
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_top_users", result);
         }
@@ -592,18 +646,24 @@ public class KuaiShouV2Test {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KuaiShouV2",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_live_square_refresh",result);
             return;
         }
         if (Statuscode != 200){
             testResultDao.insertResult("KuaiShouV2",Statuscode, new Date(), "http请求错误", url,"get_live_square_refresh",result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "get_live_square_refresh", result);
         }
         else if (code != 0) {
             testResultDao.insertResult("KuaiShouV2",code, new Date(), "业务请求错误", url,"get_live_square_refresh",result);
@@ -672,6 +732,9 @@ public class KuaiShouV2Test {
         }
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_square_list", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "get_live_square_list", result);
         }
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_square_list", result);
@@ -749,6 +812,9 @@ public class KuaiShouV2Test {
         }
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "参数异常", url, "get_live_district_rank", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "get_live_district_rank", result);
         }
         else if (msg.toString().contains("签名验证失败")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "get_live_district_rank", result);
