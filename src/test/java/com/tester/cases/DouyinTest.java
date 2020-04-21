@@ -692,6 +692,8 @@ public class DouyinTest {
         Integer code,Statuscode;
         JSONObject data;
         JSONArray columns;
+        Object msg;
+
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -701,11 +703,15 @@ public class DouyinTest {
             code = jsonObject.getInteger("code");
             data = jsonObject.getJSONObject("data");
             columns = data.getJSONArray("columns");
+            msg = jsonObject.get("msg");
         } catch (Exception e) {
             testResultDao.insertResult("Douyin",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_promotion_list",result);
             return;
         }
-        if (columns == null || columns.size() == 0) {
+        if (msg.toString().contains("Sorry, your cid can request up to 1200000 times per day")) {
+            testResultDao.insertResult("Douyin", 400, new Date(), "次数用完", url, "get_promotion_list", result);
+        }
+        else if (columns == null || columns.size() == 0) {
             testResultDao.insertResult("Douyin", 300, new Date(), "data返回为空", url, "get_promotion_list", result);
         }
        else if (Statuscode != 200){

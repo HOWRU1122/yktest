@@ -785,6 +785,9 @@ public class KuaiShouV1Test {
         if (msg.toString().contains("参数异常")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "参数异常", url, "get_comm_list", result);
         }
+        else if (msg.toString().contains("Need captcha")) {
+            testResultDao.insertResult("KuaiShouV1", 400, new Date(), "需要验证码", url, "get_comm_list", result);
+        }
         else if (msg.toString().contains("代理IP已过期,本次请求失败")) {
             testResultDao.insertResult("KuaiShouV1", 400, new Date(), "代理IP已过期,本次请求失败", url, "get_comm_list", result);
         }
@@ -846,7 +849,7 @@ public class KuaiShouV1Test {
             testResultDao.insertResult("KuaiShouV1", code, new Date(), "业务请求错误", url, "get_live_detail", result);
         }
         else {
-            testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_comm_list", result);
+            testResultDao.insertResult("KuaiShouV1", 200, new Date(), "成功", url, "get_live_detail", result);
             System.out.println("成功，" + "请求url：" + url);
         }
     }

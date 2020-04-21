@@ -251,7 +251,10 @@ public class DouyinLiteTest {
             testResultDao.insertResult("DouyinLite",500, new Date(), "测试异常，e:" + e.getMessage(), url, "get_user_following_list",result);
             return;
         }
-        if (followings == null || followings.size() == 0) {
+        if (msg.toString().contains("Sorry, your cid can request up to 1200000 times per day")) {
+            testResultDao.insertResult("DouyinLite", 400, new Date(), "次数用完", url, "get_user_following_list", result);
+        }
+        else if (followings == null || followings.size() == 0) {
             testResultDao.insertResult("DouyinLite", 300, new Date(), "data返回为空", url, "get_user_following_list", result);
         }
        else if (msg.toString().contains("重试超过阈值")) {
