@@ -161,6 +161,12 @@ public class KuaiShouV2Test {
         if (msg.toString().contains("Redis内可用设备池为空")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "Redis内可用设备池为空", url, "user_info", result);
         }
+        else if (msg.toString().contains("签名验证失败")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "签名验证失败", url, "user_info", result);
+        }
+        else if (msg.toString().contains("重试超过阈值")) {
+            testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "user_info", result);
+        }
         else if (msg.toString().contains("重试超过阈值")) {
             testResultDao.insertResult("KuaiShouV2", 400, new Date(), "重试超过阈值", url, "user_info", result);
         }

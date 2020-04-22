@@ -62,17 +62,23 @@ public class KaoLaTest {
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
+        Object msg;
         try {
             HttpResponse response = client.execute(get);
             result = EntityUtils.toString(response.getEntity(), "utf-8");
             Statuscode = response.getStatusLine().getStatusCode();
             JSONObject jsonObject = JSONObject.parseObject(result);
             code = jsonObject.getInteger("code");
+            msg = jsonObject.get("msg");
+            System.out.println(msg);
         } catch (Exception e) {
             testResultDao.insertResult("KaoLa",500, new Date(), "测试异常，e:" + e.getMessage(), url, "item_list",result);
             return;
         }
-        if (Statuscode != 200){
+        if (msg.toString().contains("提取页面数据失败")) {
+            testResultDao.insertResult("KaoLa", 400, new Date(), "提取页面数据失败", url, "item_list", result);
+        }
+        else if (Statuscode != 200){
             testResultDao.insertResult("KaoLa",Statuscode, new Date(), "http请求错误", url,"item_list",result);
         }
         else if (code != 0) {
