@@ -4,34 +4,8 @@
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tester/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tester/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tester/config/ExtentTestNGIReporterListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tester/config/ExtentTestNGIReporterListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tester/config/ExtentTestNGIReporterListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tester/config/ExtentTestNGIReporterListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tester/dao/TestResultDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tester/dao/TestResultDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tester/model/TestResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tester/model/TestResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tester/utils/DatabaseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tester/utils/DatabaseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/AlibabaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/AlibabaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinAweTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinAweTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinLiteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinLiteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinShareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinShareTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DouyinTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/Douyinv1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/Douyinv1Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DuTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/JingDongCPSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/JingDongCPSTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/JingDongTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/JingDongTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KaoLaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KaoLaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KuaiShouV1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KuaiShouV1Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KuaiShouV2Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/KuaiShouV2Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/MeiTuanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/MeiTuanTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/PddTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/PddTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/SumaitongTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/SumaitongTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/TBAPPTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/TBAPPTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/TBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/TBTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/XHSv1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/XHSv1Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/XHSv2Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/XHSv2Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,8 +93,8 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DouyinAweTest.get_user_info">
-    <configuration name="AlibabaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AlibabaTest.get_search_list">
+    <configuration name="AlibabaTest.get_cate_info" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -130,7 +104,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
       <option name="MAIN_CLASS_NAME" value="com.tester.cases.AlibabaTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="get_cate_info" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,6 +121,22 @@
       <option name="PACKAGE_NAME" value="com.tester.cases" />
       <option name="MAIN_CLASS_NAME" value="com.tester.cases.AlibabaTest" />
       <option name="METHOD_NAME" value="get_product_info" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlibabaTest.get_search_list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yktest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.AlibabaTest" />
+      <option name="METHOD_NAME" value="get_search_list" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,22 +173,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumaitongTest.get_item_list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yktest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tester.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.SumaitongTest" />
-      <option name="METHOD_NAME" value="get_item_list" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="yktest" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tester.Application" />
@@ -207,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlibabaTest.get_search_list" />
+        <item itemvalue="JUnit.AlibabaTest.get_product_info" />
+        <item itemvalue="JUnit.AlibabaTest.get_cate_info" />
         <item itemvalue="JUnit.DouyinAweTest.get_user_info" />
         <item itemvalue="JUnit.SumaitongTest" />
-        <item itemvalue="JUnit.AlibabaTest.get_product_info" />
-        <item itemvalue="JUnit.SumaitongTest.get_item_list" />
-        <item itemvalue="JUnit.AlibabaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +243,7 @@
       <workItem from="1585906693813" duration="446000" />
       <workItem from="1585907167667" duration="464000" />
       <workItem from="1586237721460" duration="3823000" />
-      <workItem from="1586247632224" duration="67003000" />
+      <workItem from="1586247632224" duration="69046000" />
     </task>
     <servers />
   </component>
@@ -308,7 +283,7 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="301" y="123" width="1452" height="802" key="DiffContextDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586247615066" />
-    <state width="1610" height="356" key="GridCell.Tab.0.bottom" timestamp="1588037044792">
+    <state width="1610" height="356" key="GridCell.Tab.0.bottom" timestamp="1588065535515">
       <screen x="1920" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
@@ -318,8 +293,8 @@
     <state width="1610" height="309" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
     <state width="1610" height="331" key="GridCell.Tab.0.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504012" />
     <state width="1610" height="330" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555520" />
-    <state width="1610" height="356" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588037044792" />
-    <state width="1610" height="356" key="GridCell.Tab.0.center" timestamp="1588037044791">
+    <state width="1610" height="356" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588065535515" />
+    <state width="1610" height="356" key="GridCell.Tab.0.center" timestamp="1588065535513">
       <screen x="1920" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
@@ -329,8 +304,8 @@
     <state width="1610" height="309" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
     <state width="1610" height="331" key="GridCell.Tab.0.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504012" />
     <state width="1610" height="330" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555518" />
-    <state width="1610" height="356" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588037044791" />
-    <state width="1610" height="356" key="GridCell.Tab.0.left" timestamp="1588037044790">
+    <state width="1610" height="356" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588065535513" />
+    <state width="1610" height="356" key="GridCell.Tab.0.left" timestamp="1588065535513">
       <screen x="1920" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
@@ -340,8 +315,8 @@
     <state width="1610" height="309" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
     <state width="1610" height="331" key="GridCell.Tab.0.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504011" />
     <state width="1610" height="330" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555518" />
-    <state width="1610" height="356" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588037044790" />
-    <state width="1610" height="356" key="GridCell.Tab.0.right" timestamp="1588037044791">
+    <state width="1610" height="356" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588065535513" />
+    <state width="1610" height="356" key="GridCell.Tab.0.right" timestamp="1588065535514">
       <screen x="1920" y="23" width="1680" height="972" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
@@ -351,7 +326,7 @@
     <state width="1610" height="309" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
     <state width="1610" height="331" key="GridCell.Tab.0.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504012" />
     <state width="1610" height="330" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555519" />
-    <state width="1610" height="356" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588037044791" />
+    <state width="1610" height="356" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588065535514" />
     <state width="1610" height="331" key="GridCell.Tab.1.bottom" timestamp="1586758754423">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
