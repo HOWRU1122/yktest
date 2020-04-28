@@ -1,0 +1,834 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>151/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 28 09:24:17 CST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>355 seconds (355725 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tester.cases.TBAPPTest.broadcaster_info()'><b>broadcaster_info</b><br>Test class: com.tester.cases.TBAPPTest</td>
+<td></td>
+<td>24</td>
+<td>broadcaster_info(com.tester.cases.TBAPPTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBAPPTest.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.TBAPPTest</td>
+<td></td>
+<td>13</td>
+<td>call_nums(com.tester.cases.TBAPPTest)</td></tr>
+<tr>
+<td title='com.tester.cases.MeiTuanTest.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.MeiTuanTest</td>
+<td></td>
+<td>13</td>
+<td>call_nums(com.tester.cases.MeiTuanTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DuTest.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.DuTest</td>
+<td></td>
+<td>2</td>
+<td>call_nums(com.tester.cases.DuTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>7</td>
+<td>call_nums(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>6</td>
+<td>call_nums(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.TBAPPTest.channel_info()'><b>channel_info</b><br>Test class: com.tester.cases.TBAPPTest</td>
+<td></td>
+<td>16</td>
+<td>channel_info(com.tester.cases.TBAPPTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.channel_refresh()'><b>channel_refresh</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>8</td>
+<td>channel_refresh(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlCommentsCounts()'><b>crawlCommentsCounts</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>1</td>
+<td>crawlCommentsCounts(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlPageByBrandName()'><b>crawlPageByBrandName</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>4</td>
+<td>crawlPageByBrandName(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlPageShopProducts()'><b>crawlPageShopProducts</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>9</td>
+<td>crawlPageShopProducts(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlShopDetails()'><b>crawlShopDetails</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>0</td>
+<td>crawlShopDetails(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlShopVenderId()'><b>crawlShopVenderId</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>0</td>
+<td>crawlShopVenderId(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlSkuComment()'><b>crawlSkuComment</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>5</td>
+<td>crawlSkuComment(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlSkuCommentAndCount()'><b>crawlSkuCommentAndCount</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>5</td>
+<td>crawlSkuCommentAndCount(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlSkuPrices()'><b>crawlSkuPrices</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td></td>
+<td>1</td>
+<td>crawlSkuPrices(com.tester.cases.JingDongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_99_goods()'><b>get_99_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>64</td>
+<td>get_99_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBTest.get_ask_tag()'><b>get_ask_tag</b><br>Test class: com.tester.cases.TBTest</td>
+<td></td>
+<td>5</td>
+<td>get_ask_tag(com.tester.cases.TBTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.get_aweme_comment()'><b>get_aweme_comment</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>9</td>
+<td>get_aweme_comment(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.get_aweme_info()'><b>get_aweme_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>15</td>
+<td>get_aweme_info(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.get_aweme_list()'><b>get_aweme_list</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>45</td>
+<td>get_aweme_list(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_cat_id_list()'><b>get_cat_id_list</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>69</td>
+<td>get_cat_id_list(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.AlibabaTest.get_cate_info()'><b>get_cate_info</b><br>Test class: com.tester.cases.AlibabaTest</td>
+<td></td>
+<td>14</td>
+<td>get_cate_info(com.tester.cases.AlibabaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_clearance_sale_goods()'><b>get_clearance_sale_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>56</td>
+<td>get_clearance_sale_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_comm_list()'><b>get_comm_list</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>3</td>
+<td>get_comm_list(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.AlibabaTest.get_comment_list()'><b>get_comment_list</b><br>Test class: com.tester.cases.AlibabaTest</td>
+<td></td>
+<td>11</td>
+<td>get_comment_list(com.tester.cases.AlibabaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_daily_good_mall()'><b>get_daily_good_mall</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>3</td>
+<td>get_daily_good_mall(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBTest.get_daren_feed()'><b>get_daren_feed</b><br>Test class: com.tester.cases.TBTest</td>
+<td></td>
+<td>8</td>
+<td>get_daren_feed(com.tester.cases.TBTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBTest.get_daren_info()'><b>get_daren_info</b><br>Test class: com.tester.cases.TBTest</td>
+<td></td>
+<td>9</td>
+<td>get_daren_info(com.tester.cases.TBTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_electrical_goods()'><b>get_electrical_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>67</td>
+<td>get_electrical_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_fenlei_goods()'><b>get_fenlei_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>48</td>
+<td>get_fenlei_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBTest.get_good_goods()'><b>get_good_goods</b><br>Test class: com.tester.cases.TBTest</td>
+<td></td>
+<td>3</td>
+<td>get_good_goods(com.tester.cases.TBTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBTest.get_goods_detail()'><b>get_goods_detail</b><br>Test class: com.tester.cases.TBTest</td>
+<td></td>
+<td>1</td>
+<td>get_goods_detail(com.tester.cases.TBTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_goods_detail()'><b>get_goods_detail</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>1</td>
+<td>get_goods_detail(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_hot_goods()'><b>get_hot_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>54</td>
+<td>get_hot_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_item_detial_h5()'><b>get_item_detial_h5</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>11</td>
+<td>get_item_detial_h5(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_item_detial_pc()'><b>get_item_detial_pc</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>12</td>
+<td>get_item_detial_pc(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_item_feedback()'><b>get_item_feedback</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>13</td>
+<td>get_item_feedback(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.AlibabaTest.get_item_info_h5()'><b>get_item_info_h5</b><br>Test class: com.tester.cases.AlibabaTest</td>
+<td></td>
+<td>10</td>
+<td>get_item_info_h5(com.tester.cases.AlibabaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_item_list()'><b>get_item_list</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>1</td>
+<td>get_item_list(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_limited_seckill()'><b>get_limited_seckill</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>1</td>
+<td>get_limited_seckill(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_live_detail()'><b>get_live_detail</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>7</td>
+<td>get_live_detail(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_live_district_rank()'><b>get_live_district_rank</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>31</td>
+<td>get_live_district_rank(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.get_live_district_rank()'><b>get_live_district_rank</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>38</td>
+<td>get_live_district_rank(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_live_info()'><b>get_live_info</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>27</td>
+<td>get_live_info(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.get_live_info()'><b>get_live_info</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>35</td>
+<td>get_live_info(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_live_square_list()'><b>get_live_square_list</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>0</td>
+<td>get_live_square_list(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.get_live_square_list()'><b>get_live_square_list</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>3</td>
+<td>get_live_square_list(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_live_square_refresh()'><b>get_live_square_refresh</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>23</td>
+<td>get_live_square_refresh(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.get_live_square_refresh()'><b>get_live_square_refresh</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>32</td>
+<td>get_live_square_refresh(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_live_top_users()'><b>get_live_top_users</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>2</td>
+<td>get_live_top_users(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.get_live_top_users()'><b>get_live_top_users</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>5</td>
+<td>get_live_top_users(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_live_users()'><b>get_live_users</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>15</td>
+<td>get_live_users(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.get_live_users()'><b>get_live_users</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>24</td>
+<td>get_live_users(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_love_shopping_goods()'><b>get_love_shopping_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>66</td>
+<td>get_love_shopping_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_mall_info()'><b>get_mall_info</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>3</td>
+<td>get_mall_info(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_mall_most_goods()'><b>get_mall_most_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>60</td>
+<td>get_mall_most_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_mall_similar_goods()'><b>get_mall_similar_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>0</td>
+<td>get_mall_similar_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_new_clothes_goods()'><b>get_new_clothes_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>65</td>
+<td>get_new_clothes_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_pdd_date()'><b>get_pdd_date</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>68</td>
+<td>get_pdd_date(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.AlibabaTest.get_product_info()'><b>get_product_info</b><br>Test class: com.tester.cases.AlibabaTest</td>
+<td></td>
+<td>11</td>
+<td>get_product_info(com.tester.cases.AlibabaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinTest.get_promotion_list()'><b>get_promotion_list</b><br>Test class: com.tester.cases.DouyinTest</td>
+<td></td>
+<td>5</td>
+<td>get_promotion_list(com.tester.cases.DouyinTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.get_promotion_list()'><b>get_promotion_list</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>9</td>
+<td>get_promotion_list(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBTest.get_questions()'><b>get_questions</b><br>Test class: com.tester.cases.TBTest</td>
+<td></td>
+<td>4</td>
+<td>get_questions(com.tester.cases.TBTest)</td></tr>
+<tr>
+<td title='com.tester.cases.AlibabaTest.get_search_list()'><b>get_search_list</b><br>Test class: com.tester.cases.AlibabaTest</td>
+<td></td>
+<td>9</td>
+<td>get_search_list(com.tester.cases.AlibabaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_seller_info()'><b>get_seller_info</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>14</td>
+<td>get_seller_info(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_shop_feedback()'><b>get_shop_feedback</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>3</td>
+<td>get_shop_feedback(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_shop_info_h5()'><b>get_shop_info_h5</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>9</td>
+<td>get_shop_info_h5(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_shop_info_pc()'><b>get_shop_info_pc</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>10</td>
+<td>get_shop_info_pc(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.SumaitongTest.get_shop_item()'><b>get_shop_item</b><br>Test class: com.tester.cases.SumaitongTest</td>
+<td></td>
+<td>2</td>
+<td>get_shop_item(com.tester.cases.SumaitongTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBAPPTest.get_shop_items()'><b>get_shop_items</b><br>Test class: com.tester.cases.TBAPPTest</td>
+<td></td>
+<td>8</td>
+<td>get_shop_items(com.tester.cases.TBAPPTest)</td></tr>
+<tr>
+<td title='com.tester.cases.AlibabaTest.get_shop_items()'><b>get_shop_items</b><br>Test class: com.tester.cases.AlibabaTest</td>
+<td></td>
+<td>4</td>
+<td>get_shop_items(com.tester.cases.AlibabaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_similar_goods()'><b>get_similar_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>53</td>
+<td>get_similar_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.PddTest.get_subsidy_goods()'><b>get_subsidy_goods</b><br>Test class: com.tester.cases.PddTest</td>
+<td></td>
+<td>69</td>
+<td>get_subsidy_goods(com.tester.cases.PddTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBTest.get_tb_comment()'><b>get_tb_comment</b><br>Test class: com.tester.cases.TBTest</td>
+<td></td>
+<td>5</td>
+<td>get_tb_comment(com.tester.cases.TBTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.get_user_card_info()'><b>get_user_card_info</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>7</td>
+<td>get_user_card_info(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinLiteTest.get_user_following_list()'><b>get_user_following_list</b><br>Test class: com.tester.cases.DouyinLiteTest</td>
+<td></td>
+<td>0</td>
+<td>get_user_following_list(com.tester.cases.DouyinLiteTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.get_user_info()'><b>get_user_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>11</td>
+<td>get_user_info(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBAPPTest.goods_list()'><b>goods_list</b><br>Test class: com.tester.cases.TBAPPTest</td>
+<td></td>
+<td>23</td>
+<td>goods_list(com.tester.cases.TBAPPTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.home_feed()'><b>home_feed</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>11</td>
+<td>home_feed(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.home_feed()'><b>home_feed</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>30</td>
+<td>home_feed(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.MeiTuanTest.homepage_shops()'><b>homepage_shops</b><br>Test class: com.tester.cases.MeiTuanTest</td>
+<td></td>
+<td>7</td>
+<td>homepage_shops(com.tester.cases.MeiTuanTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.hot_feed()'><b>hot_feed</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>14</td>
+<td>hot_feed(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.hot_feed()'><b>hot_feed</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>22</td>
+<td>hot_feed(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.hot_recommend()'><b>hot_recommend</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>3</td>
+<td>hot_recommend(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DuTest.ice_shopping()'><b>ice_shopping</b><br>Test class: com.tester.cases.DuTest</td>
+<td></td>
+<td>6</td>
+<td>ice_shopping(com.tester.cases.DuTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DuTest.ice_shopping_tab()'><b>ice_shopping_tab</b><br>Test class: com.tester.cases.DuTest</td>
+<td></td>
+<td>0</td>
+<td>ice_shopping_tab(com.tester.cases.DuTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.item_comm()'><b>item_comm</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>1</td>
+<td>item_comm(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DuTest.item_detail()'><b>item_detail</b><br>Test class: com.tester.cases.DuTest</td>
+<td></td>
+<td>6</td>
+<td>item_detail(com.tester.cases.DuTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KaoLaTest.item_detail()'><b>item_detail</b><br>Test class: com.tester.cases.KaoLaTest</td>
+<td></td>
+<td>3</td>
+<td>item_detail(com.tester.cases.KaoLaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.item_info()'><b>item_info</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>2</td>
+<td>item_info(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KaoLaTest.item_list()'><b>item_list</b><br>Test class: com.tester.cases.KaoLaTest</td>
+<td></td>
+<td>0</td>
+<td>item_list(com.tester.cases.KaoLaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.item_price()'><b>item_price</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>3</td>
+<td>item_price(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.item_search()'><b>item_search</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>11</td>
+<td>item_search(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.JingDongCPSTest.items()'><b>items</b><br>Test class: com.tester.cases.JingDongCPSTest</td>
+<td></td>
+<td>0</td>
+<td>items(com.tester.cases.JingDongCPSTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KaoLaTest.leaf_cate()'><b>leaf_cate</b><br>Test class: com.tester.cases.KaoLaTest</td>
+<td></td>
+<td>4</td>
+<td>leaf_cate(com.tester.cases.KaoLaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBAPPTest.live_detail()'><b>live_detail</b><br>Test class: com.tester.cases.TBAPPTest</td>
+<td></td>
+<td>13</td>
+<td>live_detail(com.tester.cases.TBAPPTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.nearby_feed()'><b>nearby_feed</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>8</td>
+<td>nearby_feed(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.nearby_feed()'><b>nearby_feed</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>12</td>
+<td>nearby_feed(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.note_comments()'><b>note_comments</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>0</td>
+<td>note_comments(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.note_comments()'><b>note_comments</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>7</td>
+<td>note_comments(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.note_detail()'><b>note_detail</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>10</td>
+<td>note_detail(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.note_detail()'><b>note_detail</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>23</td>
+<td>note_detail(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.note_search()'><b>note_search</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>29</td>
+<td>note_search(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.product_list()'><b>product_list</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>22</td>
+<td>product_list(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.product_list()'><b>product_list</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>31</td>
+<td>product_list(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.share_video()'><b>share_video</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>22</td>
+<td>share_video(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.share_video()'><b>share_video</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>30</td>
+<td>share_video(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.MeiTuanTest.shop_comments()'><b>shop_comments</b><br>Test class: com.tester.cases.MeiTuanTest</td>
+<td></td>
+<td>13</td>
+<td>shop_comments(com.tester.cases.MeiTuanTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.shop_font()'><b>shop_font</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>2</td>
+<td>shop_font(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.MeiTuanTest.shop_foods()'><b>shop_foods</b><br>Test class: com.tester.cases.MeiTuanTest</td>
+<td></td>
+<td>25</td>
+<td>shop_foods(com.tester.cases.MeiTuanTest)</td></tr>
+<tr>
+<td title='com.tester.cases.KaoLaTest.shop_info()'><b>shop_info</b><br>Test class: com.tester.cases.KaoLaTest</td>
+<td></td>
+<td>1</td>
+<td>shop_info(com.tester.cases.KaoLaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.shop_info()'><b>shop_info</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>2</td>
+<td>shop_info(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KaoLaTest.shop_item()'><b>shop_item</b><br>Test class: com.tester.cases.KaoLaTest</td>
+<td></td>
+<td>2</td>
+<td>shop_item(com.tester.cases.KaoLaTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.shop_items()'><b>shop_items</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>8</td>
+<td>shop_items(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DuTest.sold_list()'><b>sold_list</b><br>Test class: com.tester.cases.DuTest</td>
+<td></td>
+<td>2</td>
+<td>sold_list(com.tester.cases.DuTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.topic_notes()'><b>topic_notes</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>14</td>
+<td>topic_notes(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.user_fans()'><b>user_fans</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>7</td>
+<td>user_fans(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.user_fans()'><b>user_fans</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>19</td>
+<td>user_fans(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.user_focus()'><b>user_focus</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>10</td>
+<td>user_focus(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.user_focus()'><b>user_focus</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>27</td>
+<td>user_focus(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.Douyinv1Test.user_goods()'><b>user_goods</b><br>Test class: com.tester.cases.Douyinv1Test</td>
+<td></td>
+<td>2</td>
+<td>user_goods(com.tester.cases.Douyinv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.user_hot_video()'><b>user_hot_video</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>14</td>
+<td>user_hot_video(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.Douyinv1Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.Douyinv1Test</td>
+<td></td>
+<td>0</td>
+<td>user_info(com.tester.cases.Douyinv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>16</td>
+<td>user_info(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>8</td>
+<td>user_info(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.user_info()'><b>user_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>9</td>
+<td>user_info(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinShareTest.user_info()'><b>user_info</b><br>Test class: com.tester.cases.DouyinShareTest</td>
+<td></td>
+<td>0</td>
+<td>user_info(com.tester.cases.DouyinShareTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>20</td>
+<td>user_info(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>25</td>
+<td>user_info(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.user_note()'><b>user_note</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>9</td>
+<td>user_note(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.user_note()'><b>user_note</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>23</td>
+<td>user_note(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.user_room()'><b>user_room</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>10</td>
+<td>user_room(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.user_search()'><b>user_search</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>5</td>
+<td>user_search(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.user_search()'><b>user_search</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>14</td>
+<td>user_search(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.Douyinv1Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.Douyinv1Test</td>
+<td></td>
+<td>2</td>
+<td>user_video(com.tester.cases.Douyinv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>33</td>
+<td>user_video(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>11</td>
+<td>user_video(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.user_video()'><b>user_video</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>47</td>
+<td>user_video(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinShareTest.user_video()'><b>user_video</b><br>Test class: com.tester.cases.DouyinShareTest</td>
+<td></td>
+<td>5</td>
+<td>user_video(com.tester.cases.DouyinShareTest)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>28</td>
+<td>user_video(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>39</td>
+<td>user_video(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.Douyinv1Test.video_comment()'><b>video_comment</b><br>Test class: com.tester.cases.Douyinv1Test</td>
+<td></td>
+<td>0</td>
+<td>video_comment(com.tester.cases.Douyinv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.video_comment()'><b>video_comment</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>3</td>
+<td>video_comment(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.video_comment()'><b>video_comment</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>6</td>
+<td>video_comment(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV1Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
+<td></td>
+<td>13</td>
+<td>video_detail(com.tester.cases.KuaiShouV1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv1Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.XHSv1Test</td>
+<td></td>
+<td>5</td>
+<td>video_detail(com.tester.cases.XHSv1Test)</td></tr>
+<tr>
+<td title='com.tester.cases.XHSv2Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.XHSv2Test</td>
+<td></td>
+<td>11</td>
+<td>video_detail(com.tester.cases.XHSv2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.KuaiShouV2Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
+<td></td>
+<td>21</td>
+<td>video_detail(com.tester.cases.KuaiShouV2Test)</td></tr>
+<tr>
+<td title='com.tester.cases.DouyinAweTest.video_info()'><b>video_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
+<td></td>
+<td>8</td>
+<td>video_info(com.tester.cases.DouyinAweTest)</td></tr>
+<tr>
+<td title='com.tester.cases.TBAPPTest.video_list()'><b>video_list</b><br>Test class: com.tester.cases.TBAPPTest</td>
+<td></td>
+<td>12</td>
+<td>video_list(com.tester.cases.TBAPPTest)</td></tr>
+</table><p>
+</body>
+</html>

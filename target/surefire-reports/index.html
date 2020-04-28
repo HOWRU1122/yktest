@@ -1,0 +1,3447 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-passed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">151 methods,   151 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBAPPTest" class="method navigator-link" hash-for-method="broadcaster_info">broadcaster_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.MeiTuanTest" class="method navigator-link" hash-for-method="call_nums">call_nums</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBAPPTest" class="method navigator-link" hash-for-method="call_nums">call_nums</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="call_nums">call_nums</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DuTest" class="method navigator-link" hash-for-method="call_nums">call_nums</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="call_nums">call_nums</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBAPPTest" class="method navigator-link" hash-for-method="channel_info">channel_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="channel_refresh">channel_refresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlCommentsCounts">crawlCommentsCounts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlPageByBrandName">crawlPageByBrandName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlPageShopProducts">crawlPageShopProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlShopDetails">crawlShopDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlShopVenderId">crawlShopVenderId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlSkuComment">crawlSkuComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlSkuCommentAndCount">crawlSkuCommentAndCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongTest" class="method navigator-link" hash-for-method="crawlSkuPrices">crawlSkuPrices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_99_goods">get_99_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBTest" class="method navigator-link" hash-for-method="get_ask_tag">get_ask_tag</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="get_aweme_comment">get_aweme_comment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="get_aweme_info">get_aweme_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="get_aweme_list">get_aweme_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_cat_id_list">get_cat_id_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.AlibabaTest" class="method navigator-link" hash-for-method="get_cate_info">get_cate_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_clearance_sale_goods">get_clearance_sale_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_comm_list">get_comm_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.AlibabaTest" class="method navigator-link" hash-for-method="get_comment_list">get_comment_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_daily_good_mall">get_daily_good_mall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBTest" class="method navigator-link" hash-for-method="get_daren_feed">get_daren_feed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBTest" class="method navigator-link" hash-for-method="get_daren_info">get_daren_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_electrical_goods">get_electrical_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_fenlei_goods">get_fenlei_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBTest" class="method navigator-link" hash-for-method="get_good_goods">get_good_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBTest" class="method navigator-link" hash-for-method="get_goods_detail">get_goods_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_goods_detail">get_goods_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_hot_goods">get_hot_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_item_detial_h5">get_item_detial_h5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_item_detial_pc">get_item_detial_pc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_item_feedback">get_item_feedback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.AlibabaTest" class="method navigator-link" hash-for-method="get_item_info_h5">get_item_info_h5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_item_list">get_item_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_limited_seckill">get_limited_seckill</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_live_detail">get_live_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="get_live_district_rank">get_live_district_rank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_live_district_rank">get_live_district_rank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_live_info">get_live_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="get_live_info">get_live_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="get_live_square_list">get_live_square_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_live_square_list">get_live_square_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_live_square_refresh">get_live_square_refresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="get_live_square_refresh">get_live_square_refresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_live_top_users">get_live_top_users</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="get_live_top_users">get_live_top_users</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="get_live_users">get_live_users</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_live_users">get_live_users</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_love_shopping_goods">get_love_shopping_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_mall_info">get_mall_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_mall_most_goods">get_mall_most_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_mall_similar_goods">get_mall_similar_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_new_clothes_goods">get_new_clothes_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_pdd_date">get_pdd_date</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.AlibabaTest" class="method navigator-link" hash-for-method="get_product_info">get_product_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinTest" class="method navigator-link" hash-for-method="get_promotion_list">get_promotion_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="get_promotion_list">get_promotion_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBTest" class="method navigator-link" hash-for-method="get_questions">get_questions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.AlibabaTest" class="method navigator-link" hash-for-method="get_search_list">get_search_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_seller_info">get_seller_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_shop_feedback">get_shop_feedback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_shop_info_h5">get_shop_info_h5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_shop_info_pc">get_shop_info_pc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.SumaitongTest" class="method navigator-link" hash-for-method="get_shop_item">get_shop_item</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.AlibabaTest" class="method navigator-link" hash-for-method="get_shop_items">get_shop_items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBAPPTest" class="method navigator-link" hash-for-method="get_shop_items">get_shop_items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_similar_goods">get_similar_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.PddTest" class="method navigator-link" hash-for-method="get_subsidy_goods">get_subsidy_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBTest" class="method navigator-link" hash-for-method="get_tb_comment">get_tb_comment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="get_user_card_info">get_user_card_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinLiteTest" class="method navigator-link" hash-for-method="get_user_following_list">get_user_following_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="get_user_info">get_user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBAPPTest" class="method navigator-link" hash-for-method="goods_list">goods_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="home_feed">home_feed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="home_feed">home_feed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.MeiTuanTest" class="method navigator-link" hash-for-method="homepage_shops">homepage_shops</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="hot_feed">hot_feed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="hot_feed">hot_feed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="hot_recommend">hot_recommend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DuTest" class="method navigator-link" hash-for-method="ice_shopping">ice_shopping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DuTest" class="method navigator-link" hash-for-method="ice_shopping_tab">ice_shopping_tab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="item_comm">item_comm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KaoLaTest" class="method navigator-link" hash-for-method="item_detail">item_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DuTest" class="method navigator-link" hash-for-method="item_detail">item_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="item_info">item_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KaoLaTest" class="method navigator-link" hash-for-method="item_list">item_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="item_price">item_price</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="item_search">item_search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.JingDongCPSTest" class="method navigator-link" hash-for-method="items">items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KaoLaTest" class="method navigator-link" hash-for-method="leaf_cate">leaf_cate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBAPPTest" class="method navigator-link" hash-for-method="live_detail">live_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="nearby_feed">nearby_feed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="nearby_feed">nearby_feed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="note_comments">note_comments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="note_comments">note_comments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="note_detail">note_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="note_detail">note_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="note_search">note_search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="product_list">product_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="product_list">product_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="share_video">share_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="share_video">share_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.MeiTuanTest" class="method navigator-link" hash-for-method="shop_comments">shop_comments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="shop_font">shop_font</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.MeiTuanTest" class="method navigator-link" hash-for-method="shop_foods">shop_foods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KaoLaTest" class="method navigator-link" hash-for-method="shop_info">shop_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="shop_info">shop_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KaoLaTest" class="method navigator-link" hash-for-method="shop_item">shop_item</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="shop_items">shop_items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DuTest" class="method navigator-link" hash-for-method="sold_list">sold_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="topic_notes">topic_notes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="user_fans">user_fans</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="user_fans">user_fans</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="user_focus">user_focus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="user_focus">user_focus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.Douyinv1Test" class="method navigator-link" hash-for-method="user_goods">user_goods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="user_hot_video">user_hot_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinShareTest" class="method navigator-link" hash-for-method="user_info">user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="user_info">user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="user_info">user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="user_info">user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="user_info">user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.Douyinv1Test" class="method navigator-link" hash-for-method="user_info">user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="user_info">user_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="user_note">user_note</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="user_note">user_note</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="user_room">user_room</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="user_search">user_search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="user_search">user_search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinShareTest" class="method navigator-link" hash-for-method="user_video">user_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="user_video">user_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="user_video">user_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="user_video">user_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.Douyinv1Test" class="method navigator-link" hash-for-method="user_video">user_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="user_video">user_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="user_video">user_video</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="video_comment">video_comment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.Douyinv1Test" class="method navigator-link" hash-for-method="video_comment">video_comment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="video_comment">video_comment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV2Test" class="method navigator-link" hash-for-method="video_detail">video_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv1Test" class="method navigator-link" hash-for-method="video_detail">video_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.KuaiShouV1Test" class="method navigator-link" hash-for-method="video_detail">video_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.XHSv2Test" class="method navigator-link" hash-for-method="video_detail">video_detail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.DouyinAweTest" class="method navigator-link" hash-for-method="video_info">video_info</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tester.cases.TBAPPTest" class="method navigator-link" hash-for-method="video_list">video_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.KaoLaTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="item_detail">
+                  </a> <!-- item_detail -->
+                  <span class="method-name">item_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="item_list">
+                  </a> <!-- item_list -->
+                  <span class="method-name">item_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="leaf_cate">
+                  </a> <!-- leaf_cate -->
+                  <span class="method-name">leaf_cate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shop_info">
+                  </a> <!-- shop_info -->
+                  <span class="method-name">shop_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shop_item">
+                  </a> <!-- shop_item -->
+                  <span class="method-name">shop_item</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.SumaitongTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_item_detial_h5">
+                  </a> <!-- get_item_detial_h5 -->
+                  <span class="method-name">get_item_detial_h5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_item_detial_pc">
+                  </a> <!-- get_item_detial_pc -->
+                  <span class="method-name">get_item_detial_pc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_item_feedback">
+                  </a> <!-- get_item_feedback -->
+                  <span class="method-name">get_item_feedback</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_item_list">
+                  </a> <!-- get_item_list -->
+                  <span class="method-name">get_item_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_seller_info">
+                  </a> <!-- get_seller_info -->
+                  <span class="method-name">get_seller_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_shop_feedback">
+                  </a> <!-- get_shop_feedback -->
+                  <span class="method-name">get_shop_feedback</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_shop_info_h5">
+                  </a> <!-- get_shop_info_h5 -->
+                  <span class="method-name">get_shop_info_h5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_shop_info_pc">
+                  </a> <!-- get_shop_info_pc -->
+                  <span class="method-name">get_shop_info_pc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_shop_item">
+                  </a> <!-- get_shop_item -->
+                  <span class="method-name">get_shop_item</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.DouyinLiteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_user_following_list">
+                  </a> <!-- get_user_following_list -->
+                  <span class="method-name">get_user_following_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.DouyinAweTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_aweme_comment">
+                  </a> <!-- get_aweme_comment -->
+                  <span class="method-name">get_aweme_comment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_aweme_info">
+                  </a> <!-- get_aweme_info -->
+                  <span class="method-name">get_aweme_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_aweme_list">
+                  </a> <!-- get_aweme_list -->
+                  <span class="method-name">get_aweme_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_promotion_list">
+                  </a> <!-- get_promotion_list -->
+                  <span class="method-name">get_promotion_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_user_info">
+                  </a> <!-- get_user_info -->
+                  <span class="method-name">get_user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hot_recommend">
+                  </a> <!-- hot_recommend -->
+                  <span class="method-name">hot_recommend</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_hot_video">
+                  </a> <!-- user_hot_video -->
+                  <span class="method-name">user_hot_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_info">
+                  </a> <!-- user_info -->
+                  <span class="method-name">user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_room">
+                  </a> <!-- user_room -->
+                  <span class="method-name">user_room</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_video">
+                  </a> <!-- user_video -->
+                  <span class="method-name">user_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_info">
+                  </a> <!-- video_info -->
+                  <span class="method-name">video_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.TBAPPTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="broadcaster_info">
+                  </a> <!-- broadcaster_info -->
+                  <span class="method-name">broadcaster_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="call_nums">
+                  </a> <!-- call_nums -->
+                  <span class="method-name">call_nums</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="channel_info">
+                  </a> <!-- channel_info -->
+                  <span class="method-name">channel_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_shop_items">
+                  </a> <!-- get_shop_items -->
+                  <span class="method-name">get_shop_items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goods_list">
+                  </a> <!-- goods_list -->
+                  <span class="method-name">goods_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="live_detail">
+                  </a> <!-- live_detail -->
+                  <span class="method-name">live_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_list">
+                  </a> <!-- video_list -->
+                  <span class="method-name">video_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.DouyinShareTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_info">
+                  </a> <!-- user_info -->
+                  <span class="method-name">user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_video">
+                  </a> <!-- user_video -->
+                  <span class="method-name">user_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.Douyinv1Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_goods">
+                  </a> <!-- user_goods -->
+                  <span class="method-name">user_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_info">
+                  </a> <!-- user_info -->
+                  <span class="method-name">user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_video">
+                  </a> <!-- user_video -->
+                  <span class="method-name">user_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_comment">
+                  </a> <!-- video_comment -->
+                  <span class="method-name">video_comment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.AlibabaTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_cate_info">
+                  </a> <!-- get_cate_info -->
+                  <span class="method-name">get_cate_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_comment_list">
+                  </a> <!-- get_comment_list -->
+                  <span class="method-name">get_comment_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_item_info_h5">
+                  </a> <!-- get_item_info_h5 -->
+                  <span class="method-name">get_item_info_h5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_product_info">
+                  </a> <!-- get_product_info -->
+                  <span class="method-name">get_product_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_search_list">
+                  </a> <!-- get_search_list -->
+                  <span class="method-name">get_search_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_shop_items">
+                  </a> <!-- get_shop_items -->
+                  <span class="method-name">get_shop_items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.KuaiShouV2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="call_nums">
+                  </a> <!-- call_nums -->
+                  <span class="method-name">call_nums</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_district_rank">
+                  </a> <!-- get_live_district_rank -->
+                  <span class="method-name">get_live_district_rank</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_info">
+                  </a> <!-- get_live_info -->
+                  <span class="method-name">get_live_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_square_list">
+                  </a> <!-- get_live_square_list -->
+                  <span class="method-name">get_live_square_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_square_refresh">
+                  </a> <!-- get_live_square_refresh -->
+                  <span class="method-name">get_live_square_refresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_top_users">
+                  </a> <!-- get_live_top_users -->
+                  <span class="method-name">get_live_top_users</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_users">
+                  </a> <!-- get_live_users -->
+                  <span class="method-name">get_live_users</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hot_feed">
+                  </a> <!-- hot_feed -->
+                  <span class="method-name">hot_feed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nearby_feed">
+                  </a> <!-- nearby_feed -->
+                  <span class="method-name">nearby_feed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="product_list">
+                  </a> <!-- product_list -->
+                  <span class="method-name">product_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="share_video">
+                  </a> <!-- share_video -->
+                  <span class="method-name">share_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_info">
+                  </a> <!-- user_info -->
+                  <span class="method-name">user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_video">
+                  </a> <!-- user_video -->
+                  <span class="method-name">user_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_comment">
+                  </a> <!-- video_comment -->
+                  <span class="method-name">video_comment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_detail">
+                  </a> <!-- video_detail -->
+                  <span class="method-name">video_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.PddTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_99_goods">
+                  </a> <!-- get_99_goods -->
+                  <span class="method-name">get_99_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_cat_id_list">
+                  </a> <!-- get_cat_id_list -->
+                  <span class="method-name">get_cat_id_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_clearance_sale_goods">
+                  </a> <!-- get_clearance_sale_goods -->
+                  <span class="method-name">get_clearance_sale_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_daily_good_mall">
+                  </a> <!-- get_daily_good_mall -->
+                  <span class="method-name">get_daily_good_mall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_electrical_goods">
+                  </a> <!-- get_electrical_goods -->
+                  <span class="method-name">get_electrical_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_fenlei_goods">
+                  </a> <!-- get_fenlei_goods -->
+                  <span class="method-name">get_fenlei_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_goods_detail">
+                  </a> <!-- get_goods_detail -->
+                  <span class="method-name">get_goods_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_hot_goods">
+                  </a> <!-- get_hot_goods -->
+                  <span class="method-name">get_hot_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_limited_seckill">
+                  </a> <!-- get_limited_seckill -->
+                  <span class="method-name">get_limited_seckill</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_love_shopping_goods">
+                  </a> <!-- get_love_shopping_goods -->
+                  <span class="method-name">get_love_shopping_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_mall_info">
+                  </a> <!-- get_mall_info -->
+                  <span class="method-name">get_mall_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_mall_most_goods">
+                  </a> <!-- get_mall_most_goods -->
+                  <span class="method-name">get_mall_most_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_mall_similar_goods">
+                  </a> <!-- get_mall_similar_goods -->
+                  <span class="method-name">get_mall_similar_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_new_clothes_goods">
+                  </a> <!-- get_new_clothes_goods -->
+                  <span class="method-name">get_new_clothes_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_pdd_date">
+                  </a> <!-- get_pdd_date -->
+                  <span class="method-name">get_pdd_date</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_similar_goods">
+                  </a> <!-- get_similar_goods -->
+                  <span class="method-name">get_similar_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_subsidy_goods">
+                  </a> <!-- get_subsidy_goods -->
+                  <span class="method-name">get_subsidy_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.MeiTuanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="call_nums">
+                  </a> <!-- call_nums -->
+                  <span class="method-name">call_nums</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homepage_shops">
+                  </a> <!-- homepage_shops -->
+                  <span class="method-name">homepage_shops</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shop_comments">
+                  </a> <!-- shop_comments -->
+                  <span class="method-name">shop_comments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shop_foods">
+                  </a> <!-- shop_foods -->
+                  <span class="method-name">shop_foods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.JingDongCPSTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="items">
+                  </a> <!-- items -->
+                  <span class="method-name">items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.KuaiShouV1Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_comm_list">
+                  </a> <!-- get_comm_list -->
+                  <span class="method-name">get_comm_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_detail">
+                  </a> <!-- get_live_detail -->
+                  <span class="method-name">get_live_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_district_rank">
+                  </a> <!-- get_live_district_rank -->
+                  <span class="method-name">get_live_district_rank</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_info">
+                  </a> <!-- get_live_info -->
+                  <span class="method-name">get_live_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_square_list">
+                  </a> <!-- get_live_square_list -->
+                  <span class="method-name">get_live_square_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_square_refresh">
+                  </a> <!-- get_live_square_refresh -->
+                  <span class="method-name">get_live_square_refresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_top_users">
+                  </a> <!-- get_live_top_users -->
+                  <span class="method-name">get_live_top_users</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_live_users">
+                  </a> <!-- get_live_users -->
+                  <span class="method-name">get_live_users</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_user_card_info">
+                  </a> <!-- get_user_card_info -->
+                  <span class="method-name">get_user_card_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hot_feed">
+                  </a> <!-- hot_feed -->
+                  <span class="method-name">hot_feed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nearby_feed">
+                  </a> <!-- nearby_feed -->
+                  <span class="method-name">nearby_feed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="product_list">
+                  </a> <!-- product_list -->
+                  <span class="method-name">product_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="share_video">
+                  </a> <!-- share_video -->
+                  <span class="method-name">share_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_info">
+                  </a> <!-- user_info -->
+                  <span class="method-name">user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_video">
+                  </a> <!-- user_video -->
+                  <span class="method-name">user_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_comment">
+                  </a> <!-- video_comment -->
+                  <span class="method-name">video_comment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_detail">
+                  </a> <!-- video_detail -->
+                  <span class="method-name">video_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.JingDongTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlCommentsCounts">
+                  </a> <!-- crawlCommentsCounts -->
+                  <span class="method-name">crawlCommentsCounts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlPageByBrandName">
+                  </a> <!-- crawlPageByBrandName -->
+                  <span class="method-name">crawlPageByBrandName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlPageShopProducts">
+                  </a> <!-- crawlPageShopProducts -->
+                  <span class="method-name">crawlPageShopProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlShopDetails">
+                  </a> <!-- crawlShopDetails -->
+                  <span class="method-name">crawlShopDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlShopVenderId">
+                  </a> <!-- crawlShopVenderId -->
+                  <span class="method-name">crawlShopVenderId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlSkuComment">
+                  </a> <!-- crawlSkuComment -->
+                  <span class="method-name">crawlSkuComment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlSkuCommentAndCount">
+                  </a> <!-- crawlSkuCommentAndCount -->
+                  <span class="method-name">crawlSkuCommentAndCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crawlSkuPrices">
+                  </a> <!-- crawlSkuPrices -->
+                  <span class="method-name">crawlSkuPrices</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.DuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="call_nums">
+                  </a> <!-- call_nums -->
+                  <span class="method-name">call_nums</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ice_shopping">
+                  </a> <!-- ice_shopping -->
+                  <span class="method-name">ice_shopping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ice_shopping_tab">
+                  </a> <!-- ice_shopping_tab -->
+                  <span class="method-name">ice_shopping_tab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="item_detail">
+                  </a> <!-- item_detail -->
+                  <span class="method-name">item_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sold_list">
+                  </a> <!-- sold_list -->
+                  <span class="method-name">sold_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.DouyinTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_promotion_list">
+                  </a> <!-- get_promotion_list -->
+                  <span class="method-name">get_promotion_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.XHSv2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="call_nums">
+                  </a> <!-- call_nums -->
+                  <span class="method-name">call_nums</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="channel_refresh">
+                  </a> <!-- channel_refresh -->
+                  <span class="method-name">channel_refresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_feed">
+                  </a> <!-- home_feed -->
+                  <span class="method-name">home_feed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="item_comm">
+                  </a> <!-- item_comm -->
+                  <span class="method-name">item_comm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="item_info">
+                  </a> <!-- item_info -->
+                  <span class="method-name">item_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="item_price">
+                  </a> <!-- item_price -->
+                  <span class="method-name">item_price</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="item_search">
+                  </a> <!-- item_search -->
+                  <span class="method-name">item_search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="note_comments">
+                  </a> <!-- note_comments -->
+                  <span class="method-name">note_comments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="note_detail">
+                  </a> <!-- note_detail -->
+                  <span class="method-name">note_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="note_search">
+                  </a> <!-- note_search -->
+                  <span class="method-name">note_search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shop_font">
+                  </a> <!-- shop_font -->
+                  <span class="method-name">shop_font</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shop_info">
+                  </a> <!-- shop_info -->
+                  <span class="method-name">shop_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shop_items">
+                  </a> <!-- shop_items -->
+                  <span class="method-name">shop_items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="topic_notes">
+                  </a> <!-- topic_notes -->
+                  <span class="method-name">topic_notes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_fans">
+                  </a> <!-- user_fans -->
+                  <span class="method-name">user_fans</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_focus">
+                  </a> <!-- user_focus -->
+                  <span class="method-name">user_focus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_info">
+                  </a> <!-- user_info -->
+                  <span class="method-name">user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_note">
+                  </a> <!-- user_note -->
+                  <span class="method-name">user_note</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_search">
+                  </a> <!-- user_search -->
+                  <span class="method-name">user_search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_video">
+                  </a> <!-- user_video -->
+                  <span class="method-name">user_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_detail">
+                  </a> <!-- video_detail -->
+                  <span class="method-name">video_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.XHSv1Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_feed">
+                  </a> <!-- home_feed -->
+                  <span class="method-name">home_feed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="note_comments">
+                  </a> <!-- note_comments -->
+                  <span class="method-name">note_comments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="note_detail">
+                  </a> <!-- note_detail -->
+                  <span class="method-name">note_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_fans">
+                  </a> <!-- user_fans -->
+                  <span class="method-name">user_fans</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_focus">
+                  </a> <!-- user_focus -->
+                  <span class="method-name">user_focus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_info">
+                  </a> <!-- user_info -->
+                  <span class="method-name">user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_note">
+                  </a> <!-- user_note -->
+                  <span class="method-name">user_note</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_search">
+                  </a> <!-- user_search -->
+                  <span class="method-name">user_search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_video">
+                  </a> <!-- user_video -->
+                  <span class="method-name">user_video</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="video_detail">
+                  </a> <!-- video_detail -->
+                  <span class="method-name">video_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tester.cases.TBTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_ask_tag">
+                  </a> <!-- get_ask_tag -->
+                  <span class="method-name">get_ask_tag</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_daren_feed">
+                  </a> <!-- get_daren_feed -->
+                  <span class="method-name">get_daren_feed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_daren_info">
+                  </a> <!-- get_daren_info -->
+                  <span class="method-name">get_daren_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_good_goods">
+                  </a> <!-- get_good_goods -->
+                  <span class="method-name">get_good_goods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_goods_detail">
+                  </a> <!-- get_goods_detail -->
+                  <span class="method-name">get_goods_detail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_questions">
+                  </a> <!-- get_questions -->
+                  <span class="method-name">get_questions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_tb_comment">
+                  </a> <!-- get_tb_comment -->
+                  <span class="method-name">get_tb_comment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; junit=&quot;true&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tester.cases.DouyinTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.Douyinv1Test&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.DouyinLiteTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.JingDongTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.KuaiShouV1Test&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.XHSv1Test&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.TBAPPTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.SumaitongTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.DouyinAweTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.JingDongCPSTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.MeiTuanTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.DouyinShareTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.TBTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.PddTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.DuTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.AlibabaTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.KaoLaTest&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.XHSv2Test&quot;/&gt;
+      &lt;class name=&quot;com.tester.cases.KuaiShouV2Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (19 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(151);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'get_cat_id_list')
+data.setCell(0, 2, 'com.tester.cases.PddTest')
+data.setCell(0, 3, 69410);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'get_subsidy_goods')
+data.setCell(1, 2, 'com.tester.cases.PddTest')
+data.setCell(1, 3, 69357);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'get_pdd_date')
+data.setCell(2, 2, 'com.tester.cases.PddTest')
+data.setCell(2, 3, 68439);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'get_electrical_goods')
+data.setCell(3, 2, 'com.tester.cases.PddTest')
+data.setCell(3, 3, 67053);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'get_love_shopping_goods')
+data.setCell(4, 2, 'com.tester.cases.PddTest')
+data.setCell(4, 3, 66295);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'get_new_clothes_goods')
+data.setCell(5, 2, 'com.tester.cases.PddTest')
+data.setCell(5, 3, 65737);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'get_99_goods')
+data.setCell(6, 2, 'com.tester.cases.PddTest')
+data.setCell(6, 3, 64594);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'get_mall_most_goods')
+data.setCell(7, 2, 'com.tester.cases.PddTest')
+data.setCell(7, 3, 60494);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'get_clearance_sale_goods')
+data.setCell(8, 2, 'com.tester.cases.PddTest')
+data.setCell(8, 3, 56993);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'get_hot_goods')
+data.setCell(9, 2, 'com.tester.cases.PddTest')
+data.setCell(9, 3, 54234);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'get_similar_goods')
+data.setCell(10, 2, 'com.tester.cases.PddTest')
+data.setCell(10, 3, 53746);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'get_fenlei_goods')
+data.setCell(11, 2, 'com.tester.cases.PddTest')
+data.setCell(11, 3, 48518);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'user_video')
+data.setCell(12, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(12, 3, 47706);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'get_aweme_list')
+data.setCell(13, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(13, 3, 45405);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'user_video')
+data.setCell(14, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(14, 3, 39362);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'get_live_district_rank')
+data.setCell(15, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(15, 3, 38155);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'get_live_info')
+data.setCell(16, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(16, 3, 35327);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'user_video')
+data.setCell(17, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(17, 3, 33053);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'get_live_square_refresh')
+data.setCell(18, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(18, 3, 32309);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'get_live_district_rank')
+data.setCell(19, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(19, 3, 31674);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'product_list')
+data.setCell(20, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(20, 3, 31024);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'share_video')
+data.setCell(21, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(21, 3, 30560);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'home_feed')
+data.setCell(22, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(22, 3, 30125);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'note_search')
+data.setCell(23, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(23, 3, 29174);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'user_video')
+data.setCell(24, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(24, 3, 28576);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'user_focus')
+data.setCell(25, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(25, 3, 27435);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'get_live_info')
+data.setCell(26, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(26, 3, 27277);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'shop_foods')
+data.setCell(27, 2, 'com.tester.cases.MeiTuanTest')
+data.setCell(27, 3, 25299);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'user_info')
+data.setCell(28, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(28, 3, 25222);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'broadcaster_info')
+data.setCell(29, 2, 'com.tester.cases.TBAPPTest')
+data.setCell(29, 3, 24954);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'get_live_users')
+data.setCell(30, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(30, 3, 24387);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'note_detail')
+data.setCell(31, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(31, 3, 23910);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'get_live_square_refresh')
+data.setCell(32, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(32, 3, 23588);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'goods_list')
+data.setCell(33, 2, 'com.tester.cases.TBAPPTest')
+data.setCell(33, 3, 23522);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'user_note')
+data.setCell(34, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(34, 3, 23188);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'product_list')
+data.setCell(35, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(35, 3, 22976);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'hot_feed')
+data.setCell(36, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(36, 3, 22969);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'share_video')
+data.setCell(37, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(37, 3, 22462);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'video_detail')
+data.setCell(38, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(38, 3, 21375);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'user_info')
+data.setCell(39, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(39, 3, 20449);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'user_fans')
+data.setCell(40, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(40, 3, 19583);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'channel_info')
+data.setCell(41, 2, 'com.tester.cases.TBAPPTest')
+data.setCell(41, 3, 16802);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'user_info')
+data.setCell(42, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(42, 3, 16648);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'get_live_users')
+data.setCell(43, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(43, 3, 15996);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'get_aweme_info')
+data.setCell(44, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(44, 3, 15765);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'user_hot_video')
+data.setCell(45, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(45, 3, 14968);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'get_cate_info')
+data.setCell(46, 2, 'com.tester.cases.AlibabaTest')
+data.setCell(46, 3, 14733);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'hot_feed')
+data.setCell(47, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(47, 3, 14676);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'get_seller_info')
+data.setCell(48, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(48, 3, 14383);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'topic_notes')
+data.setCell(49, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(49, 3, 14338);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'user_search')
+data.setCell(50, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(50, 3, 14260);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'call_nums')
+data.setCell(51, 2, 'com.tester.cases.TBAPPTest')
+data.setCell(51, 3, 13874);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'live_detail')
+data.setCell(52, 2, 'com.tester.cases.TBAPPTest')
+data.setCell(52, 3, 13791);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'video_detail')
+data.setCell(53, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(53, 3, 13677);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'get_item_feedback')
+data.setCell(54, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(54, 3, 13578);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'call_nums')
+data.setCell(55, 2, 'com.tester.cases.MeiTuanTest')
+data.setCell(55, 3, 13115);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'shop_comments')
+data.setCell(56, 2, 'com.tester.cases.MeiTuanTest')
+data.setCell(56, 3, 13023);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'video_list')
+data.setCell(57, 2, 'com.tester.cases.TBAPPTest')
+data.setCell(57, 3, 12850);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'get_item_detial_pc')
+data.setCell(58, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(58, 3, 12758);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'nearby_feed')
+data.setCell(59, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(59, 3, 12191);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'get_item_detial_h5')
+data.setCell(60, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(60, 3, 11965);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'get_user_info')
+data.setCell(61, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(61, 3, 11871);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'home_feed')
+data.setCell(62, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(62, 3, 11794);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'item_search')
+data.setCell(63, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(63, 3, 11685);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'get_product_info')
+data.setCell(64, 2, 'com.tester.cases.AlibabaTest')
+data.setCell(64, 3, 11393);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'get_comment_list')
+data.setCell(65, 2, 'com.tester.cases.AlibabaTest')
+data.setCell(65, 3, 11367);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'video_detail')
+data.setCell(66, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(66, 3, 11272);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'user_video')
+data.setCell(67, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(67, 3, 11106);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'user_focus')
+data.setCell(68, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(68, 3, 10696);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'user_room')
+data.setCell(69, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(69, 3, 10437);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'get_shop_info_pc')
+data.setCell(70, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(70, 3, 10407);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'note_detail')
+data.setCell(71, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(71, 3, 10290);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'get_item_info_h5')
+data.setCell(72, 2, 'com.tester.cases.AlibabaTest')
+data.setCell(72, 3, 10189);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'user_info')
+data.setCell(73, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(73, 3, 9974);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'get_shop_info_h5')
+data.setCell(74, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(74, 3, 9809);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'get_aweme_comment')
+data.setCell(75, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(75, 3, 9513);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'user_note')
+data.setCell(76, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(76, 3, 9311);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'get_daren_info')
+data.setCell(77, 2, 'com.tester.cases.TBTest')
+data.setCell(77, 3, 9279);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'get_search_list')
+data.setCell(78, 2, 'com.tester.cases.AlibabaTest')
+data.setCell(78, 3, 9264);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'get_promotion_list')
+data.setCell(79, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(79, 3, 9115);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'crawlPageShopProducts')
+data.setCell(80, 2, 'com.tester.cases.JingDongTest')
+data.setCell(80, 3, 9057);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'user_info')
+data.setCell(81, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(81, 3, 8752);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'video_info')
+data.setCell(82, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(82, 3, 8601);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'channel_refresh')
+data.setCell(83, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(83, 3, 8506);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'get_shop_items')
+data.setCell(84, 2, 'com.tester.cases.TBAPPTest')
+data.setCell(84, 3, 8456);
+data.setCell(85, 0, 85)
+data.setCell(85, 1, 'get_daren_feed')
+data.setCell(85, 2, 'com.tester.cases.TBTest')
+data.setCell(85, 3, 8428);
+data.setCell(86, 0, 86)
+data.setCell(86, 1, 'nearby_feed')
+data.setCell(86, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(86, 3, 8162);
+data.setCell(87, 0, 87)
+data.setCell(87, 1, 'shop_items')
+data.setCell(87, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(87, 3, 8059);
+data.setCell(88, 0, 88)
+data.setCell(88, 1, 'call_nums')
+data.setCell(88, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(88, 3, 7809);
+data.setCell(89, 0, 89)
+data.setCell(89, 1, 'note_comments')
+data.setCell(89, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(89, 3, 7706);
+data.setCell(90, 0, 90)
+data.setCell(90, 1, 'get_live_detail')
+data.setCell(90, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(90, 3, 7619);
+data.setCell(91, 0, 91)
+data.setCell(91, 1, 'user_fans')
+data.setCell(91, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(91, 3, 7354);
+data.setCell(92, 0, 92)
+data.setCell(92, 1, 'homepage_shops')
+data.setCell(92, 2, 'com.tester.cases.MeiTuanTest')
+data.setCell(92, 3, 7299);
+data.setCell(93, 0, 93)
+data.setCell(93, 1, 'get_user_card_info')
+data.setCell(93, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(93, 3, 7003);
+data.setCell(94, 0, 94)
+data.setCell(94, 1, 'ice_shopping')
+data.setCell(94, 2, 'com.tester.cases.DuTest')
+data.setCell(94, 3, 6865);
+data.setCell(95, 0, 95)
+data.setCell(95, 1, 'call_nums')
+data.setCell(95, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(95, 3, 6381);
+data.setCell(96, 0, 96)
+data.setCell(96, 1, 'video_comment')
+data.setCell(96, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(96, 3, 6197);
+data.setCell(97, 0, 97)
+data.setCell(97, 1, 'item_detail')
+data.setCell(97, 2, 'com.tester.cases.DuTest')
+data.setCell(97, 3, 6196);
+data.setCell(98, 0, 98)
+data.setCell(98, 1, 'crawlSkuComment')
+data.setCell(98, 2, 'com.tester.cases.JingDongTest')
+data.setCell(98, 3, 5837);
+data.setCell(99, 0, 99)
+data.setCell(99, 1, 'user_search')
+data.setCell(99, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(99, 3, 5780);
+data.setCell(100, 0, 100)
+data.setCell(100, 1, 'get_tb_comment')
+data.setCell(100, 2, 'com.tester.cases.TBTest')
+data.setCell(100, 3, 5771);
+data.setCell(101, 0, 101)
+data.setCell(101, 1, 'get_ask_tag')
+data.setCell(101, 2, 'com.tester.cases.TBTest')
+data.setCell(101, 3, 5653);
+data.setCell(102, 0, 102)
+data.setCell(102, 1, 'get_live_top_users')
+data.setCell(102, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(102, 3, 5552);
+data.setCell(103, 0, 103)
+data.setCell(103, 1, 'user_video')
+data.setCell(103, 2, 'com.tester.cases.DouyinShareTest')
+data.setCell(103, 3, 5377);
+data.setCell(104, 0, 104)
+data.setCell(104, 1, 'crawlSkuCommentAndCount')
+data.setCell(104, 2, 'com.tester.cases.JingDongTest')
+data.setCell(104, 3, 5359);
+data.setCell(105, 0, 105)
+data.setCell(105, 1, 'get_promotion_list')
+data.setCell(105, 2, 'com.tester.cases.DouyinTest')
+data.setCell(105, 3, 5353);
+data.setCell(106, 0, 106)
+data.setCell(106, 1, 'video_detail')
+data.setCell(106, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(106, 3, 5285);
+data.setCell(107, 0, 107)
+data.setCell(107, 1, 'crawlPageByBrandName')
+data.setCell(107, 2, 'com.tester.cases.JingDongTest')
+data.setCell(107, 3, 4902);
+data.setCell(108, 0, 108)
+data.setCell(108, 1, 'get_questions')
+data.setCell(108, 2, 'com.tester.cases.TBTest')
+data.setCell(108, 3, 4644);
+data.setCell(109, 0, 109)
+data.setCell(109, 1, 'leaf_cate')
+data.setCell(109, 2, 'com.tester.cases.KaoLaTest')
+data.setCell(109, 3, 4328);
+data.setCell(110, 0, 110)
+data.setCell(110, 1, 'get_shop_items')
+data.setCell(110, 2, 'com.tester.cases.AlibabaTest')
+data.setCell(110, 3, 4043);
+data.setCell(111, 0, 111)
+data.setCell(111, 1, 'get_mall_info')
+data.setCell(111, 2, 'com.tester.cases.PddTest')
+data.setCell(111, 3, 3949);
+data.setCell(112, 0, 112)
+data.setCell(112, 1, 'get_live_square_list')
+data.setCell(112, 2, 'com.tester.cases.KuaiShouV2Test')
+data.setCell(112, 3, 3933);
+data.setCell(113, 0, 113)
+data.setCell(113, 1, 'get_good_goods')
+data.setCell(113, 2, 'com.tester.cases.TBTest')
+data.setCell(113, 3, 3826);
+data.setCell(114, 0, 114)
+data.setCell(114, 1, 'hot_recommend')
+data.setCell(114, 2, 'com.tester.cases.DouyinAweTest')
+data.setCell(114, 3, 3826);
+data.setCell(115, 0, 115)
+data.setCell(115, 1, 'get_comm_list')
+data.setCell(115, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(115, 3, 3720);
+data.setCell(116, 0, 116)
+data.setCell(116, 1, 'get_shop_feedback')
+data.setCell(116, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(116, 3, 3574);
+data.setCell(117, 0, 117)
+data.setCell(117, 1, 'get_daily_good_mall')
+data.setCell(117, 2, 'com.tester.cases.PddTest')
+data.setCell(117, 3, 3364);
+data.setCell(118, 0, 118)
+data.setCell(118, 1, 'video_comment')
+data.setCell(118, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(118, 3, 3320);
+data.setCell(119, 0, 119)
+data.setCell(119, 1, 'item_detail')
+data.setCell(119, 2, 'com.tester.cases.KaoLaTest')
+data.setCell(119, 3, 3267);
+data.setCell(120, 0, 120)
+data.setCell(120, 1, 'item_price')
+data.setCell(120, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(120, 3, 3264);
+data.setCell(121, 0, 121)
+data.setCell(121, 1, 'call_nums')
+data.setCell(121, 2, 'com.tester.cases.DuTest')
+data.setCell(121, 3, 2986);
+data.setCell(122, 0, 122)
+data.setCell(122, 1, 'sold_list')
+data.setCell(122, 2, 'com.tester.cases.DuTest')
+data.setCell(122, 3, 2912);
+data.setCell(123, 0, 123)
+data.setCell(123, 1, 'get_shop_item')
+data.setCell(123, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(123, 3, 2827);
+data.setCell(124, 0, 124)
+data.setCell(124, 1, 'user_video')
+data.setCell(124, 2, 'com.tester.cases.Douyinv1Test')
+data.setCell(124, 3, 2792);
+data.setCell(125, 0, 125)
+data.setCell(125, 1, 'get_live_top_users')
+data.setCell(125, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(125, 3, 2764);
+data.setCell(126, 0, 126)
+data.setCell(126, 1, 'shop_info')
+data.setCell(126, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(126, 3, 2682);
+data.setCell(127, 0, 127)
+data.setCell(127, 1, 'user_goods')
+data.setCell(127, 2, 'com.tester.cases.Douyinv1Test')
+data.setCell(127, 3, 2457);
+data.setCell(128, 0, 128)
+data.setCell(128, 1, 'shop_font')
+data.setCell(128, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(128, 3, 2404);
+data.setCell(129, 0, 129)
+data.setCell(129, 1, 'item_info')
+data.setCell(129, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(129, 3, 2193);
+data.setCell(130, 0, 130)
+data.setCell(130, 1, 'shop_item')
+data.setCell(130, 2, 'com.tester.cases.KaoLaTest')
+data.setCell(130, 3, 2110);
+data.setCell(131, 0, 131)
+data.setCell(131, 1, 'item_comm')
+data.setCell(131, 2, 'com.tester.cases.XHSv2Test')
+data.setCell(131, 3, 1873);
+data.setCell(132, 0, 132)
+data.setCell(132, 1, 'crawlCommentsCounts')
+data.setCell(132, 2, 'com.tester.cases.JingDongTest')
+data.setCell(132, 3, 1806);
+data.setCell(133, 0, 133)
+data.setCell(133, 1, 'get_item_list')
+data.setCell(133, 2, 'com.tester.cases.SumaitongTest')
+data.setCell(133, 3, 1709);
+data.setCell(134, 0, 134)
+data.setCell(134, 1, 'get_goods_detail')
+data.setCell(134, 2, 'com.tester.cases.TBTest')
+data.setCell(134, 3, 1535);
+data.setCell(135, 0, 135)
+data.setCell(135, 1, 'shop_info')
+data.setCell(135, 2, 'com.tester.cases.KaoLaTest')
+data.setCell(135, 3, 1498);
+data.setCell(136, 0, 136)
+data.setCell(136, 1, 'crawlSkuPrices')
+data.setCell(136, 2, 'com.tester.cases.JingDongTest')
+data.setCell(136, 3, 1427);
+data.setCell(137, 0, 137)
+data.setCell(137, 1, 'get_limited_seckill')
+data.setCell(137, 2, 'com.tester.cases.PddTest')
+data.setCell(137, 3, 1415);
+data.setCell(138, 0, 138)
+data.setCell(138, 1, 'get_goods_detail')
+data.setCell(138, 2, 'com.tester.cases.PddTest')
+data.setCell(138, 3, 1002);
+data.setCell(139, 0, 139)
+data.setCell(139, 1, 'crawlShopDetails')
+data.setCell(139, 2, 'com.tester.cases.JingDongTest')
+data.setCell(139, 3, 990);
+data.setCell(140, 0, 140)
+data.setCell(140, 1, 'user_info')
+data.setCell(140, 2, 'com.tester.cases.DouyinShareTest')
+data.setCell(140, 3, 983);
+data.setCell(141, 0, 141)
+data.setCell(141, 1, 'item_list')
+data.setCell(141, 2, 'com.tester.cases.KaoLaTest')
+data.setCell(141, 3, 893);
+data.setCell(142, 0, 142)
+data.setCell(142, 1, 'user_info')
+data.setCell(142, 2, 'com.tester.cases.Douyinv1Test')
+data.setCell(142, 3, 892);
+data.setCell(143, 0, 143)
+data.setCell(143, 1, 'items')
+data.setCell(143, 2, 'com.tester.cases.JingDongCPSTest')
+data.setCell(143, 3, 721);
+data.setCell(144, 0, 144)
+data.setCell(144, 1, 'get_user_following_list')
+data.setCell(144, 2, 'com.tester.cases.DouyinLiteTest')
+data.setCell(144, 3, 610);
+data.setCell(145, 0, 145)
+data.setCell(145, 1, 'note_comments')
+data.setCell(145, 2, 'com.tester.cases.XHSv1Test')
+data.setCell(145, 3, 608);
+data.setCell(146, 0, 146)
+data.setCell(146, 1, 'get_live_square_list')
+data.setCell(146, 2, 'com.tester.cases.KuaiShouV1Test')
+data.setCell(146, 3, 587);
+data.setCell(147, 0, 147)
+data.setCell(147, 1, 'get_mall_similar_goods')
+data.setCell(147, 2, 'com.tester.cases.PddTest')
+data.setCell(147, 3, 460);
+data.setCell(148, 0, 148)
+data.setCell(148, 1, 'crawlShopVenderId')
+data.setCell(148, 2, 'com.tester.cases.JingDongTest')
+data.setCell(148, 3, 401);
+data.setCell(149, 0, 149)
+data.setCell(149, 1, 'video_comment')
+data.setCell(149, 2, 'com.tester.cases.Douyinv1Test')
+data.setCell(149, 3, 296);
+data.setCell(150, 0, 150)
+data.setCell(150, 1, 'ice_shopping_tab')
+data.setCell(150, 2, 'com.tester.cases.DuTest')
+data.setCell(150, 3, 277);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 39 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.DouyinTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_promotion_list</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.Douyinv1Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">user_goods</span>
+                <span class="method-start">5363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_info</span>
+                <span class="method-start">5363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_comment</span>
+                <span class="method-start">5363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_video</span>
+                <span class="method-start">5364 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.DouyinLiteTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_user_following_list</span>
+                <span class="method-start">8163 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.JingDongTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">crawlShopDetails</span>
+                <span class="method-start">8780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crawlShopVenderId</span>
+                <span class="method-start">8780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crawlSkuPrices</span>
+                <span class="method-start">8780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crawlCommentsCounts</span>
+                <span class="method-start">8781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crawlPageByBrandName</span>
+                <span class="method-start">8781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crawlPageShopProducts</span>
+                <span class="method-start">8781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crawlSkuComment</span>
+                <span class="method-start">8781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crawlSkuCommentAndCount</span>
+                <span class="method-start">8781 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.KuaiShouV1Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_comm_list</span>
+                <span class="method-start">17846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_detail</span>
+                <span class="method-start">17846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_square_list</span>
+                <span class="method-start">17846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_top_users</span>
+                <span class="method-start">17846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_user_card_info</span>
+                <span class="method-start">17846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_comment</span>
+                <span class="method-start">17846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_square_refresh</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_users</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hot_feed</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">nearby_feed</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">product_list</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">share_video</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_info</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_detail</span>
+                <span class="method-start">17847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_district_rank</span>
+                <span class="method-start">17848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_info</span>
+                <span class="method-start">17848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_video</span>
+                <span class="method-start">17848 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.XHSv1Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">note_comments</span>
+                <span class="method-start">50913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_fans</span>
+                <span class="method-start">50913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_info</span>
+                <span class="method-start">50913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_search</span>
+                <span class="method-start">50913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_detail</span>
+                <span class="method-start">50913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">home_feed</span>
+                <span class="method-start">50914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">note_detail</span>
+                <span class="method-start">50914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_focus</span>
+                <span class="method-start">50914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_note</span>
+                <span class="method-start">50914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_video</span>
+                <span class="method-start">50914 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.TBAPPTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_shop_items</span>
+                <span class="method-start">62714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_list</span>
+                <span class="method-start">62714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">broadcaster_info</span>
+                <span class="method-start">62715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">call_nums</span>
+                <span class="method-start">62715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">channel_info</span>
+                <span class="method-start">62715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">goods_list</span>
+                <span class="method-start">62715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">live_detail</span>
+                <span class="method-start">62715 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.SumaitongTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_item_list</span>
+                <span class="method-start">87676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_item_detial_h5</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_item_detial_pc</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_item_feedback</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_seller_info</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_shop_feedback</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_shop_info_h5</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_shop_info_pc</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_shop_item</span>
+                <span class="method-start">87677 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.DouyinAweTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_aweme_comment</span>
+                <span class="method-start">102066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_promotion_list</span>
+                <span class="method-start">102066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hot_recommend</span>
+                <span class="method-start">102066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_info</span>
+                <span class="method-start">102066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_info</span>
+                <span class="method-start">102066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_aweme_info</span>
+                <span class="method-start">102067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_aweme_list</span>
+                <span class="method-start">102067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_user_info</span>
+                <span class="method-start">102067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_hot_video</span>
+                <span class="method-start">102067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_room</span>
+                <span class="method-start">102067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_video</span>
+                <span class="method-start">102067 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.JingDongCPSTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">items</span>
+                <span class="method-start">149778 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.MeiTuanTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">homepage_shops</span>
+                <span class="method-start">150505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shop_comments</span>
+                <span class="method-start">150505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">call_nums</span>
+                <span class="method-start">150506 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shop_foods</span>
+                <span class="method-start">150506 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.DouyinShareTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">user_info</span>
+                <span class="method-start">175810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_video</span>
+                <span class="method-start">175810 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.TBTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_ask_tag</span>
+                <span class="method-start">181193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_daren_feed</span>
+                <span class="method-start">181193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_daren_info</span>
+                <span class="method-start">181193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_good_goods</span>
+                <span class="method-start">181193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_goods_detail</span>
+                <span class="method-start">181193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_questions</span>
+                <span class="method-start">181193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_tb_comment</span>
+                <span class="method-start">181193 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.PddTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_daily_good_mall</span>
+                <span class="method-start">190478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_fenlei_goods</span>
+                <span class="method-start">190478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_goods_detail</span>
+                <span class="method-start">190478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_limited_seckill</span>
+                <span class="method-start">190478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_mall_info</span>
+                <span class="method-start">190478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_mall_similar_goods</span>
+                <span class="method-start">190478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_similar_goods</span>
+                <span class="method-start">190478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_99_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_cat_id_list</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_clearance_sale_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_electrical_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_hot_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_love_shopping_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_mall_most_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_new_clothes_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_pdd_date</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_subsidy_goods</span>
+                <span class="method-start">190479 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.DuTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">call_nums</span>
+                <span class="method-start">259894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ice_shopping</span>
+                <span class="method-start">259894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ice_shopping_tab</span>
+                <span class="method-start">259894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">item_detail</span>
+                <span class="method-start">259894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sold_list</span>
+                <span class="method-start">259894 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.AlibabaTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_cate_info</span>
+                <span class="method-start">266770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_comment_list</span>
+                <span class="method-start">266770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_item_info_h5</span>
+                <span class="method-start">266770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_product_info</span>
+                <span class="method-start">266770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_search_list</span>
+                <span class="method-start">266770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_shop_items</span>
+                <span class="method-start">266770 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.KaoLaTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">item_list</span>
+                <span class="method-start">281509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shop_info</span>
+                <span class="method-start">281509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">item_detail</span>
+                <span class="method-start">281510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">leaf_cate</span>
+                <span class="method-start">281510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shop_item</span>
+                <span class="method-start">281510 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.XHSv2Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">item_comm</span>
+                <span class="method-start">285844 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">call_nums</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">channel_refresh</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">item_info</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">item_price</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">item_search</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">note_comments</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">note_detail</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shop_font</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shop_info</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shop_items</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">topic_notes</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_fans</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_focus</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_info</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_note</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_search</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_video</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_detail</span>
+                <span class="method-start">285845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">home_feed</span>
+                <span class="method-start">285846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">note_search</span>
+                <span class="method-start">285846 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.KuaiShouV2Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">call_nums</span>
+                <span class="method-start">315977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_square_list</span>
+                <span class="method-start">315977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_top_users</span>
+                <span class="method-start">315977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hot_feed</span>
+                <span class="method-start">315977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">nearby_feed</span>
+                <span class="method-start">315977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_comment</span>
+                <span class="method-start">315977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">video_detail</span>
+                <span class="method-start">315977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_district_rank</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_info</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_square_refresh</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_live_users</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">product_list</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">share_video</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_info</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_video</span>
+                <span class="method-start">315978 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
