@@ -1,4 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 151, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 356.256 s - in TestSuite
+Tests run: 151, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 341.105 s <<< FAILURE! - in TestSuite
+crawlPageShopProducts on crawlPageShopProducts(com.tester.cases.JingDongTest)(com.tester.cases.JingDongTest)  Time elapsed: 4.891 s  <<< FAILURE!
+org.springframework.dao.RecoverableDataAccessException: 
+
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+### The error may exist in com/tester/dao/TestResultDao.java (best guess)
+### The error may involve com.tester.dao.TestResultDao.insertResult-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO test_result(item,code, start_time,result,url,method,response) VALUES(?, ?, ?, ?,?,?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+; Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+

@@ -73,7 +73,7 @@ public class DuTest {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "ice_shopping",result);
             return;
         }
-        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+        if (msg.toString().contains("Sorry, your cid can request up")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "ice_shopping", result);
         }
        else if (Statuscode != 200){
@@ -92,7 +92,7 @@ public class DuTest {
     public void ice_shopping_tab() throws IOException {
         //获取首页tab页数据
         String result = "";
-        String url = "http://47.114.196.142:5000/api/du/ice_shopping_tab?tab_id=13";
+        String url = "http://47.114.196.142:5000/api/du/ice_shopping_tab?tab_id=52";
         HttpGet get = new HttpGet(url);
         HttpClient client = HttpClientBuilder.create().build();
         Integer code,Statuscode;
@@ -109,7 +109,7 @@ public class DuTest {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "ice_shopping_tab",result);
             return;
         }
-        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+        if (msg.toString().contains("Sorry, your cid can request")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "ice_shopping_tab", result);
         }
        else if (Statuscode != 200){
@@ -145,7 +145,7 @@ public class DuTest {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "item_detail",result);
             return;
         }
-        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+        if (msg.toString().contains("Sorry, your cid can request up")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "item_detail", result);
         }
        else if (Statuscode != 200){
@@ -181,7 +181,7 @@ public class DuTest {
             testResultDao.insertResult("Du",500, new Date(), "测试异常，e:" + e.getMessage(), url, "sold_list",result);
             return;
         }
-        if (msg.toString().contains("Sorry, your cid can request up to 3000 times per day")) {
+        if (msg.toString().contains("Sorry, your cid can request up")) {
             testResultDao.insertResult("Du", 400, new Date(), "次数用完", url, "sold_list", result);
         }
        else if (Statuscode != 200){

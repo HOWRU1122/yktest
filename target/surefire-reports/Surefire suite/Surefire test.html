@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>151/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>150/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 28 09:24:17 CST 2020</td>
+<td>Started on:</td><td>Tue Apr 28 17:24:30 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>355 seconds (355725 ms)</td>
+<tr><td>Total time:</td><td>340 seconds (340552 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,246 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tester.cases.JingDongTest.crawlPageShopProducts()'><b>crawlPageShopProducts</b><br>Test class: com.tester.cases.JingDongTest</td>
+<td><div><pre>org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+### The error may exist in com/tester/dao/TestResultDao.java (best guess)
+### The error may involve com.tester.dao.TestResultDao.insertResult-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO test_result(item,code, start_time,result,url,method,response) VALUES(?, ?, ?, ?,?,?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+; Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:100)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:59)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy79.insertResult(Unknown Source)
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1414)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1399)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkReadOnlySafeStatement(ClientPreparedStatement.java:307)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:317)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 57 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:539)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:703)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:642)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:128)
+	at com.mysql.cj.NativeSession.sendCommand(NativeSession.java:311)
+	at com.mysql.cj.NativeSession.queryServerVariable(NativeSession.java:1008)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1406)
+	... 74 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:533)
+	... 80 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1887326180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1887326180'><pre>org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+### The error may exist in com/tester/dao/TestResultDao.java (best guess)
+### The error may involve com.tester.dao.TestResultDao.insertResult-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO test_result(item,code, start_time,result,url,method,response) VALUES(?, ?, ?, ?,?,?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+; Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:100)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:59)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy79.insertResult(Unknown Source)
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+	at org.testng.TestRunner$1.run(TestRunner.java:675)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:975)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:706)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1414)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1399)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkReadOnlySafeStatement(ClientPreparedStatement.java:307)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:317)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 57 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:539)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:703)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:642)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:128)
+	at com.mysql.cj.NativeSession.sendCommand(NativeSession.java:311)
+	at com.mysql.cj.NativeSession.queryServerVariable(NativeSession.java:1008)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1406)
+	... 74 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:533)
+	... 80 more
+</pre></div></td>
+<td>18</td>
+<td>crawlPageShopProducts(com.tester.cases.JingDongTest)</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,197 +317,192 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.TBAPPTest.broadcaster_info()'><b>broadcaster_info</b><br>Test class: com.tester.cases.TBAPPTest</td>
 <td></td>
-<td>24</td>
+<td>30</td>
 <td>broadcaster_info(com.tester.cases.TBAPPTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBAPPTest.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.TBAPPTest</td>
 <td></td>
-<td>13</td>
+<td>15</td>
 <td>call_nums(com.tester.cases.TBAPPTest)</td></tr>
 <tr>
 <td title='com.tester.cases.MeiTuanTest.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.MeiTuanTest</td>
 <td></td>
-<td>13</td>
+<td>23</td>
 <td>call_nums(com.tester.cases.MeiTuanTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DuTest.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.DuTest</td>
 <td></td>
-<td>2</td>
+<td>7</td>
 <td>call_nums(com.tester.cases.DuTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>7</td>
+<td>4</td>
 <td>call_nums(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.call_nums()'><b>call_nums</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>6</td>
+<td>4</td>
 <td>call_nums(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.TBAPPTest.channel_info()'><b>channel_info</b><br>Test class: com.tester.cases.TBAPPTest</td>
 <td></td>
-<td>16</td>
+<td>17</td>
 <td>channel_info(com.tester.cases.TBAPPTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.channel_refresh()'><b>channel_refresh</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>8</td>
+<td>5</td>
 <td>channel_refresh(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongTest.crawlCommentsCounts()'><b>crawlCommentsCounts</b><br>Test class: com.tester.cases.JingDongTest</td>
 <td></td>
-<td>1</td>
+<td>6</td>
 <td>crawlCommentsCounts(com.tester.cases.JingDongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongTest.crawlPageByBrandName()'><b>crawlPageByBrandName</b><br>Test class: com.tester.cases.JingDongTest</td>
 <td></td>
-<td>4</td>
+<td>10</td>
 <td>crawlPageByBrandName(com.tester.cases.JingDongTest)</td></tr>
-<tr>
-<td title='com.tester.cases.JingDongTest.crawlPageShopProducts()'><b>crawlPageShopProducts</b><br>Test class: com.tester.cases.JingDongTest</td>
-<td></td>
-<td>9</td>
-<td>crawlPageShopProducts(com.tester.cases.JingDongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongTest.crawlShopDetails()'><b>crawlShopDetails</b><br>Test class: com.tester.cases.JingDongTest</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>crawlShopDetails(com.tester.cases.JingDongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongTest.crawlShopVenderId()'><b>crawlShopVenderId</b><br>Test class: com.tester.cases.JingDongTest</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>crawlShopVenderId(com.tester.cases.JingDongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongTest.crawlSkuComment()'><b>crawlSkuComment</b><br>Test class: com.tester.cases.JingDongTest</td>
 <td></td>
-<td>5</td>
+<td>13</td>
 <td>crawlSkuComment(com.tester.cases.JingDongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongTest.crawlSkuCommentAndCount()'><b>crawlSkuCommentAndCount</b><br>Test class: com.tester.cases.JingDongTest</td>
 <td></td>
-<td>5</td>
+<td>11</td>
 <td>crawlSkuCommentAndCount(com.tester.cases.JingDongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongTest.crawlSkuPrices()'><b>crawlSkuPrices</b><br>Test class: com.tester.cases.JingDongTest</td>
 <td></td>
-<td>1</td>
+<td>3</td>
 <td>crawlSkuPrices(com.tester.cases.JingDongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_99_goods()'><b>get_99_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>64</td>
+<td>70</td>
 <td>get_99_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBTest.get_ask_tag()'><b>get_ask_tag</b><br>Test class: com.tester.cases.TBTest</td>
 <td></td>
-<td>5</td>
+<td>3</td>
 <td>get_ask_tag(com.tester.cases.TBTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.get_aweme_comment()'><b>get_aweme_comment</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>9</td>
+<td>5</td>
 <td>get_aweme_comment(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.get_aweme_info()'><b>get_aweme_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>15</td>
+<td>13</td>
 <td>get_aweme_info(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.get_aweme_list()'><b>get_aweme_list</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>45</td>
+<td>21</td>
 <td>get_aweme_list(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_cat_id_list()'><b>get_cat_id_list</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>69</td>
+<td>77</td>
 <td>get_cat_id_list(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.AlibabaTest.get_cate_info()'><b>get_cate_info</b><br>Test class: com.tester.cases.AlibabaTest</td>
 <td></td>
-<td>14</td>
+<td>11</td>
 <td>get_cate_info(com.tester.cases.AlibabaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_clearance_sale_goods()'><b>get_clearance_sale_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>56</td>
+<td>40</td>
 <td>get_clearance_sale_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_comm_list()'><b>get_comm_list</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>3</td>
+<td>5</td>
 <td>get_comm_list(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.AlibabaTest.get_comment_list()'><b>get_comment_list</b><br>Test class: com.tester.cases.AlibabaTest</td>
 <td></td>
-<td>11</td>
+<td>8</td>
 <td>get_comment_list(com.tester.cases.AlibabaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_daily_good_mall()'><b>get_daily_good_mall</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>get_daily_good_mall(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBTest.get_daren_feed()'><b>get_daren_feed</b><br>Test class: com.tester.cases.TBTest</td>
 <td></td>
-<td>8</td>
+<td>6</td>
 <td>get_daren_feed(com.tester.cases.TBTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBTest.get_daren_info()'><b>get_daren_info</b><br>Test class: com.tester.cases.TBTest</td>
 <td></td>
-<td>9</td>
+<td>7</td>
 <td>get_daren_info(com.tester.cases.TBTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_electrical_goods()'><b>get_electrical_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>67</td>
+<td>75</td>
 <td>get_electrical_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_fenlei_goods()'><b>get_fenlei_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>48</td>
+<td>37</td>
 <td>get_fenlei_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBTest.get_good_goods()'><b>get_good_goods</b><br>Test class: com.tester.cases.TBTest</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>get_good_goods(com.tester.cases.TBTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBTest.get_goods_detail()'><b>get_goods_detail</b><br>Test class: com.tester.cases.TBTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>get_goods_detail(com.tester.cases.TBTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_goods_detail()'><b>get_goods_detail</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>get_goods_detail(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_hot_goods()'><b>get_hot_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>54</td>
+<td>39</td>
 <td>get_hot_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_item_detial_h5()'><b>get_item_detial_h5</b><br>Test class: com.tester.cases.SumaitongTest</td>
 <td></td>
-<td>11</td>
+<td>7</td>
 <td>get_item_detial_h5(com.tester.cases.SumaitongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_item_detial_pc()'><b>get_item_detial_pc</b><br>Test class: com.tester.cases.SumaitongTest</td>
 <td></td>
-<td>12</td>
+<td>8</td>
 <td>get_item_detial_pc(com.tester.cases.SumaitongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_item_feedback()'><b>get_item_feedback</b><br>Test class: com.tester.cases.SumaitongTest</td>
 <td></td>
-<td>13</td>
+<td>8</td>
 <td>get_item_feedback(com.tester.cases.SumaitongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.AlibabaTest.get_item_info_h5()'><b>get_item_info_h5</b><br>Test class: com.tester.cases.AlibabaTest</td>
 <td></td>
-<td>10</td>
+<td>7</td>
 <td>get_item_info_h5(com.tester.cases.AlibabaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_item_list()'><b>get_item_list</b><br>Test class: com.tester.cases.SumaitongTest</td>
@@ -282,27 +517,27 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_live_detail()'><b>get_live_detail</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>7</td>
+<td>6</td>
 <td>get_live_detail(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_live_district_rank()'><b>get_live_district_rank</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>31</td>
+<td>26</td>
 <td>get_live_district_rank(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.get_live_district_rank()'><b>get_live_district_rank</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>38</td>
+<td>30</td>
 <td>get_live_district_rank(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_live_info()'><b>get_live_info</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>27</td>
+<td>22</td>
 <td>get_live_info(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.get_live_info()'><b>get_live_info</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>35</td>
+<td>27</td>
 <td>get_live_info(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_live_square_list()'><b>get_live_square_list</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
@@ -312,17 +547,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.get_live_square_list()'><b>get_live_square_list</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>get_live_square_list(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_live_square_refresh()'><b>get_live_square_refresh</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>23</td>
+<td>21</td>
 <td>get_live_square_refresh(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.get_live_square_refresh()'><b>get_live_square_refresh</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>32</td>
+<td>26</td>
 <td>get_live_square_refresh(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_live_top_users()'><b>get_live_top_users</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
@@ -332,22 +567,22 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.get_live_top_users()'><b>get_live_top_users</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>5</td>
+<td>3</td>
 <td>get_live_top_users(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_live_users()'><b>get_live_users</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>15</td>
+<td>16</td>
 <td>get_live_users(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.get_live_users()'><b>get_live_users</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>24</td>
+<td>15</td>
 <td>get_live_users(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_love_shopping_goods()'><b>get_love_shopping_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>66</td>
+<td>74</td>
 <td>get_love_shopping_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_mall_info()'><b>get_mall_info</b><br>Test class: com.tester.cases.PddTest</td>
@@ -357,7 +592,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.PddTest.get_mall_most_goods()'><b>get_mall_most_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>60</td>
+<td>70</td>
 <td>get_mall_most_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_mall_similar_goods()'><b>get_mall_similar_goods</b><br>Test class: com.tester.cases.PddTest</td>
@@ -367,42 +602,42 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.PddTest.get_new_clothes_goods()'><b>get_new_clothes_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>65</td>
+<td>73</td>
 <td>get_new_clothes_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_pdd_date()'><b>get_pdd_date</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>68</td>
+<td>76</td>
 <td>get_pdd_date(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.AlibabaTest.get_product_info()'><b>get_product_info</b><br>Test class: com.tester.cases.AlibabaTest</td>
 <td></td>
-<td>11</td>
+<td>8</td>
 <td>get_product_info(com.tester.cases.AlibabaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinTest.get_promotion_list()'><b>get_promotion_list</b><br>Test class: com.tester.cases.DouyinTest</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>get_promotion_list(com.tester.cases.DouyinTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.get_promotion_list()'><b>get_promotion_list</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>9</td>
+<td>4</td>
 <td>get_promotion_list(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBTest.get_questions()'><b>get_questions</b><br>Test class: com.tester.cases.TBTest</td>
 <td></td>
-<td>4</td>
+<td>3</td>
 <td>get_questions(com.tester.cases.TBTest)</td></tr>
 <tr>
 <td title='com.tester.cases.AlibabaTest.get_search_list()'><b>get_search_list</b><br>Test class: com.tester.cases.AlibabaTest</td>
 <td></td>
-<td>9</td>
+<td>6</td>
 <td>get_search_list(com.tester.cases.AlibabaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_seller_info()'><b>get_seller_info</b><br>Test class: com.tester.cases.SumaitongTest</td>
 <td></td>
-<td>14</td>
+<td>9</td>
 <td>get_seller_info(com.tester.cases.SumaitongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_shop_feedback()'><b>get_shop_feedback</b><br>Test class: com.tester.cases.SumaitongTest</td>
@@ -412,12 +647,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_shop_info_h5()'><b>get_shop_info_h5</b><br>Test class: com.tester.cases.SumaitongTest</td>
 <td></td>
-<td>9</td>
+<td>4</td>
 <td>get_shop_info_h5(com.tester.cases.SumaitongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_shop_info_pc()'><b>get_shop_info_pc</b><br>Test class: com.tester.cases.SumaitongTest</td>
 <td></td>
-<td>10</td>
+<td>5</td>
 <td>get_shop_info_pc(com.tester.cases.SumaitongTest)</td></tr>
 <tr>
 <td title='com.tester.cases.SumaitongTest.get_shop_item()'><b>get_shop_item</b><br>Test class: com.tester.cases.SumaitongTest</td>
@@ -437,12 +672,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.PddTest.get_similar_goods()'><b>get_similar_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>53</td>
+<td>39</td>
 <td>get_similar_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.PddTest.get_subsidy_goods()'><b>get_subsidy_goods</b><br>Test class: com.tester.cases.PddTest</td>
 <td></td>
-<td>69</td>
+<td>76</td>
 <td>get_subsidy_goods(com.tester.cases.PddTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBTest.get_tb_comment()'><b>get_tb_comment</b><br>Test class: com.tester.cases.TBTest</td>
@@ -452,7 +687,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.get_user_card_info()'><b>get_user_card_info</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>7</td>
+<td>6</td>
 <td>get_user_card_info(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinLiteTest.get_user_following_list()'><b>get_user_following_list</b><br>Test class: com.tester.cases.DouyinLiteTest</td>
@@ -462,22 +697,22 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.DouyinAweTest.get_user_info()'><b>get_user_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>11</td>
+<td>8</td>
 <td>get_user_info(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBAPPTest.goods_list()'><b>goods_list</b><br>Test class: com.tester.cases.TBAPPTest</td>
 <td></td>
-<td>23</td>
+<td>24</td>
 <td>goods_list(com.tester.cases.TBAPPTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.home_feed()'><b>home_feed</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>11</td>
+<td>13</td>
 <td>home_feed(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.home_feed()'><b>home_feed</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>30</td>
+<td>28</td>
 <td>home_feed(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.MeiTuanTest.homepage_shops()'><b>homepage_shops</b><br>Test class: com.tester.cases.MeiTuanTest</td>
@@ -487,47 +722,47 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.hot_feed()'><b>hot_feed</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>14</td>
+<td>15</td>
 <td>hot_feed(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.hot_feed()'><b>hot_feed</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>22</td>
+<td>14</td>
 <td>hot_feed(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.hot_recommend()'><b>hot_recommend</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>hot_recommend(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DuTest.ice_shopping()'><b>ice_shopping</b><br>Test class: com.tester.cases.DuTest</td>
 <td></td>
-<td>6</td>
+<td>10</td>
 <td>ice_shopping(com.tester.cases.DuTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DuTest.ice_shopping_tab()'><b>ice_shopping_tab</b><br>Test class: com.tester.cases.DuTest</td>
 <td></td>
-<td>0</td>
+<td>5</td>
 <td>ice_shopping_tab(com.tester.cases.DuTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.item_comm()'><b>item_comm</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>item_comm(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DuTest.item_detail()'><b>item_detail</b><br>Test class: com.tester.cases.DuTest</td>
 <td></td>
-<td>6</td>
+<td>8</td>
 <td>item_detail(com.tester.cases.DuTest)</td></tr>
 <tr>
 <td title='com.tester.cases.KaoLaTest.item_detail()'><b>item_detail</b><br>Test class: com.tester.cases.KaoLaTest</td>
 <td></td>
-<td>3</td>
+<td>5</td>
 <td>item_detail(com.tester.cases.KaoLaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.item_info()'><b>item_info</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>2</td>
+<td>0</td>
 <td>item_info(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KaoLaTest.item_list()'><b>item_list</b><br>Test class: com.tester.cases.KaoLaTest</td>
@@ -537,12 +772,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.XHSv2Test.item_price()'><b>item_price</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>item_price(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.item_search()'><b>item_search</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>11</td>
+<td>10</td>
 <td>item_search(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.JingDongCPSTest.items()'><b>items</b><br>Test class: com.tester.cases.JingDongCPSTest</td>
@@ -552,87 +787,87 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KaoLaTest.leaf_cate()'><b>leaf_cate</b><br>Test class: com.tester.cases.KaoLaTest</td>
 <td></td>
-<td>4</td>
+<td>6</td>
 <td>leaf_cate(com.tester.cases.KaoLaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBAPPTest.live_detail()'><b>live_detail</b><br>Test class: com.tester.cases.TBAPPTest</td>
 <td></td>
-<td>13</td>
+<td>15</td>
 <td>live_detail(com.tester.cases.TBAPPTest)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.nearby_feed()'><b>nearby_feed</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>8</td>
+<td>9</td>
 <td>nearby_feed(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.nearby_feed()'><b>nearby_feed</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>12</td>
+<td>5</td>
 <td>nearby_feed(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.note_comments()'><b>note_comments</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>note_comments(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.note_comments()'><b>note_comments</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>7</td>
+<td>4</td>
 <td>note_comments(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.note_detail()'><b>note_detail</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>10</td>
+<td>12</td>
 <td>note_detail(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.note_detail()'><b>note_detail</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>23</td>
+<td>21</td>
 <td>note_detail(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.note_search()'><b>note_search</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>29</td>
+<td>26</td>
 <td>note_search(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.product_list()'><b>product_list</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>22</td>
+<td>21</td>
 <td>product_list(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.product_list()'><b>product_list</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>31</td>
+<td>25</td>
 <td>product_list(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.share_video()'><b>share_video</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>22</td>
+<td>19</td>
 <td>share_video(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.share_video()'><b>share_video</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>30</td>
+<td>25</td>
 <td>share_video(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.MeiTuanTest.shop_comments()'><b>shop_comments</b><br>Test class: com.tester.cases.MeiTuanTest</td>
 <td></td>
-<td>13</td>
+<td>23</td>
 <td>shop_comments(com.tester.cases.MeiTuanTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.shop_font()'><b>shop_font</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>2</td>
+<td>0</td>
 <td>shop_font(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.MeiTuanTest.shop_foods()'><b>shop_foods</b><br>Test class: com.tester.cases.MeiTuanTest</td>
 <td></td>
-<td>25</td>
+<td>29</td>
 <td>shop_foods(com.tester.cases.MeiTuanTest)</td></tr>
 <tr>
 <td title='com.tester.cases.KaoLaTest.shop_info()'><b>shop_info</b><br>Test class: com.tester.cases.KaoLaTest</td>
 <td></td>
-<td>1</td>
+<td>3</td>
 <td>shop_info(com.tester.cases.KaoLaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.shop_info()'><b>shop_info</b><br>Test class: com.tester.cases.XHSv2Test</td>
@@ -642,52 +877,52 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KaoLaTest.shop_item()'><b>shop_item</b><br>Test class: com.tester.cases.KaoLaTest</td>
 <td></td>
-<td>2</td>
+<td>4</td>
 <td>shop_item(com.tester.cases.KaoLaTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.shop_items()'><b>shop_items</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>8</td>
+<td>4</td>
 <td>shop_items(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DuTest.sold_list()'><b>sold_list</b><br>Test class: com.tester.cases.DuTest</td>
 <td></td>
-<td>2</td>
+<td>7</td>
 <td>sold_list(com.tester.cases.DuTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.topic_notes()'><b>topic_notes</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>14</td>
+<td>13</td>
 <td>topic_notes(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.user_fans()'><b>user_fans</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>7</td>
+<td>11</td>
 <td>user_fans(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.user_fans()'><b>user_fans</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>19</td>
+<td>14</td>
 <td>user_fans(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.user_focus()'><b>user_focus</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>10</td>
+<td>12</td>
 <td>user_focus(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.user_focus()'><b>user_focus</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>27</td>
+<td>22</td>
 <td>user_focus(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.Douyinv1Test.user_goods()'><b>user_goods</b><br>Test class: com.tester.cases.Douyinv1Test</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>user_goods(com.tester.cases.Douyinv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.user_hot_video()'><b>user_hot_video</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>14</td>
+<td>11</td>
 <td>user_hot_video(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.Douyinv1Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.Douyinv1Test</td>
@@ -697,17 +932,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>16</td>
+<td>18</td>
 <td>user_info(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>8</td>
+<td>11</td>
 <td>user_info(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.user_info()'><b>user_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>9</td>
+<td>5</td>
 <td>user_info(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinShareTest.user_info()'><b>user_info</b><br>Test class: com.tester.cases.DouyinShareTest</td>
@@ -717,37 +952,37 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.XHSv2Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>20</td>
+<td>16</td>
 <td>user_info(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.user_info()'><b>user_info</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>25</td>
+<td>16</td>
 <td>user_info(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.user_note()'><b>user_note</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>9</td>
+<td>12</td>
 <td>user_note(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.user_note()'><b>user_note</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>23</td>
+<td>19</td>
 <td>user_note(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.user_room()'><b>user_room</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>10</td>
+<td>6</td>
 <td>user_room(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.user_search()'><b>user_search</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>5</td>
+<td>8</td>
 <td>user_search(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.user_search()'><b>user_search</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>14</td>
+<td>11</td>
 <td>user_search(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.Douyinv1Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.Douyinv1Test</td>
@@ -757,32 +992,32 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>33</td>
+<td>27</td>
 <td>user_video(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>11</td>
+<td>13</td>
 <td>user_video(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.user_video()'><b>user_video</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>47</td>
+<td>24</td>
 <td>user_video(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinShareTest.user_video()'><b>user_video</b><br>Test class: com.tester.cases.DouyinShareTest</td>
 <td></td>
-<td>5</td>
+<td>3</td>
 <td>user_video(com.tester.cases.DouyinShareTest)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>28</td>
+<td>24</td>
 <td>user_video(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.user_video()'><b>user_video</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>39</td>
+<td>31</td>
 <td>user_video(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.Douyinv1Test.video_comment()'><b>video_comment</b><br>Test class: com.tester.cases.Douyinv1Test</td>
@@ -792,42 +1027,42 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.video_comment()'><b>video_comment</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>3</td>
+<td>5</td>
 <td>video_comment(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.video_comment()'><b>video_comment</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>6</td>
+<td>4</td>
 <td>video_comment(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV1Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.KuaiShouV1Test</td>
 <td></td>
-<td>13</td>
+<td>14</td>
 <td>video_detail(com.tester.cases.KuaiShouV1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv1Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.XHSv1Test</td>
 <td></td>
-<td>5</td>
+<td>2</td>
 <td>video_detail(com.tester.cases.XHSv1Test)</td></tr>
 <tr>
 <td title='com.tester.cases.XHSv2Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.XHSv2Test</td>
 <td></td>
-<td>11</td>
+<td>9</td>
 <td>video_detail(com.tester.cases.XHSv2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.KuaiShouV2Test.video_detail()'><b>video_detail</b><br>Test class: com.tester.cases.KuaiShouV2Test</td>
 <td></td>
-<td>21</td>
+<td>12</td>
 <td>video_detail(com.tester.cases.KuaiShouV2Test)</td></tr>
 <tr>
 <td title='com.tester.cases.DouyinAweTest.video_info()'><b>video_info</b><br>Test class: com.tester.cases.DouyinAweTest</td>
 <td></td>
-<td>8</td>
+<td>4</td>
 <td>video_info(com.tester.cases.DouyinAweTest)</td></tr>
 <tr>
 <td title='com.tester.cases.TBAPPTest.video_list()'><b>video_list</b><br>Test class: com.tester.cases.TBAPPTest</td>
 <td></td>
-<td>12</td>
+<td>13</td>
 <td>video_list(com.tester.cases.TBAPPTest)</td></tr>
 </table><p>
 </body>

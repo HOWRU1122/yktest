@@ -64,6 +64,7 @@ public class SumaitongTest {
         }
     }
 */
+   /*
     @Test
     public void get_item_list() throws IOException {
         //根据类目id获取商品列表
@@ -103,7 +104,7 @@ public class SumaitongTest {
             System.out.println("成功，" + "请求url：" + url);
         }
     }
-
+*/
     @Test
     public void get_item_detial_h5() throws IOException {
         //获取商品详情
