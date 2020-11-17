@@ -313,5 +313,6 @@ public class TBAPPTest {
             testResultDao.insertResult("TBAPP",200, new Date(), "成功", url,"get_shop_items",result);
             System.out.println("成功，" + "请求url：" + url);
         }
+        System.out.println(result);
     }
 }

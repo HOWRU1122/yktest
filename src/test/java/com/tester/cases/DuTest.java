@@ -122,6 +122,7 @@ public class DuTest {
             testResultDao.insertResult("Du",200, new Date(), "成功", url,"ice_shopping_tab",result);
             System.out.println("成功，" + "请求url：" + url);
         }
+        System.out.println(result);
     }
 
     @Test

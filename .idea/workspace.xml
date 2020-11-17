@@ -2,9 +2,143 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongV2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/yktest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yktest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/event.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/event.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-02-11" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-02-11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-02-12" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-02-12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-02-13" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-02-13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-02-24" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-02-24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-02-25" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-02-25" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-02-26" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-02-26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-10" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-11" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-13" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-16" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-19" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-20" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-23" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-25" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-25" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-26" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-27" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-30" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-30" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-07" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-07" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-08" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-08" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-09" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-09" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-10" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-13" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-14" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-15" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-15" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-27" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-28" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-05-11" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-05-11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-05-13" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-05-13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-06-22" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-06-22" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/config/ExtentTestNGIReporterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/config/ExtentTestNGIReporterListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/model/TestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/model/TestResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/utils/DatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/utils/DatabaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/moco-runner-0.11.0-standalone.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/moco-runner-0.11.0-standalone.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/AlibabaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/AlibabaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinAweTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinAweTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinIOSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinIOSTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinLiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinLiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinShareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinShareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DouyinTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/Douyinv1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/Douyinv1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/DuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/DuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongCPSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongCPSTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongV2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/JingDongV2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/KaoLaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/KaoLaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/KuaiShouV1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/KuaiShouV1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/KuaiShouV2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/KuaiShouV2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/MeiTuanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/MeiTuanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/PddTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/PddTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/ShopeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/ShopeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/SumaitongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/SumaitongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/TBAPPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/TBAPPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/TBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/TBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/TBVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/TBVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/XHSv1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/XHSv1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/XHSv2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/XHSv2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moco-runner-0.11.0-standalone.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moco-runner-0.11.0-standalone.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.AlibabaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.AlibabaTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinAweTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinAweTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinLiteTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinLiteTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinShareTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinShareTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DouyinTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.Douyinv1Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.Douyinv1Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DuTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.DuTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongCPSTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongCPSTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.JingDongTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KaoLaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KaoLaTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KuaiShouV1Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KuaiShouV1Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KuaiShouV2Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.KuaiShouV2Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.MeiTuanTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.MeiTuanTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.PddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.PddTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.SumaitongTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.SumaitongTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.TBAPPTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.TBAPPTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.TBTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.TBTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv1Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv1Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv2Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.XHSv2Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/DuTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/TBAPPTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/TBAPPTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yktest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yktest.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +162,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,11 +174,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -58,10 +192,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -79,6 +213,7 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tester.cases" />
+      <recent name="com.tester.utils" />
       <recent name="com.tester.model" />
       <recent name="com.tester.controller" />
     </key>
@@ -93,8 +228,8 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JingDongV2Test.get_goods_detail">
-    <configuration name="DouyinIOSTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AlibabaTest.get_search_list">
+    <configuration name="AlibabaTest.get_search_list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +238,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DouyinIOSTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.AlibabaTest" />
+      <option name="METHOD_NAME" value="get_search_list" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JingDongV2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DuTest.ice_shopping_tab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -118,23 +254,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.JingDongV2Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JingDongV2Test.discovery_live_list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yktest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tester.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.JingDongV2Test" />
-      <option name="METHOD_NAME" value="discovery_live_list" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.DuTest" />
+      <option name="METHOD_NAME" value="ice_shopping_tab" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,7 +277,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TBAPPTest.get_shop_items" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yktest" />
       <extension name="coverage">
         <pattern>
@@ -165,8 +286,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tester.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.cases.ShopeeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.TBAPPTest" />
+      <option name="METHOD_NAME" value="get_shop_items" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TBTest.get_daren_info" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yktest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.TBTest" />
+      <option name="METHOD_NAME" value="get_daren_info" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,25 +318,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlibabaTest.get_search_list" />
+        <item itemvalue="JUnit.TBAPPTest.get_shop_items" />
+        <item itemvalue="JUnit.TBTest.get_daren_info" />
+        <item itemvalue="JUnit.DuTest.ice_shopping_tab" />
         <item itemvalue="JUnit.JingDongV2Test.get_goods_detail" />
-        <item itemvalue="JUnit.JingDongV2Test.discovery_live_list" />
-        <item itemvalue="JUnit.JingDongV2Test" />
-        <item itemvalue="JUnit.DouyinIOSTest" />
-        <item itemvalue="JUnit.ShopeeTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -243,129 +369,76 @@
       <workItem from="1586237721460" duration="3823000" />
       <workItem from="1586247632224" duration="70740000" />
       <workItem from="1589008149612" duration="4231000" />
-      <workItem from="1590544021458" duration="7983000" />
+      <workItem from="1590544021458" duration="11703000" />
+      <workItem from="1593590688348" duration="349000" />
+      <workItem from="1594869962615" duration="1094000" />
+      <workItem from="1594970941271" duration="325000" />
+      <workItem from="1594971290812" duration="598000" />
+      <workItem from="1596155566567" duration="590000" />
+      <workItem from="1596500834006" duration="597000" />
+      <workItem from="1596609342416" duration="14000" />
+      <workItem from="1596767910325" duration="3032000" />
+      <workItem from="1597019479729" duration="2597000" />
+      <workItem from="1597105527392" duration="1245000" />
+      <workItem from="1597129969624" duration="29000" />
+      <workItem from="1597634884720" duration="25000" />
+      <workItem from="1597653652809" duration="617000" />
+      <workItem from="1597710359369" duration="105000" />
+      <workItem from="1597737243250" duration="26000" />
+      <workItem from="1598430930332" duration="1538000" />
+      <workItem from="1598433388524" duration="881000" />
+      <workItem from="1599206209295" duration="622000" />
+      <workItem from="1599545560259" duration="1622000" />
+      <workItem from="1599548281819" duration="1006000" />
+      <workItem from="1599554575266" duration="2560000" />
+      <workItem from="1599812514319" duration="29000" />
+      <workItem from="1604313690381" duration="3214000" />
+      <workItem from="1605413336969" duration="414000" />
+      <workItem from="1605414056402" duration="255000" />
+      <workItem from="1605490857056" duration="596000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="563" y="198" key="#Notifications" timestamp="1585646844970">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="563" y="198" key="#Notifications/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585646844970" />
-    <state x="706" y="408" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1585647779708">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="706" y="408" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585647779708" />
-    <state x="632" y="242" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585907142646">
-      <screen x="0" y="23" width="1920" height="1002" />
-    </state>
-    <state x="632" y="242" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585907142646" />
-    <state x="965" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586250024691">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="965" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586250024691" />
-    <state x="665" y="88" key="CommitChangelistDialog2" timestamp="1584499097343">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="665" y="88" key="CommitChangelistDialog2/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1584499097343" />
-    <state x="301" y="123" width="1452" height="802" key="DiffContextDialog" timestamp="1586247615066">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="301" y="123" width="1452" height="802" key="DiffContextDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586247615066" />
-    <state width="1610" height="255" key="GridCell.Tab.0.bottom" timestamp="1592991987174">
+    <state x="2262" y="124" key="#Project_Structure" timestamp="1598431356018">
       <screen x="1920" y="23" width="1680" height="1027" />
     </state>
-    <state width="1610" height="258" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1585191843644" />
-    <state width="1610" height="255" key="GridCell.Tab.0.bottom/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592991987174" />
-    <state width="1610" height="331" key="GridCell.Tab.0.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504012" />
-    <state width="1610" height="355" key="GridCell.Tab.0.bottom/0.23.1920.1002/1920.23.1680.1027@1920.23.1680.1027" timestamp="1589332258460" />
-    <state width="1610" height="330" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555520" />
-    <state width="1610" height="331" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879472" />
-    <state width="1610" height="255" key="GridCell.Tab.0.center" timestamp="1592991987173">
+    <state x="2262" y="124" key="#Project_Structure/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1598431356018" />
+    <state width="1610" height="240" key="GridCell.Tab.0.bottom" timestamp="1599559549150">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1610" height="255" key="GridCell.Tab.0.bottom/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592992061567" />
+    <state width="1610" height="240" key="GridCell.Tab.0.bottom/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599559549150" />
+    <state width="1610" height="255" key="GridCell.Tab.0.bottom/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1596768065699" />
+    <state width="1610" height="240" key="GridCell.Tab.0.center" timestamp="1599559549150">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1610" height="255" key="GridCell.Tab.0.center/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592992061566" />
+    <state width="1610" height="240" key="GridCell.Tab.0.center/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599559549150" />
+    <state width="1610" height="255" key="GridCell.Tab.0.center/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1596768065697" />
+    <state width="1610" height="240" key="GridCell.Tab.0.left" timestamp="1599559549149">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1610" height="255" key="GridCell.Tab.0.left/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592992061565" />
+    <state width="1610" height="240" key="GridCell.Tab.0.left/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599559549149" />
+    <state width="1610" height="255" key="GridCell.Tab.0.left/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1596768065696" />
+    <state width="1610" height="240" key="GridCell.Tab.0.right" timestamp="1599559549150">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1610" height="255" key="GridCell.Tab.0.right/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592992061566" />
+    <state width="1610" height="240" key="GridCell.Tab.0.right/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599559549150" />
+    <state width="1610" height="255" key="GridCell.Tab.0.right/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1596768065698" />
+    <state x="2164" y="100" key="SettingsEditor" timestamp="1598433673184">
       <screen x="1920" y="23" width="1680" height="1027" />
     </state>
-    <state width="1610" height="258" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1585191843643" />
-    <state width="1610" height="255" key="GridCell.Tab.0.center/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592991987173" />
-    <state width="1610" height="331" key="GridCell.Tab.0.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504012" />
-    <state width="1610" height="355" key="GridCell.Tab.0.center/0.23.1920.1002/1920.23.1680.1027@1920.23.1680.1027" timestamp="1589332258458" />
-    <state width="1610" height="330" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555518" />
-    <state width="1610" height="331" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879471" />
-    <state width="1610" height="255" key="GridCell.Tab.0.left" timestamp="1592991987172">
+    <state x="2164" y="100" key="SettingsEditor/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1594968547296" />
+    <state x="2164" y="100" key="SettingsEditor/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1598433673184" />
+    <state x="2465" y="131" key="refactoring.ChangeSignatureDialog" timestamp="1593332097228">
       <screen x="1920" y="23" width="1680" height="1027" />
     </state>
-    <state width="1610" height="258" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1585191843643" />
-    <state width="1610" height="255" key="GridCell.Tab.0.left/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592991987172" />
-    <state width="1610" height="331" key="GridCell.Tab.0.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504011" />
-    <state width="1610" height="355" key="GridCell.Tab.0.left/0.23.1920.1002/1920.23.1680.1027@1920.23.1680.1027" timestamp="1589332258458" />
-    <state width="1610" height="330" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555518" />
-    <state width="1610" height="331" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879471" />
-    <state width="1610" height="255" key="GridCell.Tab.0.right" timestamp="1592991987173">
-      <screen x="1920" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1610" height="258" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1585191843644" />
-    <state width="1610" height="255" key="GridCell.Tab.0.right/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592991987173" />
-    <state width="1610" height="331" key="GridCell.Tab.0.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586942504012" />
-    <state width="1610" height="355" key="GridCell.Tab.0.right/0.23.1920.1002/1920.23.1680.1027@1920.23.1680.1027" timestamp="1589332258459" />
-    <state width="1610" height="330" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586942555519" />
-    <state width="1610" height="331" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879472" />
-    <state width="1610" height="331" key="GridCell.Tab.1.bottom" timestamp="1589007879475">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="331" key="GridCell.Tab.1.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586758754423" />
-    <state width="1610" height="333" key="GridCell.Tab.1.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586324060677" />
-    <state width="1610" height="331" key="GridCell.Tab.1.bottom/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879475" />
-    <state width="1610" height="331" key="GridCell.Tab.1.center" timestamp="1589007879474">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="331" key="GridCell.Tab.1.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586758754422" />
-    <state width="1610" height="333" key="GridCell.Tab.1.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586324060676" />
-    <state width="1610" height="331" key="GridCell.Tab.1.center/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879474" />
-    <state width="1610" height="331" key="GridCell.Tab.1.left" timestamp="1589007879473">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="331" key="GridCell.Tab.1.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586758754421" />
-    <state width="1610" height="333" key="GridCell.Tab.1.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586324060675" />
-    <state width="1610" height="331" key="GridCell.Tab.1.left/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879473" />
-    <state width="1610" height="331" key="GridCell.Tab.1.right" timestamp="1589007879475">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="331" key="GridCell.Tab.1.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586758754423" />
-    <state width="1610" height="333" key="GridCell.Tab.1.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586324060676" />
-    <state width="1610" height="331" key="GridCell.Tab.1.right/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879475" />
-    <state x="2164" y="100" key="SettingsEditor" timestamp="1592816645403">
-      <screen x="1920" y="23" width="1680" height="1027" />
-    </state>
-    <state x="2164" y="100" key="SettingsEditor/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1592816645403" />
-    <state x="279" y="98" key="SettingsEditor/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585907012998" />
-    <state x="2464" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1589008190200">
-      <screen x="1920" y="23" width="1680" height="1027" />
-    </state>
-    <state x="622" y="342" key="com.intellij.ide.util.TipDialog/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585907168448" />
-    <state x="2464" y="350" key="com.intellij.ide.util.TipDialog/0.23.1920.1002/1920.23.1680.1027@1920.23.1680.1027" timestamp="1589008190200" />
-    <state x="622" y="360" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585647677677" />
-    <state x="2539" y="225" width="816" height="825" key="find.popup" timestamp="1589162546156">
-      <screen x="1920" y="23" width="1680" height="1027" />
-    </state>
-    <state x="2539" y="225" width="816" height="825" key="find.popup/0.23.1920.1002/1920.23.1680.1027@1920.23.1680.1027" timestamp="1589162546156" />
-    <state x="748" y="281" width="816" height="550" key="find.popup/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586428481194" />
-    <state x="706" y="409" width="717" height="295" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1585124893179">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="706" y="409" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585124893179" />
-    <state x="2476" y="235" width="670" height="656" key="run.anything.popup" timestamp="1588065863083">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state x="635" y="242" width="670" height="675" key="run.anything.popup/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585906813906" />
-    <state x="635" y="254" width="670" height="713" key="run.anything.popup/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586252335738" />
-    <state x="2476" y="235" width="670" height="656" key="run.anything.popup/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588065863083" />
-    <state x="2437" y="281" width="671" height="716" key="search.everywhere.popup" timestamp="1589160628777">
-      <screen x="1920" y="23" width="1680" height="1027" />
-    </state>
-    <state x="591" y="275" width="766" height="697" key="search.everywhere.popup/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1585281191914" />
-    <state x="2437" y="281" width="671" height="716" key="search.everywhere.popup/0.23.1920.1002/1920.23.1680.1027@1920.23.1680.1027" timestamp="1589160628777" />
-    <state x="591" y="289" width="766" height="736" key="search.everywhere.popup/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1586428336888" />
+    <state x="2465" y="131" key="refactoring.ChangeSignatureDialog/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1593332097228" />
   </component>
 </project>
